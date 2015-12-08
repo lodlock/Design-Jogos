@@ -29,13 +29,14 @@
 grav = 0.2;
 hsp = 0;
 vsp = 0;
-jumpspeed = 7;
-movespeed = 4;
+jumpspeed = 4;
+movespeed = 2;
 target = noone;
 globalvar transform;
 transform = false;
 globalvar crate;
 crate = false;
+can_see = false;
 
 globalvar arrows;
 arrows = 3;
@@ -85,7 +86,7 @@ if (place_meeting(x,y+1, obj_box)){
 
 if keyboard_check(vk_control) {
     target = collision_circle(mouse_x, mouse_y, 2, obj_enemy, 0, 1);
-    if (instance_exists(target) &amp;&amp; mouse_check_button_pressed(mb_left)) {
+    if (instance_exists(target) &amp;&amp; mouse_check_button_pressed(mb_left) &amp;&amp; can_see) {
         
         switch(target.sprite_index){
             case spr_enemy:
@@ -202,8 +203,16 @@ if ((place_meeting(x,y, obj_enemy)  || place_meeting(x,y, obj_e)) &amp;&amp; spr
           <argument>
             <kind>1</kind>
             <string>draw_sprite_ext(sprite_index,image_index,x,y,facing,1,0,c_white,1);
-if (mouse_check_button(mb_left))
-    draw_line_width(obj_player.x,obj_player.y, mouse_x, mouse_y, 2);
+if (mouse_check_button(mb_left)){
+    if(collision_line(obj_player.x,obj_player.y, mouse_x, mouse_y, obj_box,false, false) || distance_to_point(mouse_x,mouse_y) &gt;= 300){
+        draw_line_width_color(obj_player.x,obj_player.y, mouse_x, mouse_y,2,c_red,c_red);
+        can_see = false;
+    }
+    else{
+        draw_line_width_color(obj_player.x,obj_player.y, mouse_x, mouse_y,2,c_green,c_green);
+        can_see = true;
+    }
+}
 </string>
           </argument>
         </arguments>
