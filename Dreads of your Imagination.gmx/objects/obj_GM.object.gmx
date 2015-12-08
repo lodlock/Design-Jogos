@@ -55,6 +55,7 @@ nrcrates = 5;
     nrcrates -= 1;
     
 }
+
 </string>
           </argument>
         </arguments>

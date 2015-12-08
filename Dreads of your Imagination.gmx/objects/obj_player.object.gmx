@@ -202,6 +202,8 @@ if ((place_meeting(x,y, obj_enemy)  || place_meeting(x,y, obj_e)) &amp;&amp; spr
           <argument>
             <kind>1</kind>
             <string>draw_sprite_ext(sprite_index,image_index,x,y,facing,1,0,c_white,1);
+if (mouse_check_button(mb_left))
+    draw_line_width(obj_player.x,obj_player.y, mouse_x, mouse_y, 2);
 </string>
           </argument>
         </arguments>
