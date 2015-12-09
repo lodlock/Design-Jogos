@@ -46,7 +46,7 @@ if (mouse_check_button(mb_left) && swords > 0 && !keyboard_check(vk_control) && 
 }
 
 //Enemy Collision (Devia tirar vida não dar logo restart)
-if ((place_meeting(x,y, obj_enemy)  || place_meeting(x,y, obj_e)) && sprite_index != spr_player_sword || place_meeting(x,y, obj_e2)){
+if ((place_meeting(x,y, obj_transformable_enemy)  || place_meeting(x,y, obj_e)) && sprite_index != spr_player_sword || place_meeting(x,y, obj_e2)){
     room_restart();
 }
 

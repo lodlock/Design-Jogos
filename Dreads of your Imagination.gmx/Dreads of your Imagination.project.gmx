@@ -28,15 +28,25 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\ItemPickup.gml</script>
-    <script>scripts\scr_move_down.gml</script>
-    <script>scripts\scr_move_left.gml</script>
-    <script>scripts\scr_move_right.gml</script>
-    <script>scripts\scr_move_up.gml</script>
     <script>scripts\scr_text.gml</script>
-    <script>scripts\scr_player_normal.gml</script>
     <script>scripts\scr_get_input.gml</script>
-    <script>scripts\scr_player_collision.gml</script>
-    <script>scripts\scr_player_transforming.gml</script>
+    <scripts name="Enemy Scripts">
+      <script>scripts\scr_transformable_enemy_normal.gml</script>
+      <script>scripts\scr_move_down.gml</script>
+      <script>scripts\scr_move_up.gml</script>
+      <script>scripts\scr_move_left.gml</script>
+      <script>scripts\scr_move_right.gml</script>
+      <script>scripts\scr_transformable_enemy_transforming.gml</script>
+      <script>scripts\scr_enemy_collision.gml</script>
+      <script>scripts\scr_enemy_normal.gml</script>
+      <script>scripts\scr_transforming.gml</script>
+      <script>scripts\scr_enemy_normal_vertical.gml</script>
+    </scripts>
+    <scripts name="Player Scripts">
+      <script>scripts\scr_player_collision.gml</script>
+      <script>scripts\scr_player_transforming.gml</script>
+      <script>scripts\scr_player_normal.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
@@ -47,8 +57,8 @@
     <object>objects\obj_box</object>
     <object>objects\obj_crate</object>
     <object>objects\obj_e</object>
-    <object>objects\</object>
-    <object>objects\obj_enemy</object>
+    <object>objects\obj_e2</object>
+    <object>objects\obj_transformable_enemy</object>
     <object>objects\obj_GM</object>
     <object>objects\obj_inventory</object>
     <object>objects\obj_pet</object>
@@ -57,6 +67,7 @@
     <object>objects\obj_sword</object>
     <object>objects\obj_timeController</object>
     <object>objects\obj_text</object>
+    <object>objects\obj_lightning</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

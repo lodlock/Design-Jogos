@@ -71,14 +71,14 @@ enum states {
     <instance objName="obj_box" x="16" y="384" name="inst_73BBE439" locked="0" code="" scaleX="1" scaleY="25" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1040" y="736" name="inst_B0BCF9C6" locked="0" code="" scaleX="65" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2032" y="384" name="inst_4AD3E9D4" locked="0" code="" scaleX="1" scaleY="25" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="128" y="704" name="inst_56E73418" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="896" y="352" name="inst_56E73418" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pet" x="80" y="704" name="inst_379F1142" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_GM" x="48" y="16" name="inst_E98556B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inventory" x="80" y="16" name="inst_021E0458" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_timeController" x="112" y="16" name="inst_2E3758AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="336" y="624" name="inst_053211CC" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="368" y="704" name="inst_43ED5D41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="352" y="592" name="inst_AE542F39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_transformable_enemy" x="368" y="704" name="inst_43ED5D41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_transformable_enemy" x="352" y="592" name="inst_AE542F39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="480" y="704" name="inst_97905C95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="512" y="672" name="inst_B1D5EB91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="544" y="640" name="inst_847EAEB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -97,15 +97,15 @@ enum states {
     <instance objName="obj_box" x="1504" y="544" name="inst_D5B857E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1536" y="512" name="inst_FC6A6C63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1776" y="480" name="inst_64C94F4B" locked="0" code="" scaleX="15" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="928" y="544" name="inst_FA1D4F98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_transformable_enemy" x="928" y="544" name="inst_FA1D4F98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1440" y="224" name="inst_017D6D81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1280" y="224" name="inst_E1033FEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1120" y="224" name="inst_FE0DAEC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="176" y="704" name="inst_FC65D805" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="" x="1120" y="320" name="inst_4DC278FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="" x="1280" y="320" name="inst_1612B762" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="" x="1440" y="320" name="inst_C0C3C14A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="1120" y="192" name="inst_F773FA85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_e2" x="1120" y="320" name="inst_4DC278FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_e2" x="1280" y="320" name="inst_1612B762" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_e2" x="1440" y="320" name="inst_C0C3C14A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_transformable_enemy" x="1120" y="192" name="inst_F773FA85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_e" x="1168" y="352" name="inst_887E0ECF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="752" y="352" name="inst_2F30425E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="752" y="128" name="inst_B2D138C3" locked="0" code="" scaleX="1" scaleY="10" colour="4294967295" rotation="0"/>
@@ -119,13 +119,14 @@ enum states {
     <instance objName="obj_e" x="608" y="192" name="inst_AFC50EBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_e" x="688" y="192" name="inst_8C77C728" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="416" y="0" name="inst_2C19237D" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="1760" y="448" name="inst_1367C70D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="1872" y="448" name="inst_074A7DA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_transformable_enemy" x="1760" y="448" name="inst_1367C70D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_transformable_enemy" x="1872" y="448" name="inst_074A7DA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_e" x="1664" y="448" name="inst_B7BAEB84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_e" x="1952" y="448" name="inst_94119E66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_e" x="1808" y="448" name="inst_DAB73950" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_arrow" x="656" y="208" name="inst_3CB5867E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="768" y="384" name="inst_B20BC624" locked="0" code="" scaleX="45.90625" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lightning" x="144" y="16" name="inst_6B2D92C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
