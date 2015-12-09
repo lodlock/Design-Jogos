@@ -7,5 +7,5 @@ var not_ledge = instance_position(x-(sprite_width/2)-1, y+(sprite_height/2)+1, o
 if (not_wall && not_ledge){
     x+= hspd * global.timeMultiplier;
 } else{
-    state = scr_move_right;
+    right_or_left = scr_move_right;
 }

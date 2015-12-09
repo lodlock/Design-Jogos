@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = choose(scr_move_right, scr_move_left);
+            <string>right_or_left = choose(scr_move_right, scr_move_left);
 </string>
           </argument>
         </arguments>
@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(state);
+            <string>script_execute(right_or_left);
 
 if (place_meeting(x,y, obj_player) &amp;&amp; (obj_player.sprite_index == spr_player_sword || 
                                        obj_player.sprite_index == spr_player_sword_swipe_down || 

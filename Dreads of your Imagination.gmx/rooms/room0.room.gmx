@@ -25,7 +25,8 @@ scr_text("Inimigos a amarelo sao indestrutiveis",0.5,1500,200);
 
 enum states {
     normal,
-    talking
+    talking,
+    transforming
 }</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
@@ -101,9 +102,9 @@ enum states {
     <instance objName="obj_box" x="1280" y="224" name="inst_E1033FEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1120" y="224" name="inst_FE0DAEC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="176" y="704" name="inst_FC65D805" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_e2" x="1120" y="320" name="inst_4DC278FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_e2" x="1280" y="320" name="inst_1612B762" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_e2" x="1440" y="320" name="inst_C0C3C14A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="" x="1120" y="320" name="inst_4DC278FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="" x="1280" y="320" name="inst_1612B762" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="" x="1440" y="320" name="inst_C0C3C14A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy" x="1120" y="192" name="inst_F773FA85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_e" x="1168" y="352" name="inst_887E0ECF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="752" y="352" name="inst_2F30425E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -29,14 +29,17 @@
 grav = 0.2;
 hsp = 0;
 vsp = 0;
-jumpspeed = 4;
+jumpspeed = 5;
 movespeed = 2;
+
 target = noone;
-globalvar transform;
-transform = false;
+can_see = false;
+
 globalvar crate;
 crate = false;
-can_see = false;
+
+globalvar transform;
+transform = false;
 
 globalvar arrows;
 arrows = 3;
@@ -47,6 +50,8 @@ globalvar swords;
 swords = 3;
 
 facing = 1;
+
+state = states.normal;
 </string>
           </argument>
         </arguments>
@@ -69,117 +74,11 @@ facing = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Get the player's input
-key_right = keyboard_check(ord("D")); //boolean
-key_left = -keyboard_check(ord("A"));
-key_jump = keyboard_check_pressed(vk_space);
-
-//React to inputs
-move = key_left + key_right;
-if(move == 1) facing = 1; else if (move == -1) facing = -1;
-hsp = move * movespeed;
-if (vsp &lt; 10) vsp += grav;
-
-if (place_meeting(x,y+1, obj_box)){
-    vsp = key_jump * -jumpspeed;
+            <string>switch(state){
+    case states.normal: scr_player_normal(); break;
+    //case states.talking: scr_player_talking(); break;  //TODO
+    case states.transforming: scr_player_transforming(self); break;    
 }
-
-if keyboard_check(vk_control) {
-    target = collision_circle(mouse_x, mouse_y, 2, obj_enemy, 0, 1);
-    if (instance_exists(target) &amp;&amp; mouse_check_button_pressed(mb_left) &amp;&amp; can_see) {
-        
-        switch(target.sprite_index){
-            case spr_enemy:
-                target.sprite_index = spr_bow;
-                transform = true;
-                mouse_clear(mb_left);
-                break;
-            case spr_bow:
-                target.sprite_index = spr_crate;
-                transform = true;
-                mouse_clear(mb_left);
-                break;
-            case spr_crate:
-                target.sprite_index = spr_sword;
-                transform = true;
-                mouse_clear(mb_left);
-                break;
-            case spr_sword:
-                target.sprite_index = spr_enemy;
-                transform = false;
-                mouse_clear(mb_left);
-                break;
-            default:
-                break;  
-           
-        }
-        if(obj_timeController.slowDown == false){
-            obj_timeController.slowDown = true;
-        }   
-    }
-}
-if !keyboard_check(vk_control) {
-   
-    
-    if(obj_timeController.slowDown == true){
-        obj_timeController.slowDown = false;
-    }
-    
-}
-
-if (mouse_check_button(mb_left) &amp;&amp; arrows &gt; 0 &amp;&amp; !keyboard_check(vk_control) &amp;&amp; sprite_index == spr_player_bow &amp;&amp; !crate){
-    arrows -= 1;
-    var arrow_id;
-    arrow_id = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_arrow);
-    arrow_id.direction = 90 * (1-facing);    
-    show_debug_message(facing);
-    arrow_id.image_angle = arrow_id.direction;
-    mouse_clear(mb_left);
-}
-
-if (mouse_check_button(mb_left) &amp;&amp; swords &gt; 0 &amp;&amp; !keyboard_check(vk_control) &amp;&amp; !crate){
-    
-    switch(sprite_index){
-            case spr_player_sword:
-                sprite_index = spr_player_sword_swipe_front;
-                mouse_clear(mb_left);
-                break;
-            case spr_player_sword_swipe_front:
-                sprite_index = spr_player_sword_swipe_down;
-                mouse_clear(mb_left);
-                break;
-            case spr_player_sword_swipe_down:
-                sprite_index = spr_player_sword;
-                mouse_clear(mb_left);
-                break;
-            default:
-                break;
-    }
-}
-
-//Horizontal Collision
-if (place_meeting(x+hsp,y, obj_box)){
-    while(!place_meeting(x+sign(hsp),y,obj_box)){
-        x += (sign(hsp) * global.timeMultiplier);
-    }
-    hsp = 0;
-}
-
-x += (hsp * global.timeMultiplier);
-
-//Vertical Collision
-if (place_meeting(x,y+vsp, obj_box)){
-    while(!place_meeting(x,y+sign(vsp),obj_box)){
-        y += (sign(vsp) * global.timeMultiplier);
-    }
-    vsp = 0;
-}
-y += (vsp * global.timeMultiplier);
-
-if ((place_meeting(x,y, obj_enemy)  || place_meeting(x,y, obj_e)) &amp;&amp; sprite_index != spr_player_sword || place_meeting(x,y, obj_e2)){
-    room_restart();
-}
-
 </string>
           </argument>
         </arguments>
@@ -204,12 +103,12 @@ if ((place_meeting(x,y, obj_enemy)  || place_meeting(x,y, obj_e)) &amp;&amp; spr
             <kind>1</kind>
             <string>draw_sprite_ext(sprite_index,image_index,x,y,facing,1,0,c_white,1);
 if (mouse_check_button(mb_left)){
-    if(collision_line(obj_player.x,obj_player.y, mouse_x, mouse_y, obj_box,false, false) || distance_to_point(mouse_x,mouse_y) &gt;= 300){
-        draw_line_width_color(obj_player.x,obj_player.y, mouse_x, mouse_y,2,c_red,c_red);
+    if(collision_line(x,y, mouse_x, mouse_y, obj_box,false, false) || distance_to_point(mouse_x,mouse_y) &gt;= 300){
+        draw_line_width_color(x,y, mouse_x, mouse_y,2,c_red,c_red);
         can_see = false;
     }
     else{
-        draw_line_width_color(obj_player.x,obj_player.y, mouse_x, mouse_y,2,c_green,c_green);
+        draw_line_width_color(x,y, mouse_x, mouse_y,2,c_green,c_green);
         can_see = true;
     }
 }
