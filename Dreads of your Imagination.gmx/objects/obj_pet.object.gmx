@@ -29,9 +29,17 @@
 pet_dx = 0;
 pet_dy = 0;
 pet_grav = 0.2;
-pet_speed = 5;
+pet_speed = 4;
 pet_jump_speed = 2;
 pet_out_of_view = false;
+
+grav = 0.2;
+hsp = 0;
+vsp = 0;
+jumpspeed = 5;
+movespeed = 2;
+
+state = states.normal;
 </string>
           </argument>
         </arguments>
@@ -92,91 +100,12 @@ draw_set_blend_mode(bm_normal);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///wall collisions and apply movement
-
-//Horizontal
-if(place_meeting(x + pet_dx, y, obj_box)){
-    while(!place_meeting(x + sign(pet_dx), y, obj_box)){
-        x += sign(pet_dx);
-    }
-    pet_dx = 0;
-}
-//Vertical
-if(place_meeting(x, y + pet_dy, obj_box)){
-    while(!place_meeting(x, y + sign(pet_dy), obj_box)){
-        y += sign(pet_dy);
-    }
-    pet_dy = 0;
-}
-
-x += pet_dx;
-y += pet_dy;
-
-pet_dy += pet_grav;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///movement
-
-//=========================================//
-//catch up horizontally
-//=========================================//
-
-player_xdistance     = obj_player.x - x;
-player_sprite_width  = abs(obj_player.sprite_width);
-player_sprite_height = abs(obj_player.sprite_height);
-
-if (pet_out_of_view)
-{
-    x      = obj_player.x - player_sprite_width;
-    y      = obj_player.y;
-    pet_dy = 0;
-    
-    pet_out_of_view = false;
-}
-else if (abs(player_xdistance) &gt; 2 * player_sprite_width)
-{
-
-    if (place_meeting(x, y + 1, obj_box)) pet_dy = pet_jump_speed * -1;
-
-    pet_dx = pet_speed * sign(player_xdistance) * 1.5;
-
-}
-else if (abs(player_xdistance) &gt; 1.5 * player_sprite_width)
-{
-
-    if (place_meeting(x, y + 1, obj_box)) pet_dy = pet_jump_speed * -1;
-
-    pet_dx = pet_speed * sign(player_xdistance);
-
-}
-else pet_dx = 0;
-
-//=========================================//
-//catch up vertically
-//=========================================//
-player_ydistance = y - obj_player.y;
-
-if (player_ydistance &gt; 1.5 * player_sprite_height)
-{
-    if (place_meeting(x, y + 1, obj_box)) pet_dy = obj_player.jumpspeed * -1;
+            <string>switch(state){
+    case states.normal: scr_pet_normal(self); break;
+    //case states.talking: scr_pet_talking(); break;  //TODO
+    case states.transforming: scr_pet_transforming(self); break; 
+    case states.petcontroll: scr_pet_controll(self); break;
+    case states.petidle: scr_pet_idle(self); break;  
 }
 </string>
           </argument>

@@ -46,6 +46,14 @@
       <script>scripts\scr_player_collision.gml</script>
       <script>scripts\scr_player_transforming.gml</script>
       <script>scripts\scr_player_normal.gml</script>
+      <script>scripts\scr_controll_pet.gml</script>
+    </scripts>
+    <scripts name="Pet Scripts">
+      <script>scripts\scr_pet_normal.gml</script>
+      <script>scripts\scr_pet_collisions.gml</script>
+      <script>scripts\scr_pet_transforming.gml</script>
+      <script>scripts\scr_pet_controll.gml</script>
+      <script>scripts\scr_pet_idle.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">

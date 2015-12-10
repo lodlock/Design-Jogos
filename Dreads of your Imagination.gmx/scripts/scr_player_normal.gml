@@ -53,3 +53,13 @@ if ((place_meeting(x,y, obj_transformable_enemy)  || place_meeting(x,y, obj_e)) 
 if (keyboard_check(vk_control) && can_see) {
     obj_player.state = states.transforming;
 }
+else if(obj_pet.state = states.normal || obj_pet.state = states.petidle){
+    obj_player.state = states.normal;
+}
+
+
+if(obj_pet.state = states.petcontroll){
+    obj_player.state = states.petcontroll;
+}
+
+
