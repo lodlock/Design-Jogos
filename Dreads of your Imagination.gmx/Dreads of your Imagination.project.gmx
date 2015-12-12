@@ -10,6 +10,7 @@
     <sprite>sprites\spr_bow</sprite>
     <sprite>sprites\spr_box</sprite>
     <sprite>sprites\spr_crate</sprite>
+    <sprite>sprites\spr_placeCrate</sprite>
     <sprite>sprites\spr_e</sprite>
     <sprite>sprites\spr_e2</sprite>
     <sprite>sprites\spr_enemy</sprite>
@@ -23,6 +24,10 @@
     <sprite>sprites\spr_player_sword_swipe_down</sprite>
     <sprite>sprites\spr_player_sword_swipe_front</sprite>
     <sprite>sprites\spr_sword</sprite>
+    <sprite>sprites\spr_torch</sprite>
+    <sprite>sprites\spr_shadow</sprite>
+    <sprite>sprites\spr_box1</sprite>
+    <sprite>sprites\spr_sign</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -46,7 +51,7 @@
       <script>scripts\scr_player_collision.gml</script>
       <script>scripts\scr_player_transforming.gml</script>
       <script>scripts\scr_player_normal.gml</script>
-      <script>scripts\scr_controll_pet.gml</script>
+      <script>scripts\scr_iddle.gml</script>
     </scripts>
     <scripts name="Pet Scripts">
       <script>scripts\scr_pet_normal.gml</script>
@@ -55,27 +60,41 @@
       <script>scripts\scr_pet_controll.gml</script>
       <script>scripts\scr_pet_idle.gml</script>
     </scripts>
+    <scripts name="Math Scripts">
+      <script>scripts\scr_angle_difference.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_arrow</object>
+    <object>objects\obj_transformable_enemy</object>
     <object>objects\obj_bow</object>
     <object>objects\obj_box</object>
+    <object>objects\obj_sword</object>
+    <object>objects\obj_arrow</object>
     <object>objects\obj_crate</object>
     <object>objects\obj_e</object>
     <object>objects\obj_e2</object>
-    <object>objects\obj_transformable_enemy</object>
     <object>objects\obj_GM</object>
     <object>objects\obj_inventory</object>
     <object>objects\obj_pet</object>
     <object>objects\obj_placeCrate</object>
     <object>objects\obj_player</object>
-    <object>objects\obj_sword</object>
     <object>objects\obj_timeController</object>
     <object>objects\obj_text</object>
     <object>objects\obj_lightning</object>
+    <object>objects\obj_torch</object>
+    <object>objects\obj_menu_transforming</object>
+    <object>objects\obj_box1</object>
+    <object>objects\obj_sign</object>
+    <object>objects\obj_sign1</object>
+    <object>objects\obj_sign2</object>
+    <object>objects\obj_sign3</object>
+    <object>objects\obj_sign4</object>
+    <object>objects\obj_sign5</object>
+    <object>objects\obj_sign6</object>
+    <object>objects\obj_sign7</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

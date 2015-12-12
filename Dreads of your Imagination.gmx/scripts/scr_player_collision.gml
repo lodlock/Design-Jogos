@@ -1,22 +1,33 @@
-//argument0 = obj that called the script
-
 //Horizontal Collision
-if (place_meeting(argument0.x+argument0.hsp,argument0.y, obj_box)){
-    while(!place_meeting(argument0.x+sign(argument0.hsp),argument0.y,obj_box)){
-        argument0.x += (sign(argument0.hsp) * global.timeMultiplier);
+if (place_meeting(x+hsp,y, obj_box)){
+    while(!place_meeting(x+sign(hsp),y,obj_box)){
+        x += sign(hsp);
     }
-    argument0.hsp = 0;
+    hsp = 0;
 }
 
-argument0.x += (argument0.hsp * global.timeMultiplier);
+if (place_meeting(x+hsp,y, obj_crate)){
+    while(!place_meeting(x+sign(hsp),y,obj_crate)){
+        x += sign(hsp);
+    }
+    hsp = 0;
+}
+
+x += hsp;
 
 //Vertical Collision
-if (place_meeting(argument0.x,argument0.y+argument0.vsp, obj_box)){
-    while(!place_meeting(argument0.x,argument0.y+sign(argument0.vsp),obj_box)){
-        argument0.y += (sign(argument0.vsp) * global.timeMultiplier);
+if (place_meeting(x,y+vsp, obj_box)){
+    while(!place_meeting(x,y+sign(vsp),obj_box)){
+        y += sign(vsp);
     }
-    argument0.vsp = 0;
+    vsp = 0;
 }
-argument0.y += (argument0.vsp * global.timeMultiplier);
 
+if (place_meeting(x,y+vsp, obj_crate)){
+    while(!place_meeting(x,y+sign(vsp),obj_crate)){
+        y += sign(vsp);
+    }
+    vsp = 0;
+}
 
+y += vsp;

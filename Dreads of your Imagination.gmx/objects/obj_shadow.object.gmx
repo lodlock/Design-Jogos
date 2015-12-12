@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-999</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,23 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Create the variable;
-
-showinv = true;
-globalvar maxInvSlots;
-maxInvSlots = 2;
-
-for(i=0;i&lt;=maxInvSlots;i+=1)
-{
-    global.inventory[i,0] = "";
-}
-             
+            <string>globalvar shadow;
+shadow = surface_create(x, y)
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="2">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -58,8 +49,10 @@ for(i=0;i&lt;=maxInvSlots;i+=1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = xstart + view_xview[0];
-y = ystart + view_yview[0];
+            <string>surface_set_target(shadow);
+draw_set_color(c_white);
+draw_rectangle(0,0,x,y,false);
+surface_reset_target();
 </string>
           </argument>
         </arguments>
@@ -82,45 +75,16 @@ y = ystart + view_yview[0];
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(showinv==true) {
-    draw_text(x+16,y+16,"Inventory");
-    for(i=0;i&lt;=maxInvSlots;i+=1)
-    {   
-        if(global.inventory[i,0] == spr_placeCrate){
-            showinv = true;
-            draw_sprite(global.inventory[i,0],0,x+32+(32*i),y+54);
-            draw_text(x+32+(20*i),y+74,nrcrates);
-            if nrcrates == 0{
-                global.inventory[i,0] = "";
-                draw_sprite(global.inventory[i,0],0,x+32+(32*i),y+54);
-                draw_text(x+32+(32*i),y+74,"");
-                crate = false;
-                obj_player.sprite_index = spr_player;
-            }
-        }
-        else if(global.inventory[i,0] == spr_bow){
-            showinv = true;
-            draw_sprite(global.inventory[i,0],0,x+32+(32*i),y+54);
-            draw_text(x+32+(20*i),y+74,arrows);
-            if arrows == 0{
-                global.inventory[i,0] = "";
-                draw_sprite(global.inventory[i,0],0,x+32+(32*i),y+54);
-                draw_text(x+32+(32*i),y+74,"");
-                obj_player.sprite_index = spr_player;
-            }
-        }
-        else if(global.inventory[i,0] == spr_sword){
-            showinv = true;
-            draw_sprite(global.inventory[i,0],0,x+32+(32*i),y+54);
-            draw_text(x+32+(20*i),y+74,swords);
-            if swords == 0{
-                global.inventory[i,0] = "";
-                draw_sprite(global.inventory[i,0],0,x+32+(32*i),y+54);
-                draw_text(x+32+(32*i),y+74,"");
-                obj_player.sprite_index = spr_player;
-            }
-        }
-    }
+            <string>if (!surface_exists(shadow)){
+shadow = surface_create(x, y)
+draw_set_blend_mode(bm_subtract);
+draw_surface(shadow,x,y);
+draw_set_blend_mode(bm_normal);
+}
+else{
+draw_set_blend_mode(bm_subtract);
+draw_surface(shadow,x,y);
+draw_set_blend_mode(bm_normal);
 }
 </string>
           </argument>

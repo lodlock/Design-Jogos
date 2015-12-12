@@ -1,7 +1,3 @@
-//=========================================//
-//catch up horizontally
-//=========================================//
-
 player_xdistance     = obj_player.x - x;
 player_sprite_width  = abs(obj_player.sprite_width);
 player_sprite_height = abs(obj_player.sprite_height);
@@ -45,16 +41,16 @@ if (player_ydistance > 1.5 * player_sprite_height)
 scr_pet_collisions();
 
 if (obj_player.state = states.transforming) {
-    argument0.state = states.transforming; 
+    state = states.transforming; 
 }
 
 if(keyboard_check(ord("H"))){
     keyboard_clear(ord("H"));
-    argument0.state = states.petcontroll;
+    state = states.petcontroll;
 }
 if(keyboard_check(ord("I"))){
     keyboard_clear(ord("I"));
-    argument0.state = states.petidle;
+    state = states.petidle;
 }
 
 view_object[0] = obj_player;

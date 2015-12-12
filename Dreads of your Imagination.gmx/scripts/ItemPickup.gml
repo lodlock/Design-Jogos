@@ -2,7 +2,7 @@
 
 for(i=0;i<=maxInvSlots;i+=1)
 {
-    if (argument0 == spr_crate && global.inventory[i,0] == spr_crate){
+    if (argument0 == spr_placeCrate && global.inventory[i,0] == spr_placeCrate){
         global.inventory[i,0] = argument0;
         i = maxInvSlots;
     }

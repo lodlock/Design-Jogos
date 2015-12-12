@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-999</depth>
+  <depth>-998</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>globalvar light;
 light = surface_create(view_wview, view_hview)
+darkness = false;
 </string>
           </argument>
         </arguments>
@@ -50,7 +51,10 @@ light = surface_create(view_wview, view_hview)
           <argument>
             <kind>1</kind>
             <string>surface_set_target(light);
-draw_set_color(c_white);
+
+if(obj_sign3.showtext == 1) darkness = true;
+if(darkness) draw_set_color(c_white);
+else draw_set_color(c_black);
 draw_rectangle(0,0,view_wview,view_hview,false);
 surface_reset_target();
 </string>
@@ -78,7 +82,7 @@ surface_reset_target();
             <string>if (!surface_exists(light)){
 light = surface_create(view_wview, view_hview)
 draw_set_blend_mode(bm_subtract);
-draw_surface(hlight,view_xview,view_yview);
+draw_surface(light,view_xview,view_yview);
 draw_set_blend_mode(bm_normal);
 }
 else{
