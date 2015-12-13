@@ -59,6 +59,8 @@
       <script>scripts\scr_pet_transforming.gml</script>
       <script>scripts\scr_pet_controll.gml</script>
       <script>scripts\scr_pet_idle.gml</script>
+      <script>scripts\scr_pet_collision_controlled.gml</script>
+      <script>scripts\scr_ledge_grab_pet.gml</script>
     </scripts>
     <scripts name="Math Scripts">
       <script>scripts\scr_angle_difference.gml</script>

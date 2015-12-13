@@ -35,6 +35,7 @@ pet_out_of_view = false;
 
 grav = 0.2;
 hsp = 0;
+hsp_dir = 1;
 vsp = 0;
 jumpspeed = 5;
 movespeed = 2;
@@ -108,6 +109,7 @@ draw_set_blend_mode(bm_normal);
     case states.transforming: scr_pet_transforming(self); break; 
     case states.petcontroll: scr_pet_controll(self); break;
     case states.petidle: scr_pet_idle(self); break;  
+    case states.grab_ledge : scr_ledge_grab_pet(); break;
 }
 </string>
           </argument>

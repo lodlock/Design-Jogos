@@ -25,4 +25,4 @@ if(keyboard_check(ord("H"))){
     argument0.state = states.petidle;
 }
 view_object[0] = obj_pet;
-scr_player_collision(self);
+scr_pet_collision_controlled();
