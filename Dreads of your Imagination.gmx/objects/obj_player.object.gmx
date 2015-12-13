@@ -28,6 +28,7 @@
             <string>///Initialize Variables
 grav = 0.2;
 hsp = 0;
+hsp_dir = 1;
 vsp = 0;
 jumpspeed = 5;
 movespeed = 2;
@@ -77,6 +78,7 @@ crate = false;
     //case states.talking: scr_player_talking(); break;  //TODO
     case states.transforming: scr_player_transforming(); break;
     case states.petcontroll: scr_iddle(); break;  
+    case states.grab_ledge: scr_ledge_grab(); break;
 }
 </string>
           </argument>

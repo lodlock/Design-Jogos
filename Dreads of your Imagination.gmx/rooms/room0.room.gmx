@@ -15,6 +15,7 @@
 enum states {
     normal,
     talking,
+    grab_ledge,
     transforming,
     petcontroll,
     petidle

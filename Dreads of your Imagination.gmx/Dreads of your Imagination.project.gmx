@@ -25,7 +25,6 @@
     <sprite>sprites\spr_player_sword_swipe_front</sprite>
     <sprite>sprites\spr_sword</sprite>
     <sprite>sprites\spr_torch</sprite>
-    <sprite>sprites\spr_shadow</sprite>
     <sprite>sprites\spr_box1</sprite>
     <sprite>sprites\spr_sign</sprite>
   </sprites>
@@ -52,6 +51,7 @@
       <script>scripts\scr_player_transforming.gml</script>
       <script>scripts\scr_player_normal.gml</script>
       <script>scripts\scr_iddle.gml</script>
+      <script>scripts\scr_ledge_grab.gml</script>
     </scripts>
     <scripts name="Pet Scripts">
       <script>scripts\scr_pet_normal.gml</script>

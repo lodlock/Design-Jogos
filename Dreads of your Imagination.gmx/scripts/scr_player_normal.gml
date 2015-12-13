@@ -11,6 +11,9 @@ if (place_meeting(x,y+1, obj_box) || place_meeting(x,y+1, obj_crate)){
     vsp = key_jump * -jumpspeed;
 }
 
+if(hsp != 0){
+    hsp_dir = sign(hsp);
+}
 
 scr_player_collision(self);
 
@@ -76,4 +79,6 @@ if (mouse_check_button(mb_left) && swords > 0 && !keyboard_check(vk_control) && 
 if ((place_meeting(x,y, obj_transformable_enemy)  || place_meeting(x,y, obj_e)) && sprite_index != spr_player_sword || place_meeting(x,y, obj_e2)){
     room_restart();
 }
+
+
 
