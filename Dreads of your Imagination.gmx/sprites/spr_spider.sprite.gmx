@@ -2,24 +2,26 @@
 <sprite>
   <type>0</type>
   <xorig>35</xorig>
-  <yorigin>35</yorigin>
+  <yorigin>22</yorigin>
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>21</bbox_left>
-  <bbox_right>48</bbox_right>
-  <bbox_top>18</bbox_top>
-  <bbox_bottom>67</bbox_bottom>
+  <bbox_left>0</bbox_left>
+  <bbox_right>70</bbox_right>
+  <bbox_top>0</bbox_top>
+  <bbox_bottom>44</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>70</width>
-  <height>70</height>
+  <width>71</width>
+  <height>45</height>
   <frames>
-    <frame index="0">images\spr_torch_0.png</frame>
+    <frame index="0">images\spr_spider_0.png</frame>
+    <frame index="1">images\spr_spider_1.png</frame>
+    <frame index="2">images\spr_spider_2.png</frame>
   </frames>
 </sprite>

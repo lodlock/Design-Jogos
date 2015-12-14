@@ -11,11 +11,12 @@
     <sprite>sprites\spr_box</sprite>
     <sprite>sprites\spr_crate</sprite>
     <sprite>sprites\spr_placeCrate</sprite>
-    <sprite>sprites\spr_e</sprite>
     <sprite>sprites\spr_e2</sprite>
     <sprite>sprites\spr_enemy</sprite>
+    <sprite>sprites\spr_spider</sprite>
     <sprite>sprites\spr_inventory_box_mask</sprite>
     <sprite>sprites\spr_pet</sprite>
+    <sprite>sprites\spr_pet_idle</sprite>
     <sprite>sprites\spr_placeHolder</sprite>
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_player_box</sprite>
@@ -24,9 +25,13 @@
     <sprite>sprites\spr_player_sword_swipe_down</sprite>
     <sprite>sprites\spr_player_sword_swipe_front</sprite>
     <sprite>sprites\spr_sword</sprite>
+    <sprite>sprites\spr_torch_light</sprite>
     <sprite>sprites\spr_torch</sprite>
     <sprite>sprites\spr_box1</sprite>
     <sprite>sprites\spr_sign</sprite>
+    <sprite>sprites\spr_bat</sprite>
+    <sprite>sprites\spr_bat_fly</sprite>
+    <sprite>sprites\sprite24</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>

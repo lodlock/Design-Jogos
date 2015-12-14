@@ -3,6 +3,8 @@ scr_get_input();
 //React to inputs
 move = key_left + key_right;
 if(move == 1) facing = 1; else if (move == -1) facing = -1;
+if (move == 0) sprite_index = spr_pet_idle;
+else sprite_index = spr_pet;
 hsp = move * movespeed;
 if (vsp < 10) vsp += grav;
 

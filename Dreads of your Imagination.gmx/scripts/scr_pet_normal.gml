@@ -2,6 +2,10 @@ player_xdistance     = obj_player.x - x;
 player_sprite_width  = abs(obj_player.sprite_width);
 player_sprite_height = abs(obj_player.sprite_height);
 
+if player_xdistance < 0 facing = -1;
+else facing = 1;
+
+
 if (pet_out_of_view)
 {
     x      = obj_player.x - player_sprite_width;
@@ -12,21 +16,15 @@ if (pet_out_of_view)
 }
 else if (abs(player_xdistance) > 2 * player_sprite_width)
 {
-
-    if (place_meeting(x, y + 1, obj_box)) pet_dy = pet_jump_speed * -1;
-
     pet_dx = pet_speed * sign(player_xdistance) * 1.5;
-
 }
 else if (abs(player_xdistance) > 1.5 * player_sprite_width)
-{
-
-    if (place_meeting(x, y + 1, obj_box)) pet_dy = pet_jump_speed * -1;
-
+{  
     pet_dx = pet_speed * sign(player_xdistance);
-
 }
 else pet_dx = 0;
+
+
 
 //=========================================//
 //catch up vertically
@@ -37,6 +35,8 @@ if (player_ydistance > 1.5 * player_sprite_height)
 {
     if (place_meeting(x, y + 1, obj_box)) pet_dy = obj_player.jumpspeed * -1;
 }
+if (obj_player.hsp != 0 || obj_player.vsp != 0) sprite_index = spr_pet;
+else sprite_index = spr_pet_idle;
 
 scr_pet_collisions();
 
