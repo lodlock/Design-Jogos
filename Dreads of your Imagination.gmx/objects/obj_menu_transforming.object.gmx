@@ -56,9 +56,9 @@ menu_height = 50;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check_pressed(vk_right)){
+            <string>if (keyboard_check_pressed(ord("D"))){
     selected += 1;
-}else if (keyboard_check_pressed(vk_left)){
+}else if (keyboard_check_pressed(ord("A"))){
     selected -= 1;
 }
 
@@ -70,25 +70,25 @@ if(item &lt; 0){
     item += image_number;
 }
 
-if(keyboard_check(vk_enter) || keyboard_check(ord("F")) &amp;&amp; obj_player.state = states.transforming){
+if(keyboard_check(vk_enter) || keyboard_check_pressed(ord("E")) &amp;&amp; obj_player.state = states.transforming){
     switch(item){
-        case 0: obj_player.target.sprite_index = spr_enemy;
-                keyboard_clear(ord("F"));
+        case 0: obj_player.target.sprite_index = spr_spider;
+                keyboard_clear(ord("E"));
                 transform = true;
                 obj_player.state = states.normal;
                 break;
         case 1: obj_player.target.sprite_index = spr_bow;
-                keyboard_clear(ord("F"));
+                keyboard_clear(ord("E"));
                 transform = true;
                 obj_player.state = states.normal;
                 break;
         case 2: obj_player.target.sprite_index = spr_crate;
-                keyboard_clear(ord("F"));
+                keyboard_clear(ord("E"));
                 transform = true;
                 obj_player.state = states.normal;
                 break;
         case 3: obj_player.target.sprite_index = spr_sword;
-                keyboard_clear(ord("F"));
+                keyboard_clear(ord("E"));
                 transform = true;
                 obj_player.state = states.normal;
                 break;
@@ -124,7 +124,6 @@ display_set_gui_size(1024, 768);
 if(obj_player.state == states.transforming){
     var pr, i;
     i = 0;
-    
     pr = ds_priority_create();
     
     repeat(image_number){

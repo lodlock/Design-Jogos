@@ -51,7 +51,7 @@ nrcrates = 5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(mouse_check_button(mb_left) &amp;&amp; crate &amp;&amp; place_free(mouse_x,mouse_y) &amp;&amp; !keyboard_check(vk_control)){
+            <string>if(mouse_check_button(mb_left) &amp;&amp; crate &amp;&amp; place_free(mouse_x,mouse_y)){
     instance_create(mouse_x,mouse_y, obj_crate);
     mouse_clear(mb_left);
     nrcrates -= 1;
