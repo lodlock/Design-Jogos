@@ -17,13 +17,13 @@ target = collision_circle(x, y, 50, obj_torch, 0, 1);
 
 //scr_pet_collisions();
 
-if (instance_exists(target) &&  keyboard_check(ord("F"))){
-    keyboard_clear(ord("F"));
+if (instance_exists(target) &&  keyboard_check(ord("E"))){
+    keyboard_clear(ord("E"));
     target.can_light = true;
 }
 
-if(keyboard_check(ord("H"))){
-    keyboard_clear(ord("H"));
+if(keyboard_check(ord("F"))){
+    keyboard_clear(ord("F"));
     argument0.state = states.petidle;
 }
 view_object[0] = obj_pet;

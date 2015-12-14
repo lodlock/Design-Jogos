@@ -1,11 +1,11 @@
 //IDLE PET
 
-if(keyboard_check(ord("I"))){
-    keyboard_clear(ord("I"));
+if(keyboard_check(ord("Q"))){
+    keyboard_clear(ord("Q"));
     state = states.normal;
 }
-if(keyboard_check(ord("H"))){
-    keyboard_clear(ord("H"));
+if(keyboard_check(ord("F"))){
+    keyboard_clear(ord("F"));
     argument0.state = states.petcontroll;
 }
 

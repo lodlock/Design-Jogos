@@ -162,8 +162,10 @@ draw_set_blend_mode(bm_normal);
 image_speed = 0.2;
 
 if (instance_exists(target) &amp;&amp; !target.can_light){
+    target.depth = -999;
+    depth = -999;
     draw_set_halign(fa_center);
-    draw_text(target.x,target.y-42, "Press F to Light Torch");
+    draw_text(target.x,target.y-42, "Press E to Light Torch");
 }
 </string>
           </argument>

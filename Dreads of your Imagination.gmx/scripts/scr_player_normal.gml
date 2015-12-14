@@ -20,8 +20,8 @@ if(hsp != 0){
 scr_player_collision(self);
 
 //Begin Transforming
-if (keyboard_check(ord("F")) && can_see) {
-    keyboard_clear(ord("F"));
+if (keyboard_check(ord("E")) && can_see) {
+    keyboard_clear(ord("E"));
     obj_player.state = states.transforming;
 }
 else if(obj_pet.state = states.normal || obj_pet.state = states.petidle){
@@ -29,13 +29,13 @@ else if(obj_pet.state = states.normal || obj_pet.state = states.petidle){
 }
 
 //Give controll to pet
-if(keyboard_check(ord("H"))){
-    keyboard_clear(ord("H"));
+if(keyboard_check(ord("F"))){
+    keyboard_clear(ord("F"));
     obj_pet.state = states.petcontroll;
 }
 //Call pet
-if(keyboard_check(ord("I"))){
-    keyboard_clear(ord("I"));
+if(keyboard_check(ord("Q"))){
+    keyboard_clear(ord("Q"));
     obj_pet.state = states.petidle;
 }
 //Change player state if pet is being controlled

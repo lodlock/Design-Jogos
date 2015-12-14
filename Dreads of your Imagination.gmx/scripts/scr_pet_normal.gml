@@ -44,12 +44,12 @@ if (obj_player.state = states.transforming) {
     state = states.transforming; 
 }
 
-if(keyboard_check(ord("H"))){
-    keyboard_clear(ord("H"));
+if(keyboard_check(ord("E"))){
+    keyboard_clear(ord("E"));
     state = states.petcontroll;
 }
-if(keyboard_check(ord("I"))){
-    keyboard_clear(ord("I"));
+if(keyboard_check(ord("Q"))){
+    keyboard_clear(ord("Q"));
     state = states.petidle;
 }
 
