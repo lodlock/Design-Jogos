@@ -22,7 +22,6 @@
     <sprite>sprites\spr_placeHolder</sprite>
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_player_box</sprite>
-    <sprite>sprites\spr_player_bow</sprite>
     <sprite>sprites\spr_player_sword</sprite>
     <sprite>sprites\spr_player_sword_swipe_down</sprite>
     <sprite>sprites\spr_player_sword_swipe_front</sprite>
@@ -34,6 +33,7 @@
     <sprite>sprites\spr_bat</sprite>
     <sprite>sprites\spr_bat_fly</sprite>
     <sprite>sprites\sprite24</sprite>
+    <sprite>sprites\spr_player_bow</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -81,9 +81,9 @@
     <object>objects\obj_bow</object>
     <object>objects\obj_box</object>
     <object>objects\obj_sword</object>
+    <object>objects\obj_e</object>
     <object>objects\obj_arrow</object>
     <object>objects\obj_crate</object>
-    <object>objects\obj_e</object>
     <object>objects\obj_e2</object>
     <object>objects\obj_GM</object>
     <object>objects\obj_inventory</object>

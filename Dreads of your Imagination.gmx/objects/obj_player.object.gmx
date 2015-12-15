@@ -102,7 +102,8 @@ crate = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index,image_index,x,y,facing,1,0,c_white,1);
+            <string>draw_sprite_ext(sprite_index,image_index,x,y,-facing,1,0,c_white,1);
+image_speed = 0.1;
 if(collision_line(x,y, mouse_x, mouse_y, obj_box,false, false) || distance_to_point(mouse_x,mouse_y) &gt;= 300){
     draw_circle_colour(x,y,16,c_red,c_red,5);
     can_see = false;
