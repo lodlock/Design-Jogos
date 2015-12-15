@@ -112,15 +112,35 @@ pointy = mouse_y;
             <kind>1</kind>
             <string>draw_sprite_ext(sprite_index,image_index,x,y,-facing,1,0,c_white,1);
 image_speed = 0.1;
+
+if(state == states.transforming) return 0;
+
 if(collision_line(x,y, mouse_x, mouse_y, obj_box,false, false) || distance_to_point(mouse_x,mouse_y) &gt;= 300){
-    if (collision_circle(mouse_x, mouse_y, 2, obj_transformable_enemy, 0, 1)) cursor_sprite = spr_cant_transform;
-    draw_circle_colour(x,y,16,c_red,c_red,5);
+    if (collision_circle(mouse_x, mouse_y, 2, obj_transformable_enemy, 0, 1)){
+        cursor_sprite = spr_cant_transform;
+        draw_set_color(c_black);
+        draw_set_halign(fa_center);
+        draw_text(x+1, y - 63, "Too far or obstructed#to transform!");
+        
+        draw_set_color(c_white);
+        draw_set_halign(fa_center);
+        draw_text(x, y - 64, "Too far or obstructed#to transform!");
+    } 
+    
     can_see = false;
 }
 else if (!collision_line(x,y, mouse_x, mouse_y, obj_box,false, false) &amp;&amp; distance_to_point(mouse_x,mouse_y) &lt; 300 &amp;&amp; collision_line(x,y, mouse_x, mouse_y, obj_transformable_enemy,false, false)){
     target = collision_circle(mouse_x, mouse_y, 2, obj_transformable_enemy, 0, 1);
     cursor_sprite = spr_can_transform;
-    draw_circle_colour(x,y,16,c_green,c_green,5);
+    
+    draw_set_color(c_black);
+    draw_set_halign(fa_center);
+    draw_text(x+1, y - 63, "Press E to start#transforming!");
+    
+    draw_set_color(c_white);
+    draw_set_halign(fa_center);
+    draw_text(x, y - 64, "Press E to start#transforming!");
+    
     can_see = true;
 }
 else cursor_sprite = spr_cursor;

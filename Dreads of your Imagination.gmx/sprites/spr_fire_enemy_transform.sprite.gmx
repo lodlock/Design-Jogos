@@ -7,10 +7,10 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>128</bbox_left>
-  <bbox_right>346</bbox_right>
-  <bbox_top>53</bbox_top>
-  <bbox_bottom>146</bbox_bottom>
+  <bbox_left>141</bbox_left>
+  <bbox_right>336</bbox_right>
+  <bbox_top>25</bbox_top>
+  <bbox_bottom>170</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -20,8 +20,8 @@
   <width>512</width>
   <height>197</height>
   <frames>
-    <frame index="0">images\spr_enemy_0.png</frame>
-    <frame index="1">images\spr_enemy_1.png</frame>
-    <frame index="2">images\spr_enemy_2.png</frame>
+    <frame index="0">images\spr_fire_enemy_transform_0.png</frame>
+    <frame index="1">images\spr_fire_enemy_transform_1.png</frame>
+    <frame index="2">images\spr_fire_enemy_transform_2.png</frame>
   </frames>
 </sprite>
