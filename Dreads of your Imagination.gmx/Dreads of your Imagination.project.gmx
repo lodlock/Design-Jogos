@@ -34,6 +34,10 @@
     <sprite>sprites\spr_bat_fly</sprite>
     <sprite>sprites\sprite24</sprite>
     <sprite>sprites\spr_player_bow</sprite>
+    <sprite>sprites\spr_chain</sprite>
+    <sprite>sprites\spr_cant_transform</sprite>
+    <sprite>sprites\spr_can_transform</sprite>
+    <sprite>sprites\spr_cursor</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -105,6 +109,8 @@
     <object>objects\obj_sign6</object>
     <object>objects\obj_sign7</object>
     <object>objects\obj_musicBox</object>
+    <object>objects\obj_test</object>
+    <object>objects\obj_chain</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

@@ -17,7 +17,7 @@ if(hsp != 0){
     hsp_dir = sign(hsp);
 }
 
-scr_player_collision(self);
+
 
 //Begin Transforming
 if (keyboard_check(ord("E")) && can_see) {
@@ -47,17 +47,20 @@ if(obj_pet.state = states.petcontroll){
 //CHANGE THIS LATER
 
 //Shoot Arrows
-if (mouse_check_button(mb_left) && arrows > 0 && sprite_index == spr_player_bow && !crate){
-    arrows -= 1;
-    var arrow_id;
-    arrow_id = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_arrow);
-    arrow_id.direction = 90 * (1-facing);    
-    arrow_id.image_angle = arrow_id.direction;
+if (mouse_check_button(mb_left) && sprite_index == spr_player_bow){
+    arrow_x = mouse_x;
+    arrow_y = mouse_y;
+    
+    arrow = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_arrow);
+    
+    
+    
     mouse_clear(mb_left);
 }
 
+scr_player_collision(self);
 //Sword attack
-if (mouse_check_button(mb_left) && swords > 0 && !keyboard_check(vk_control) && !crate){
+if (mouse_check_button(mb_left) && sprite_index == spr_player_sword){
     
     switch(sprite_index){
             case spr_player_sword:
@@ -83,4 +86,30 @@ if ((place_meeting(x,y, obj_transformable_enemy)  || place_meeting(x,y, obj_e)) 
 }
 
 
+if instance_exists(arrow){
+    with (arrow)
+    {
+        if point_distance(x, y, obj_player.arrow_x, obj_player.arrow_y) > 5
+            {
+             move_towards_point(obj_player.arrow_x, obj_player.arrow_y, 10);
+            }
+            else {
+                speed = 0;
+                obj_player.rope = instance_create(obj_player.arrow_x, obj_player.arrow_y, obj_chain);
+                instance_destroy();
+            }
+    }
+}
+if instance_exists(rope){
+    if point_distance(x, y, rope.x, rope.y) > 5
+        {
+        move_towards_point(rope.x, rope.y, 2);
+        grav = 0;
+        }
+        else {
+            speed = 0;
+            grav = 0.2;
+            with(rope) instance_destroy();
+        }
+}
 

@@ -29,7 +29,7 @@
 
 showinv = true;
 globalvar maxInvSlots;
-maxInvSlots = 2;
+maxInvSlots = 5;
 
 for(i=0;i&lt;=maxInvSlots;i+=1)
 {
@@ -89,7 +89,7 @@ y = ystart + view_yview[0];
         if(global.inventory[i,0] == spr_placeCrate){
             showinv = true;
             draw_sprite(global.inventory[i,0],0,x+32+(32*i),y+54);
-            draw_text(x+32+(20*i),y+74,nrcrates);
+            draw_text(x+32+(20*i),y+74,i+1);
             if nrcrates == 0{
                 global.inventory[i,0] = "";
                 draw_sprite(global.inventory[i,0],0,x+32+(32*i),y+54);
@@ -101,7 +101,7 @@ y = ystart + view_yview[0];
         else if(global.inventory[i,0] == spr_bow){
             showinv = true;
             draw_sprite(global.inventory[i,0],0,x+32+(32*i),y+54);
-            draw_text(x+32+(20*i),y+74,arrows);
+            draw_text(x+32+(20*i),y+74,i+1);
             if arrows == 0{
                 global.inventory[i,0] = "";
                 draw_sprite(global.inventory[i,0],0,x+32+(32*i),y+54);
@@ -112,7 +112,7 @@ y = ystart + view_yview[0];
         else if(global.inventory[i,0] == spr_sword){
             showinv = true;
             draw_sprite(global.inventory[i,0],0,x+32+(32*i),y+54);
-            draw_text(x+32+(20*i),y+74,swords);
+            draw_text(x+32+(20*i),y+74,i+1);
             if swords == 0{
                 global.inventory[i,0] = "";
                 draw_sprite(global.inventory[i,0],0,x+32+(32*i),y+54);

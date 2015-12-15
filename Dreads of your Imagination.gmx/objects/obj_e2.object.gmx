@@ -53,6 +53,7 @@ state = states.normal;
     case states.normal: scr_enemy_normal_vertical(self); break;
     case states.transforming: scr_transforming(self); break;
 }
+
 </string>
           </argument>
         </arguments>

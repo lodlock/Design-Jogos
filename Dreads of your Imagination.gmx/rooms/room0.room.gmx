@@ -10,7 +10,9 @@
   <persistent>0</persistent>
   <colour>8421504</colour>
   <showcolour>-1</showcolour>
-  <code>window_set_fullscreen(true);
+  <code>window_set_fullscreen(false);
+window_set_cursor(cr_none);
+cursor_sprite = spr_cursor;
 enum states {
     normal,
     talking,
@@ -161,8 +163,8 @@ enum states {
     <instance objName="obj_menu_transforming" x="-200" y="-24" name="inst_9A17049A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="-80" y="288" name="inst_AD973135" locked="0" code="" scaleX="5" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_musicBox" x="16" y="16" name="inst_7040BB6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_transformable_enemy" x="296" y="360" name="inst_355268DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_transformable_enemy" x="216" y="360" name="inst_9E9BD07D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_test" x="704" y="216" name="inst_D4FCB28E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_transformable_enemy" x="336" y="368" name="inst_7823B739" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

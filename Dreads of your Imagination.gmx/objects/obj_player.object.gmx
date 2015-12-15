@@ -33,6 +33,11 @@ vsp = 0;
 jumpspeed = 5;
 movespeed = 2;
 
+arrow_x = 0.0;
+arrow_y = 0.0;
+
+rope = noone;
+arrow = noone;
 target = noone;
 can_see = false;
 globalvar transform;
@@ -51,6 +56,9 @@ lenx = 28;
 leny = 1;
 globalvar crate;
 crate = false;
+
+pointx = mouse_x;
+pointy = mouse_y;
 </string>
           </argument>
         </arguments>
@@ -105,14 +113,19 @@ crate = false;
             <string>draw_sprite_ext(sprite_index,image_index,x,y,-facing,1,0,c_white,1);
 image_speed = 0.1;
 if(collision_line(x,y, mouse_x, mouse_y, obj_box,false, false) || distance_to_point(mouse_x,mouse_y) &gt;= 300){
+    if (collision_circle(mouse_x, mouse_y, 2, obj_transformable_enemy, 0, 1)) cursor_sprite = spr_cant_transform;
     draw_circle_colour(x,y,16,c_red,c_red,5);
     can_see = false;
 }
 else if (!collision_line(x,y, mouse_x, mouse_y, obj_box,false, false) &amp;&amp; distance_to_point(mouse_x,mouse_y) &lt; 300 &amp;&amp; collision_line(x,y, mouse_x, mouse_y, obj_transformable_enemy,false, false)){
     target = collision_circle(mouse_x, mouse_y, 2, obj_transformable_enemy, 0, 1);
+    cursor_sprite = spr_can_transform;
     draw_circle_colour(x,y,16,c_green,c_green,5);
     can_see = true;
 }
+else cursor_sprite = spr_cursor;
+
+if (speed != 0) draw_line(x, y, rope.x, rope.y);
 </string>
           </argument>
         </arguments>
