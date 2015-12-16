@@ -138,6 +138,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Start_menu</room>
     <room>rooms\room0</room>
   </rooms>
   <help>
