@@ -40,6 +40,8 @@ can_shoot = true;
 ammo_x = 0.0;
 ammo_y = 0.0;
 
+attack = false;
+
 rope = noone;
 arrow = noone;
 fireball = noone;
@@ -130,7 +132,15 @@ if(instance_exists(arrow)){
         image_speed = 0;
     }
 }
-else image_index = 0;
+
+if(attack){
+    image_speed = 1;
+    if(image_index == 11){
+        show_debug_message("ADIEU");
+        image_speed = 0;
+        attack = false;
+    }
+}
 
 if(state == states.transforming) return 0;
 

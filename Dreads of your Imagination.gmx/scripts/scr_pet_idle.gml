@@ -1,11 +1,12 @@
 //IDLE PET
-
 if(keyboard_check(ord("Q"))){
-    keyboard_clear(ord("Q"));
     state = states.normal;
+    show_debug_message("VEM CA");
+    keyboard_clear(ord("Q"));
 }
 if(keyboard_check(ord("F"))){
     keyboard_clear(ord("F"));
+    show_debug_message("CONTROL");
     argument0.state = states.petcontroll;
 }
 

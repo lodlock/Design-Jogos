@@ -1,6 +1,9 @@
-if (place_meeting(x,y, obj_player) && (obj_player.sword_rdy)){
-    instance_destroy();
+if (place_meeting(x,y, obj_player) && obj_player.sword_rdy && obj_player.attack){
+    hp -= 10;
+    x += 2 * obj_player.facing;
 }
+
+if(hp < 0) instance_destroy();
 
 if (place_meeting(x,y, obj_arrow)){
     with(obj_arrow)

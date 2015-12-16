@@ -38,6 +38,12 @@ if(keyboard_check(ord("Q"))){
     keyboard_clear(ord("Q"));
     obj_pet.state = states.petidle;
 }
+if(obj_pet.state = states.petidle){
+    if(keyboard_check(ord("Q"))){
+        keyboard_clear(ord("Q"));
+        obj_pet.state = states.normal;
+    }
+}
 //Change player state if pet is being controlled
 if(obj_pet.state = states.petcontroll){
     obj_player.state = states.petcontroll;
@@ -83,15 +89,18 @@ if (mouse_check_button(mb_left) && fireball_rdy){
     mouse_clear(mb_left);
 }
 
-scr_player_collision(self);
+
 //Sword attack
 if (mouse_check_button(mb_left) && sword_rdy){
-    
-    //TODO
+    //sprinte_index = spr_player_sword;
+    //image_speed = 0.5;
+    image_index = 0;
+    attack = true;
+    mouse_clear(mb_left);
 }
 
 
-if ((place_meeting(x,y, obj_transformable_enemy)  || place_meeting(x,y, obj_e)) && !sword_rdy || place_meeting(x,y, obj_e2)){
+if ((place_meeting(x,y, obj_transformable_enemy)  || place_meeting(x,y, obj_e)) && !attack || place_meeting(x,y, obj_e2)){
     hp -= 0.5;
 }
 
@@ -110,4 +119,4 @@ if instance_exists(rope){
         can_shoot = true;
     }
 }
-
+scr_player_collision(self);

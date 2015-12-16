@@ -35,7 +35,7 @@ if (player_ydistance > 1.5 * player_sprite_height)
 {
     if (place_meeting(x, y + 1, obj_box)) pet_dy = obj_player.jumpspeed * -1;
 }
-if (obj_player.hsp != 0 || obj_player.vsp != 0) sprite_index = spr_pet;
+if (obj_player.hsp != 0 || obj_player.vsp != 0) sprite_index = spr_pet_idle;
 else sprite_index = spr_pet_idle;
 
 scr_pet_collisions();
@@ -44,13 +44,5 @@ if (obj_player.state = states.transforming) {
     state = states.transforming; 
 }
 
-if(keyboard_check(ord("F"))){
-    keyboard_clear(ord("F"));
-    state = states.petcontroll;
-}
-if(keyboard_check(ord("Q"))){
-    keyboard_clear(ord("Q"));
-    state = states.petidle;
-}
 
 view_object[0] = obj_player;
