@@ -47,69 +47,67 @@ if(obj_pet.state = states.petcontroll){
 //CHANGE THIS LATER
 
 //Shoot Arrows
-if (mouse_check_button(mb_left) && sprite_index == spr_player_bow){
-    arrow_x = mouse_x;
-    arrow_y = mouse_y;
+if (mouse_check_button(mb_left) && bow_rdy){
     
-    arrow = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_arrow);
+    ammo_x = mouse_x;
+    ammo_y = mouse_y;
     
+    sprinte_index = spr_player_bow;
+    image_speed = 0.5;
     
+    if (can_shoot)
+    {
+        arrow = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_arrow);
+        can_shoot = false;
+        if instance_exists(rope) with(rope) instance_destroy();
+    }   
+    mouse_clear(mb_left);
+}
+
+
+if (mouse_check_button(mb_left) && web_rdy){
     
+    ammo_x = mouse_x;
+    ammo_y = mouse_y;
+    
+    web = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_web);
+    mouse_clear(mb_left);
+}
+
+if (mouse_check_button(mb_left) && fireball_rdy){
+    
+    ammo_x = mouse_x;
+    ammo_y = mouse_y;
+    
+    fireball = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_fireball);
     mouse_clear(mb_left);
 }
 
 scr_player_collision(self);
 //Sword attack
-if (mouse_check_button(mb_left) && sprite_index == spr_player_sword){
+if (mouse_check_button(mb_left) && sword_rdy){
     
-    switch(sprite_index){
-            case spr_player_sword:
-                sprite_index = spr_player_sword_swipe_front;
-                mouse_clear(mb_left);
-                break;
-            case spr_player_sword_swipe_front:
-                sprite_index = spr_player_sword_swipe_down;
-                mouse_clear(mb_left);
-                break;
-            case spr_player_sword_swipe_down:
-                sprite_index = spr_player_sword;
-                mouse_clear(mb_left);
-                break;
-            default:
-                break;
-    }
-}
-
-//Enemy Collision (Devia tirar vida não dar logo restart)
-if ((place_meeting(x,y, obj_transformable_enemy)  || place_meeting(x,y, obj_e)) && sprite_index != spr_player_sword || place_meeting(x,y, obj_e2)){
-    room_restart();
+    //TODO
 }
 
 
-if instance_exists(arrow){
-    with (arrow)
-    {
-        if point_distance(x, y, obj_player.arrow_x, obj_player.arrow_y) > 5
-            {
-             move_towards_point(obj_player.arrow_x, obj_player.arrow_y, 10);
-            }
-            else {
-                speed = 0;
-                obj_player.rope = instance_create(obj_player.arrow_x, obj_player.arrow_y, obj_chain);
-                instance_destroy();
-            }
-    }
+if ((place_meeting(x,y, obj_transformable_enemy)  || place_meeting(x,y, obj_e)) && !sword_rdy || place_meeting(x,y, obj_e2)){
+    hp -= 0.5;
 }
+
+if (hp < 0) room_restart();
+
 if instance_exists(rope){
     if point_distance(x, y, rope.x, rope.y) > 5
-        {
-        move_towards_point(rope.x, rope.y, 2);
-        grav = 0;
-        }
-        else {
-            speed = 0;
-            grav = 0.2;
-            with(rope) instance_destroy();
-        }
+    {
+    move_towards_point(rope.x, rope.y, 2);
+    grav = 0;
+    }
+    else {
+        speed = 0;
+        grav = 0.2;
+        with(rope) instance_destroy();
+        can_shoot = true;
+    }
 }
 

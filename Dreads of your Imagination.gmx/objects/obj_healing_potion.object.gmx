@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>if (place_meeting(x,y, obj_player)){
-    ItemPickup(sprite_index);
-    instance_destroy();
+   instance_destroy();
+    obj_player.hp = 100;
 }
 </string>
           </argument>

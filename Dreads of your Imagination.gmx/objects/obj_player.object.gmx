@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-10</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -33,11 +33,17 @@ vsp = 0;
 jumpspeed = 5;
 movespeed = 2;
 
-arrow_x = 0.0;
-arrow_y = 0.0;
+hp = 100;
+
+can_shoot = true;
+
+ammo_x = 0.0;
+ammo_y = 0.0;
 
 rope = noone;
 arrow = noone;
+fireball = noone;
+web = noone;
 target = noone;
 can_see = false;
 globalvar transform;
@@ -50,6 +56,12 @@ swords = 3;
 
 globalvar arrows;
 arrows = 3;
+
+//Item selected
+sword_rdy = false;
+bow_rdy = false;
+fireball_rdy = false;
+web_rdy = false;
 
 //SEE THIS LATER
 lenx = 28;
@@ -111,7 +123,14 @@ pointy = mouse_y;
           <argument>
             <kind>1</kind>
             <string>draw_sprite_ext(sprite_index,image_index,x,y,-facing,1,0,c_white,1);
-image_speed = 0.1;
+image_speed = 0;
+if(instance_exists(arrow)){
+    image_speed = 1;
+    if(image_index == 18){
+        image_speed = 0;
+    }
+}
+else image_index = 0;
 
 if(state == states.transforming) return 0;
 
@@ -169,16 +188,48 @@ if (speed != 0) draw_line(x, y, rope.x, rope.y);
           <argument>
             <kind>1</kind>
             <string>if (global.inventory[2,0] == spr_bow){
-    crate = false;
-    sprite_index = spr_player_bow;
+    if (!bow_rdy){
+        bow_rdy = true;
+        sprite_index = spr_player_bow;
+        return 0;
+    }
+    else{
+        bow_rdy = false;
+        sprite_index = spr_player;
+        return 0;
+    } 
 }
-if (global.inventory[2,0] == spr_sword){
-    crate = false;
-    sprite_index = spr_player_sword;
+else if (global.inventory[2,0] == spr_sword){   
+    if (!sword_rdy){
+        sword_rdy = true;
+        sprite_index = spr_player_sword;
+        return 0;
+    }
+    else{
+        sword_rdy = false;
+        sprite_index = spr_player;
+        return 0;
+    }
 } 
-if (global.inventory[2,0] == spr_placeCrate){
-    crate = true;
-    sprite_index = spr_player_box;
+else if (global.inventory[2,0] == spr_web_pickup){
+    if (!web_rdy){
+        web_rdy = true;
+        return 0;
+    }
+    else{
+        web_rdy = false;
+        return 0;
+    }
+}
+else if (global.inventory[2,0] == spr_fireball_pickup){
+    if (!fireball_rdy){
+        fireball_rdy = true;
+        return 0;
+    }
+    else{
+        fireball_rdy = false;
+        return 0;
+    }
 } 
 </string>
           </argument>
@@ -203,17 +254,49 @@ if (global.inventory[2,0] == spr_placeCrate){
           <argument>
             <kind>1</kind>
             <string>if (global.inventory[1,0] == spr_bow){
-    crate = false;
-    sprite_index = spr_player_bow;
+    if (!bow_rdy){
+        bow_rdy = true;
+        sprite_index = spr_player_bow;
+        return 0;
+    }
+    else{
+        bow_rdy = false;
+        sprite_index = spr_player;
+        return 0;
+    } 
 }
-if (global.inventory[1,0] == spr_sword){
-    crate = false;
-    sprite_index = spr_player_sword;
+else if (global.inventory[1,0] == spr_sword){   
+    if (!sword_rdy){
+        sword_rdy = true;
+        sprite_index = spr_player_sword;
+        return 0;
+    }
+    else{
+        sword_rdy = false;
+        sprite_index = spr_player;
+        return 0;
+    }
 } 
-if (global.inventory[1,0] == spr_placeCrate){
-    crate = true;
-    sprite_index = spr_player_box;
-}  
+else if (global.inventory[1,0] == spr_web_pickup){
+    if (!web_rdy){
+        web_rdy = true;
+        return 0;
+    }
+    else{
+        web_rdy = false;
+        return 0;
+    }
+}
+else if (global.inventory[1,0] == spr_fireball_pickup){
+    if (!fireball_rdy){
+        fireball_rdy = true;
+        return 0;
+    }
+    else{
+        fireball_rdy = false;
+        return 0;
+    }
+} 
 </string>
           </argument>
         </arguments>
@@ -237,16 +320,48 @@ if (global.inventory[1,0] == spr_placeCrate){
           <argument>
             <kind>1</kind>
             <string>if (global.inventory[0,0] == spr_bow){
-    crate = false;
-    sprite_index = spr_player_bow; 
+    if (!bow_rdy){
+        bow_rdy = true;
+        sprite_index = spr_player_bow;
+        return 0;
+    }
+    else{
+        bow_rdy = false;
+        sprite_index = spr_player;
+        return 0;
+    } 
 }
-if (global.inventory[0,0] == spr_sword){
-    crate = false;
-    sprite_index = spr_player_sword;
+else if (global.inventory[0,0] == spr_sword){   
+    if (!sword_rdy){
+        sword_rdy = true;
+        sprite_index = spr_player_sword;
+        return 0;
+    }
+    else{
+        sword_rdy = false;
+        sprite_index = spr_player;
+        return 0;
+    }
 } 
-if (global.inventory[0,0] == spr_placeCrate){
-    crate = true;
-    sprite_index = spr_player_box;
+else if (global.inventory[0,0] == spr_web_pickup){
+    if (!web_rdy){
+        web_rdy = true;
+        return 0;
+    }
+    else{
+        web_rdy = false;
+        return 0;
+    }
+}
+else if (global.inventory[0,0] == spr_fireball_pickup){
+    if (!fireball_rdy){
+        fireball_rdy = true;
+        return 0;
+    }
+    else{
+        fireball_rdy = false;
+        return 0;
+    }
 } 
 </string>
           </argument>
