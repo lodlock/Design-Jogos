@@ -44,6 +44,7 @@
     <sprite>sprites\spr_healthbar_border</sprite>
     <sprite>sprites\spr_healthbar_inner</sprite>
     <sprite>sprites\spr_healthbar_bg</sprite>
+    <sprite>sprites\spr_selection_arrow</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -81,6 +82,9 @@
     </scripts>
     <scripts name="Math Scripts">
       <script>scripts\scr_angle_difference.gml</script>
+    </scripts>
+    <scripts name="Menu Scripts">
+      <script>scripts\scr_menu.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -135,6 +139,9 @@
       <object>objects\obj_arrow</object>
       <object>objects\obj_web</object>
       <object>objects\obj_fireball</object>
+    </objects>
+    <objects name="Menu">
+      <object>objects\obj_menu</object>
     </objects>
   </objects>
   <rooms name="rooms">
