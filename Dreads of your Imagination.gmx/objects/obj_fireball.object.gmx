@@ -25,8 +25,33 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>right_or_left = choose(scr_move_right, scr_move_left);
+            <string>alarm[0] = 30 * room_speed;
 state = states.normal;
+facing = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_destroy();
+obj_player.can_shoot = true;
 </string>
           </argument>
         </arguments>
@@ -49,7 +74,7 @@ state = states.normal;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle = point_direction(x, y, obj_player.ammo_x, obj_player.ammo_y);
+            <string>//image_angle = point_direction(x, y, obj_player.ammo_x, obj_player.ammo_y);
 
 switch (state){
     case states.normal: scr_fireball_mov(); break;
@@ -80,7 +105,7 @@ switch (state){
             <kind>1</kind>
             <string>draw_self();
 image_speed = 0.2;
-
+image_angle = 90 * (1+facing);
 size = 400;
 if (!surface_exists(light)){
 light = surface_create(view_wview, view_hview)
@@ -97,6 +122,8 @@ draw_ellipse_colour(x - size/2 - view_xview,y - size/2 - view_yview,x + size/2 -
 surface_reset_target();
 draw_set_blend_mode(bm_normal);
 }
+
+draw_text(x,y-50,alarm[0]/room_speed);
 </string>
           </argument>
         </arguments>

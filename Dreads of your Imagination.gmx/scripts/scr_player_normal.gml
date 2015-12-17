@@ -68,8 +68,11 @@ if (key_space && web_rdy){
     
     ammo_x = (x+32)*facing;
     ammo_y = y;
-    
-    web = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_web);
+    if (can_shoot)
+    {
+        web = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_web);
+        can_shoot = false;
+    }
     mouse_clear(mb_left);
 }
 
