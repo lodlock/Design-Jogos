@@ -57,7 +57,7 @@ if(obj_sign3.showtext == 1) {darkness = true; already = true}
 if(obj_pet.state = states.petcontroll) darkness = false;
 if(obj_player.state = states.normal &amp;&amp; already) darkness = true;
 if(darkness) draw_set_color(c_white);
-else draw_set_color(c_black);
+else draw_set_color(c_white);
 draw_rectangle(0,0,view_wview,view_hview,false);
 surface_reset_target();
 </string>

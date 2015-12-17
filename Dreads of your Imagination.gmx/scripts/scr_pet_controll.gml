@@ -15,7 +15,6 @@ if (place_meeting(x,y+1, obj_box)){
 
 //show_debug_message(distance_to_object(obj_player));
 if(distance_to_object(obj_player) > 1000){
-   show_debug_message(distance_to_object(obj_player));
     warn_player = true;
     obj_player.hp -= 0.1;
 }
@@ -30,7 +29,7 @@ if (instance_exists(torch) &&  keyboard_check(ord("E"))){
     torch.can_light = true;
 }
 
-if(collision_circle(x+10,y,5,obj_transformable_enemy,false,false) && mouse_check_button(mb_left)){
+if(collision_circle(x+10,y,5,obj_transformable_enemy,false,false) && key_space){
     enemy = collision_circle(x+10,y,5,obj_transformable_enemy,false,false);
     enemy.hp -= 10;
     mouse_clear(mb_left);

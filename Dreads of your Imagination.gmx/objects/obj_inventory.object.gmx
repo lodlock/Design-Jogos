@@ -83,8 +83,6 @@ y = ystart + view_yview[0];
           <argument>
             <kind>1</kind>
             <string>if(showinv==true) {
-    draw_set_halign(fa_center);
-    draw_text(view_xview+16,view_yview+50,"Inventory");
     for(i=0;i&lt;=maxInvSlots;i+=1)
     {   
         if(global.inventory[i,0] == spr_bow){

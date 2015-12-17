@@ -30,6 +30,7 @@ right_or_left = choose(scr_move_right, scr_move_left);
 facing = 0;
 state = states.normal;
 hp = 100;
+ask_transform = false;
 </string>
           </argument>
         </arguments>
@@ -119,6 +120,8 @@ draw_set_blend_mode(bm_normal);
             <string>draw_sprite_ext(sprite_index,image_index,x,y,-facing,1,0,c_white,1);
 image_speed = 0.2;
 draw_healthbar(x-25,y-35,x+25,y-40,hp,c_black,c_red,c_green,0,true,false);
+
+if(ask_transform) draw_text(x,y-50,"Press E now to transform!!");
 </string>
           </argument>
         </arguments>

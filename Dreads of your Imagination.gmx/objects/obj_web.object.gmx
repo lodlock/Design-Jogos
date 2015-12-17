@@ -8,6 +8,85 @@
   <parentName>obj_arrow</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>state = states.normal;
+facing = 0;
+already_done = false;
+first_contact = true;
+stop_enemy = noone;
+alarm[1] = 1 * room_speed;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_destroy();
+already_done = false;
+obj_player.can_shoot = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_destroy();
+stop_enemy.movespeed = 1;
+already_done = false;
+obj_player.can_shoot = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,16 +104,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle = point_direction(x, y, obj_player.ammo_x, obj_player.ammo_y);
+            <string>switch (state){
+    case states.normal: scr_web_mov(); break;
+    case states.transforming: scr_transforming(); break;
+}
 
-if point_distance(x, y, obj_player.ammo_x, obj_player.ammo_y) &gt; 5
-{
-    move_towards_point(obj_player.ammo_x, obj_player.ammo_y, 10);
-}
-else {
-    speed = 0;
-    instance_destroy();
-}
+
 </string>
           </argument>
         </arguments>
@@ -60,7 +135,7 @@ else {
             <string>draw_self();
 image_speed = 0.5;
 
-direction = 90 * (1-obj_player.facing);
+image_angle = 90 * (1+facing);
 </string>
           </argument>
         </arguments>

@@ -28,6 +28,7 @@
             <string>alarm[0] = 30 * room_speed;
 state = states.normal;
 facing = 0;
+hspd = 0;
 </string>
           </argument>
         </arguments>
@@ -74,9 +75,7 @@ obj_player.can_shoot = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//image_angle = point_direction(x, y, obj_player.ammo_x, obj_player.ammo_y);
-
-switch (state){
+            <string>switch (state){
     case states.normal: scr_fireball_mov(); break;
     case states.transforming: scr_transforming(); break;
 }
@@ -122,7 +121,11 @@ draw_ellipse_colour(x - size/2 - view_xview,y - size/2 - view_yview,x + size/2 -
 surface_reset_target();
 draw_set_blend_mode(bm_normal);
 }
-
+if(point_in_circle(obj_player.x,obj_player.y,x,y,200) &amp;&amp; obj_lightning.darkness &amp;&amp; obj_player.hp &lt; 100)
+{
+    obj_player.hp +=0.5;
+}
+else if (!point_in_circle(obj_player.x,obj_player.y,x,y,200) &amp;&amp; obj_lightning.darkness) obj_player.hp -=0.005;
 draw_text(x,y-50,alarm[0]/room_speed);
 </string>
           </argument>

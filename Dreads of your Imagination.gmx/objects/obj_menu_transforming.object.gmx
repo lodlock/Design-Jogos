@@ -56,7 +56,7 @@ menu_height = 50;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(obj_pet.state == states.transforming &amp;&amp; obj_pet.enemy.sprite_index = spr_spider){
+            <string>if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_spider){
     if (keyboard_check_pressed(ord("D"))){
         selected += 1;
     }else if (keyboard_check_pressed(ord("A"))){
@@ -73,26 +73,21 @@ menu_height = 50;
     
     if(keyboard_check(vk_enter) || keyboard_check_pressed(ord("E")) &amp;&amp; obj_pet.state = states.transforming){
         switch(item){
-            case 0: obj_pet.enemy.sprite_index = spr_spider;
+            case 0: with(obj_pet.enemy) instance_change(obj_web_pickup,1);
                     keyboard_clear(ord("E"));
-                    transform = true;
                     obj_pet.state = states.petcontroll;
+                    obj_player.state = states.petcontroll;
                     break;
-            case 1: obj_pet.enemy.sprite_index = spr_web_pickup;
+            case 1: with(obj_pet.enemy) instance_change(obj_bow,1);
                     keyboard_clear(ord("E"));
-                    transform = true;
                     obj_pet.state = states.petcontroll;
-                    break;
-            case 2: obj_pet.enemy.sprite_index = spr_bow;
-                    keyboard_clear(ord("E"));
-                    transform = true;
-                    obj_pet.state = states.petcontroll;
+                    obj_player.state = states.petcontroll;
                     break;
         }
     }
 }
 
-if(obj_pet.state == states.transforming &amp;&amp; obj_pet.enemy.sprite_index = spr_fire_enemy){
+if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_fire_enemy){
     if (keyboard_check_pressed(ord("D"))){
         selected += 1;
     }else if (keyboard_check_pressed(ord("A"))){
@@ -109,20 +104,10 @@ if(obj_pet.state == states.transforming &amp;&amp; obj_pet.enemy.sprite_index = 
     
     if(keyboard_check(vk_enter) || keyboard_check_pressed(ord("E")) &amp;&amp; obj_pet.state = states.transforming){
         switch(item){
-            case 0: obj_pet.enemy.sprite_index = spr_fire_enemy;
+            case 0: with(obj_pet.enemy) instance_change(obj_fireball_pickup,1);
                     keyboard_clear(ord("E"));
-                    transform = true;
                     obj_pet.state = states.petcontroll;
-                    break;
-            case 1: obj_pet.enemy.sprite_index = spr_fireball_pickup;
-                    keyboard_clear(ord("E"));
-                    transform = true;
-                    obj_pet.state = states.petcontroll;
-                    break;
-            case 2: obj_pet.enemy.sprite_index = spr_healing_potion;
-                    keyboard_clear(ord("E"));
-                    transform = true;
-                    obj_pet.state = states.petcontroll;
+                    obj_player.state = states.petcontroll;
                     break;
         }
     }
@@ -179,18 +164,17 @@ if(obj_pet.state == states.transforming &amp;&amp; obj_pet.enemy.sprite_index = 
     var text;
     
     switch(item){
-        case 0: text = "Enemy" break;
-        case 1: text = "Web" break;
-        case 2: text = "Webow" break;
+        case 0: text = "Web: Use the power of the Spider and send webs to your enemies.#       If they get hit they will be stopped for 5 seconds! You can just use one Web each time." break;
+        case 1: text = "Webow: A Bow made of Web. Use it like a grappling hook and reach different areas.#          Use the Mouse to choose where to place it!" break;
         default: text = "" break;
     }
-    draw_set_color(c_black);
-    draw_set_halign(fa_center);
-    draw_text(view_xview[0]+view_wview[0]/2 + 1 , view_yview[0]+view_hview[0]/2 + 63,text);
-    
     draw_set_color(c_white);
-    draw_set_halign(fa_center);
-    draw_text(view_xview[0]+view_wview[0]/2 , view_yview[0]+view_hview[0]/2 + 64,text);
+    draw_set_halign(fa_left);
+    draw_text(view_xview[0]+view_wview[0]/2-449 , view_yview[0]+view_hview[0]/2 + 200,text);
+    
+    draw_set_color(c_black);
+    draw_set_halign(fa_left);
+    draw_text(view_xview[0]+view_wview[0]/2-450 , view_yview[0]+view_hview[0]/2 + 201,text);
     
     
     
@@ -229,26 +213,24 @@ if(obj_pet.state == states.transforming &amp;&amp; obj_pet.enemy.sprite_index = 
     var text;
     
     switch(item){
-        case 0: text = "Enemy" break;
-        case 1: text = "Fireball" break;
-        case 2: text = "Healing Potion" break;
+        case 0: text = "Lightball: Use the power of fire and send this Lightball.It will move the same direction you are facing,#             light the way and remove your fear while near it. You can just throw one fireball each#             time, and they last 30 seconds!" break;
         default: text = "" break;
     }
+    draw_set_color(c_white);
+    draw_set_halign(fa_left);
+    draw_text(view_xview[0]+view_wview[0]/2-449 , view_yview[0]+view_hview[0]/2 + 200,text);
+    
     draw_set_color(c_black);
-    draw_set_halign(fa_center);
-    draw_text(view_xview[0]+view_wview[0]/2 + 1 , view_yview[0]+view_hview[0]/2 + 63,text);
+    draw_set_halign(fa_left);
+    draw_text(view_xview[0]+view_wview[0]/2-450 , view_yview[0]+view_hview[0]/2 + 201,text);
+    
+    
     
     draw_set_color(c_white);
-    draw_set_halign(fa_center);
-    draw_text(view_xview[0]+view_wview[0]/2 , view_yview[0]+view_hview[0]/2 + 64,text);
-    
-    
-    
-    draw_set_color(c_black);
     draw_set_halign(fa_center);
     draw_text(view_xview[0]+view_wview[0]/2 + 1, view_yview[0]+view_hview[0]/2 - 127,"Press A or D to rotate.#E or Enter to choose.");
     
-    draw_set_color(c_white);
+    draw_set_color(c_black);
     draw_set_halign(fa_center);
     draw_text(view_xview[0]+view_wview[0]/2, view_yview[0]+view_hview[0]/2 - 128,"Press A or D to rotate.#E or Enter to choose.");
 

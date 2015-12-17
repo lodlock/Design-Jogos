@@ -39,8 +39,8 @@ grav = 0.2;
 hsp = 0;
 hsp_dir = 1;
 vsp = 0;
-jumpspeed = 5;
-movespeed = 2;
+jumpspeed = 6;
+movespeed = 4;
 
 torch = noone;
 enemy = noone;

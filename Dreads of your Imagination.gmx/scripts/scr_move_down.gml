@@ -1,6 +1,6 @@
 ///scr_move_down()
 
-var vspd = 5;
+var vspd = 5 * movespeed;
 var not_wall = !place_meeting(x, y+vspd, obj_box);
 
 if (not_wall){

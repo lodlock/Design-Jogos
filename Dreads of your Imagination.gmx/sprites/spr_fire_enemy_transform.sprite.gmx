@@ -9,8 +9,8 @@
   <bboxmode>0</bboxmode>
   <bbox_left>141</bbox_left>
   <bbox_right>336</bbox_right>
-  <bbox_top>25</bbox_top>
-  <bbox_bottom>170</bbox_bottom>
+  <bbox_top>57</bbox_top>
+  <bbox_bottom>142</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -21,7 +21,5 @@
   <height>197</height>
   <frames>
     <frame index="0">images\spr_fire_enemy_transform_0.png</frame>
-    <frame index="1">images\spr_fire_enemy_transform_1.png</frame>
-    <frame index="2">images\spr_fire_enemy_transform_2.png</frame>
   </frames>
 </sprite>

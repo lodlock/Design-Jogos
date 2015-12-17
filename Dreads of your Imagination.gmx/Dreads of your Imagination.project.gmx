@@ -45,11 +45,18 @@
     <sprite>sprites\spr_healthbar_inner</sprite>
     <sprite>sprites\spr_healthbar_bg</sprite>
     <sprite>sprites\spr_selection_arrow</sprite>
+    <sprites name="Obscuro">
+      <sprite>sprites\spr_obscuro_transform</sprite>
+      <sprite>sprites\spr_obscuro_walk_and_iddle</sprite>
+      <sprite>sprites\spr_obscuro_attack</sprite>
+      <sprite>sprites\spr_obscuro_appear_dissapear</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_fireball_mov.gml</script>
+    <script>scripts\scr_web_mov.gml</script>
     <script>scripts\ItemPickup.gml</script>
     <script>scripts\scr_text.gml</script>
     <script>scripts\scr_get_input.gml</script>
@@ -128,6 +135,7 @@
       <object>objects\obj_e2</object>
       <object>objects\obj_transformable_enemy</object>
       <object>objects\obj_fire_enemy</object>
+      <object>objects\obj_boss_obscuro</object>
     </objects>
     <objects name="Tiles">
       <object>objects\obj_crate</object>
@@ -135,6 +143,7 @@
       <object>objects\obj_box1</object>
       <object>objects\obj_chain</object>
       <object>objects\obj_torch</object>
+      <object>objects\obj_boss_torch</object>
     </objects>
     <objects name="Ammo">
       <object>objects\obj_arrow</object>

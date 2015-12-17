@@ -28,6 +28,7 @@
             <string>up_or_down = choose(scr_move_up, scr_move_down);
 state = states.normal;
 hp = 100;
+movespeed = 1;
 </string>
           </argument>
         </arguments>
