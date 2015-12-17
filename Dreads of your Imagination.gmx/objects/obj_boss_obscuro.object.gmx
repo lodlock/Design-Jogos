@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = states.normal;
+            <string>state = states.transforming;
 vsp = 0;
 hsp = 0;
 alarm[0] = 10 * room_speed;
@@ -94,6 +94,7 @@ can_be_transformed = false;
         if(distance_to_object(obj_pet) &gt; 1289) state = states.normal;
     }
     break;
+    case states.transforming:{ if(start_boss) state = states.normal; break;}
 }
 
 //Horizontal Collision
@@ -158,11 +159,11 @@ y += vsp;
             <string>draw_self();
 image_speed = 0.2;
 
-if(alarm[0] == -1){ 
+if(alarm[0] == -1 &amp;&amp; !obj_GM.kid_can_transform &amp;&amp; start_boss){ 
     sprite_index = spr_obscuro_appear_dissapear;
     image_speed = 0.2;
     
-    if(image_index &gt; 11){
+    if(image_index &gt; 11 ){
         x = obj_pet.x;
         y = obj_pet.y - 50;
         alarm[0] = random(10) * room_speed;

@@ -113,5 +113,5 @@ if instance_exists(rope){
         can_shoot = true;
     }
 }
-view_object[0] = obj_pet;
+view_object[0] = obj_player;
 scr_player_collision(self);

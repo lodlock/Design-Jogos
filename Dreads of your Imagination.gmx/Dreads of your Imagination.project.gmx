@@ -155,6 +155,10 @@
       <object>objects\obj_menu</object>
     </objects>
     <object>objects\obj_chicken</object>
+    <object>objects\obj_sign8</object>
+    <object>objects\obj_sign9</object>
+    <object>objects\obj_sign10</object>
+    <object>objects\obj_sign11</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
