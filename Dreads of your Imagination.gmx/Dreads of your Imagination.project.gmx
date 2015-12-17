@@ -46,10 +46,10 @@
     <sprite>sprites\spr_healthbar_bg</sprite>
     <sprite>sprites\spr_selection_arrow</sprite>
     <sprites name="Obscuro">
-      <sprite>sprites\spr_obscuro_transform</sprite>
       <sprite>sprites\spr_obscuro_walk_and_iddle</sprite>
       <sprite>sprites\spr_obscuro_attack</sprite>
       <sprite>sprites\spr_obscuro_appear_dissapear</sprite>
+      <sprite>sprites\spr_chicken_obscuro</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -95,6 +95,7 @@
       <script>scripts\scr_move_left.gml</script>
       <script>scripts\scr_move_right.gml</script>
     </scripts>
+    <script>scripts\scr_chicken.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
@@ -153,6 +154,7 @@
     <objects name="Menu">
       <object>objects\obj_menu</object>
     </objects>
+    <object>objects\obj_chicken</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

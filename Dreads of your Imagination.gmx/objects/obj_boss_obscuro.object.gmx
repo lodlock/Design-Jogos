@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -30,6 +30,7 @@ vsp = 0;
 hsp = 0;
 alarm[0] = 10 * room_speed;
 hp = 200;
+can_be_transformed = false;
 </string>
           </argument>
         </arguments>
@@ -52,9 +53,8 @@ hp = 200;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = obj_pet.x;
-y = obj_pet.y - 50;
-alarm[0] = random(10) * room_speed;
+            <string>
+
 </string>
           </argument>
         </arguments>
@@ -130,6 +130,7 @@ if (place_meeting(x,y+1,obj_box))
     y += yminus;
 }
 
+if(hp == 0) can_be_transformed = true;
 
 y += vsp;
 </string>
@@ -157,6 +158,19 @@ y += vsp;
             <string>draw_self();
 image_speed = 0.2;
 
+if(alarm[0] == -1){ 
+    sprite_index = spr_obscuro_appear_dissapear;
+    image_speed = 0.2;
+    
+    if(image_index &gt; 11){
+        x = obj_pet.x;
+        y = obj_pet.y - 50;
+        alarm[0] = random(10) * room_speed;
+    }
+}else {
+    sprite_index = spr_obscuro_walk_and_iddle;
+    image_speed = 0.2;
+}
 draw_healthbar(x-25,y-65,x+25,y-70,hp/2,c_black,c_red,c_green,0,true,false);
 </string>
           </argument>
