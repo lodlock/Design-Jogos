@@ -28,6 +28,7 @@
             <string>globalvar light;
 light = surface_create(view_wview, view_hview)
 darkness = false;
+already = false;
 </string>
           </argument>
         </arguments>
@@ -52,7 +53,9 @@ darkness = false;
             <kind>1</kind>
             <string>surface_set_target(light);
 
-if(obj_sign3.showtext == 1) darkness = true;
+if(obj_sign3.showtext == 1) {darkness = true; already = true}
+if(obj_pet.state = states.petcontroll) darkness = false;
+if(obj_player.state = states.normal &amp;&amp; already) darkness = true;
 if(darkness) draw_set_color(c_white);
 else draw_set_color(c_black);
 draw_rectangle(0,0,view_wview,view_hview,false);

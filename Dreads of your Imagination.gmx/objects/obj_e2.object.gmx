@@ -51,8 +51,8 @@ hp = 100;
           <argument>
             <kind>1</kind>
             <string>switch (state){
-    case states.normal: scr_enemy_normal_vertical(self); break;
-    case states.transforming: scr_transforming(self); break;
+    case states.normal: scr_enemy_normal_vertical(); break;
+    case states.transforming: scr_transforming(); break;
 }
 
 </string>

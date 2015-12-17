@@ -65,6 +65,12 @@ draw_ellipse_colour(x - size/2 - view_xview,y - size/2 - view_yview,x + size/2 -
 surface_reset_target();
 draw_set_blend_mode(bm_normal);
 }
+
+if(point_in_circle(obj_player.x,obj_player.y,x,y,220) &amp;&amp; can_light &amp;&amp; obj_lightning.darkness &amp;&amp; obj_player.hp &lt; 100)
+{
+    obj_player.hp +=0.5;
+}
+else if (!point_in_circle(obj_player.x,obj_player.y,x,y,220) &amp;&amp; obj_lightning.darkness) obj_player.hp -=0.005;
 </string>
           </argument>
         </arguments>
@@ -89,11 +95,11 @@ draw_set_blend_mode(bm_normal);
             <kind>1</kind>
             <string>draw_self();
 
-if (!surface_exists(light) &amp;&amp; can_light){
+if (!surface_exists(light) &amp;&amp; can_light &amp;&amp; obj_lightning.darkness){
 sprite_index = spr_torch_light;
 image_speed = 0.1;
 }
-else if (can_light){
+else if (can_light &amp;&amp; obj_lightning.darkness){
 sprite_index = spr_torch_light;
 image_speed = 0.1;
 }

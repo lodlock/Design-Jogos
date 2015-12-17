@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-10</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -89,7 +89,7 @@ pointy = mouse_y;
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>obj_player</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -97,7 +97,6 @@ pointy = mouse_y;
             <kind>1</kind>
             <string>switch(state){
     case states.normal: scr_player_normal(); break;
-    //case states.talking: scr_player_talking(); break;  //TODO
     case states.transforming: scr_player_transforming(); break;
     case states.petcontroll: scr_iddle(); break;  
     case states.grab_ledge: scr_ledge_grab(); break;
@@ -136,7 +135,6 @@ if(instance_exists(arrow)){
 if(attack){
     image_speed = 1;
     if(image_index == 11){
-        show_debug_message("ADIEU");
         image_speed = 0;
         attack = false;
     }
@@ -144,6 +142,7 @@ if(attack){
 
 if(state == states.transforming) return 0;
 
+/*
 if(collision_line(x,y, mouse_x, mouse_y, obj_box,false, false) || distance_to_point(mouse_x,mouse_y) &gt;= 300){
     if (collision_circle(mouse_x, mouse_y, 2, obj_transformable_enemy, 0, 1)){
         cursor_sprite = spr_cant_transform;
@@ -173,6 +172,7 @@ else if (!collision_line(x,y, mouse_x, mouse_y, obj_box,false, false) &amp;&amp;
     can_see = true;
 }
 else cursor_sprite = spr_cursor;
+*/
 
 if (speed != 0) draw_line(x, y, rope.x, rope.y);
 </string>

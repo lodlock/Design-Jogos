@@ -24,7 +24,7 @@ else if (abs(player_xdistance) > 1.5 * player_sprite_width)
 }
 else pet_dx = 0;
 
-
+obj_pet.warn_player = false;
 
 //=========================================//
 //catch up vertically

@@ -13,18 +13,34 @@ if (place_meeting(x,y+1, obj_box)){
     vsp = key_jump * -jumpspeed;
 }
 
-target = collision_circle(x, y, 50, obj_torch, 0, 1);
+//show_debug_message(distance_to_object(obj_player));
+if(distance_to_object(obj_player) > 1000){
+   show_debug_message(distance_to_object(obj_player));
+    warn_player = true;
+    obj_player.hp -= 0.1;
+}
+else warn_player = false;
+
+torch = collision_circle(x, y, 50, obj_torch, 0, 1);
 
 //scr_pet_collisions();
 
-if (instance_exists(target) &&  keyboard_check(ord("E"))){
+if (instance_exists(torch) &&  keyboard_check(ord("E"))){
     keyboard_clear(ord("E"));
-    target.can_light = true;
+    torch.can_light = true;
+}
+
+if(collision_circle(x+10,y,5,obj_transformable_enemy,false,false) && mouse_check_button(mb_left)){
+    enemy = collision_circle(x+10,y,5,obj_transformable_enemy,false,false);
+    enemy.hp -= 10;
+    mouse_clear(mb_left);
 }
 
 if(keyboard_check(ord("F"))){
     keyboard_clear(ord("F"));
-    argument0.state = states.petidle;
+    obj_player.state = states.normal;
+    state = states.normal;
 }
+
 view_object[0] = obj_pet;
 scr_pet_collision_controlled();

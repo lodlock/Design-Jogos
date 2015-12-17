@@ -1,7 +1,5 @@
 scr_get_input();
 
-
-
 //React to inputs
 move = key_left + key_right;
 if(move == 1) facing = 1; else if (move == -1) facing = -1;
@@ -19,34 +17,29 @@ if(hsp != 0){
 
 
 
-//Begin Transforming
-if (keyboard_check(ord("E")) && can_see) {
+//Begin Transforming SAVE FOR BOSS MECHANIC
+/*
+if (key_e && can_see && is_boss) {
     keyboard_clear(ord("E"));
     obj_player.state = states.transforming;
-}
-else if(obj_pet.state = states.normal || obj_pet.state = states.petidle){
-    obj_player.state = states.normal;
-}
+}*/
 
-//Give controll to pet
-if(keyboard_check(ord("F"))){
-    keyboard_clear(ord("F"));
-    obj_pet.state = states.petcontroll;
-}
-//Call pet
-if(keyboard_check(ord("Q"))){
-    keyboard_clear(ord("Q"));
-    obj_pet.state = states.petidle;
-}
-if(obj_pet.state = states.petidle){
-    if(keyboard_check(ord("Q"))){
-        keyboard_clear(ord("Q"));
-        obj_pet.state = states.normal;
+
+//IF PET IS IN THE ROOM
+if(instance_exists(obj_pet)){
+    
+    if(obj_pet.state = states.normal){
+    obj_player.state = states.normal;
+    } 
+    //Give controll to pet
+    if(key_f){
+        keyboard_clear(ord("F"));
+        obj_pet.state = states.petcontroll;
     }
-}
-//Change player state if pet is being controlled
-if(obj_pet.state = states.petcontroll){
-    obj_player.state = states.petcontroll;
+    //Change player state if pet is being controlled
+    if(obj_pet.state = states.petcontroll){
+        obj_player.state = states.petcontroll;
+    }   
 }
 
 
@@ -71,19 +64,19 @@ if (mouse_check_button(mb_left) && bow_rdy){
 }
 
 
-if (mouse_check_button(mb_left) && web_rdy){
+if (key_space && web_rdy){
     
-    ammo_x = mouse_x;
-    ammo_y = mouse_y;
+    ammo_x = (x+32)*facing;
+    ammo_y = y;
     
     web = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_web);
     mouse_clear(mb_left);
 }
 
-if (mouse_check_button(mb_left) && fireball_rdy){
+if (key_space && fireball_rdy){
     
-    ammo_x = mouse_x;
-    ammo_y = mouse_y;
+    ammo_x = (x+32)*facing;
+    ammo_y = y;
     
     fireball = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_fireball);
     mouse_clear(mb_left);
@@ -91,7 +84,7 @@ if (mouse_check_button(mb_left) && fireball_rdy){
 
 
 //Sword attack
-if (mouse_check_button(mb_left) && sword_rdy){
+if (key_space && sword_rdy){
     //sprinte_index = spr_player_sword;
     //image_speed = 0.5;
     image_index = 0;
@@ -119,4 +112,5 @@ if instance_exists(rope){
         can_shoot = true;
     }
 }
+view_object[0] = obj_pet;
 scr_player_collision(self);

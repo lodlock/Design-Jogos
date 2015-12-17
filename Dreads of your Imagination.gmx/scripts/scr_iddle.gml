@@ -1,11 +1,11 @@
 //Pet is being controlled
 
-if(obj_pet.state = states.normal || obj_pet.state = states.petidle){
+if(obj_pet.state = states.normal){
     obj_player.state = states.normal;
 }
 
-if ((place_meeting(x,y, obj_transformable_enemy)  || place_meeting(x,y, obj_e)) && sprite_index != spr_player_sword || place_meeting(x,y, obj_e2)){
-    room_restart();
+if ((place_meeting(x,y, obj_transformable_enemy)  || place_meeting(x,y, obj_e)) || place_meeting(x,y, obj_e2)){
+    hp -= 0.05;
 }
 vsp += grav;
 

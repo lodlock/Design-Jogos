@@ -91,8 +91,8 @@ draw_set_blend_mode(bm_normal);
           <argument>
             <kind>1</kind>
             <string>switch (state){
-    case states.normal: scr_transformable_enemy_normal(self); break;
-    case states.transforming: scr_transformable_enemy_transforming(self); break;
+    case states.normal: scr_transformable_enemy_normal(); break;
+    case states.transforming: scr_transformable_enemy_transforming(); break;
 }
 </string>
           </argument>

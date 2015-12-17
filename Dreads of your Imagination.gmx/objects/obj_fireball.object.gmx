@@ -8,6 +8,30 @@
   <parentName>obj_arrow</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>right_or_left = choose(scr_move_right, scr_move_left);
+state = states.normal;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -27,15 +51,10 @@
             <kind>1</kind>
             <string>image_angle = point_direction(x, y, obj_player.ammo_x, obj_player.ammo_y);
 
-if point_distance(x, y, obj_player.ammo_x, obj_player.ammo_y) &gt; 5
-{
-    move_towards_point(obj_player.ammo_x, obj_player.ammo_y, 10);
+switch (state){
+    case states.normal: scr_fireball_mov(); break;
+    case states.transforming: scr_transforming(); break;
 }
-else {
-    speed = 0;
-    instance_destroy();
-}
-
 
 </string>
           </argument>
@@ -61,6 +80,23 @@ else {
             <kind>1</kind>
             <string>draw_self();
 image_speed = 0.2;
+
+size = 400;
+if (!surface_exists(light)){
+light = surface_create(view_wview, view_hview)
+draw_set_blend_mode(bm_subtract);
+surface_set_target(light);
+draw_ellipse_colour(x - size/2 - view_xview,y - size/2 - view_yview,x + size/2 - view_xview,y + size/2 - view_yview,c_red,c_black,false);
+surface_reset_target();
+draw_set_blend_mode(bm_normal);
+}
+else {
+draw_set_blend_mode(bm_subtract);
+surface_set_target(light);
+draw_ellipse_colour(x - size/2 - view_xview,y - size/2 - view_yview,x + size/2 - view_xview,y + size/2 - view_yview,c_red,c_black,false);
+surface_reset_target();
+draw_set_blend_mode(bm_normal);
+}
 </string>
           </argument>
         </arguments>

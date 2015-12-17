@@ -49,15 +49,12 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\scr_fireball_mov.gml</script>
     <script>scripts\ItemPickup.gml</script>
     <script>scripts\scr_text.gml</script>
     <script>scripts\scr_get_input.gml</script>
     <scripts name="Enemy Scripts">
       <script>scripts\scr_transformable_enemy_normal.gml</script>
-      <script>scripts\scr_move_down.gml</script>
-      <script>scripts\scr_move_up.gml</script>
-      <script>scripts\scr_move_left.gml</script>
-      <script>scripts\scr_move_right.gml</script>
       <script>scripts\scr_transformable_enemy_transforming.gml</script>
       <script>scripts\scr_enemy_collision.gml</script>
       <script>scripts\scr_enemy_normal.gml</script>
@@ -76,7 +73,6 @@
       <script>scripts\scr_pet_normal.gml</script>
       <script>scripts\scr_pet_transforming.gml</script>
       <script>scripts\scr_pet_controll.gml</script>
-      <script>scripts\scr_pet_idle.gml</script>
       <script>scripts\scr_pet_collision_controlled.gml</script>
       <script>scripts\scr_ledge_grab_pet.gml</script>
     </scripts>
@@ -85,6 +81,12 @@
     </scripts>
     <scripts name="Menu Scripts">
       <script>scripts\scr_menu.gml</script>
+    </scripts>
+    <scripts name="Movement Scripts">
+      <script>scripts\scr_move_down.gml</script>
+      <script>scripts\scr_move_up.gml</script>
+      <script>scripts\scr_move_left.gml</script>
+      <script>scripts\scr_move_right.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -117,7 +119,6 @@
       <object>objects\obj_musicBox</object>
       <object>objects\obj_inventory</object>
       <object>objects\obj_GM</object>
-      <object>objects\obj_timeController</object>
       <object>objects\obj_menu_transforming</object>
       <object>objects\obj_text</object>
       <object>objects\obj_lightning</object>
@@ -130,8 +131,8 @@
     </objects>
     <objects name="Tiles">
       <object>objects\obj_crate</object>
-      <object>objects\obj_box1</object>
       <object>objects\obj_box</object>
+      <object>objects\obj_box1</object>
       <object>objects\obj_chain</object>
       <object>objects\obj_torch</object>
     </objects>
@@ -145,8 +146,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Start_menu</room>
     <room>rooms\room0</room>
+    <room>rooms\Start_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
