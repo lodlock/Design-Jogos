@@ -93,7 +93,7 @@ with(obj_player){
     nearest_torch = instance_nearest(x, y, obj_torch);
     nearest_lightb = instance_nearest(x, y, obj_fireball);
     if(obj_lightning.darkness &amp;&amp; nearest_torch.can_light &amp;&amp; distance_to_object(nearest_torch) &lt; 200 &amp;&amp; hp &lt; 100) hp += 0.5;
-    if(obj_lightning.darkness &amp;&amp; distance_to_object(nearest_lightb) &lt; 100 &amp;&amp; hp &lt; 100) hp += 0.5;
+    if(obj_lightning.darkness &amp;&amp; distance_to_object(nearest_lightb) &lt; 100 &amp;&amp; hp &lt; 100) hp += 0.6;
     if(obj_lightning.darkness &amp;&amp; !nearest_torch.can_light) hp -= 0.5;
     if(obj_lightning.darkness &amp;&amp; nearest_torch.can_light &amp;&amp; distance_to_object(nearest_torch) &gt; 200) hp -= 0.5;
     if(!obj_lightning.darkness &amp;&amp; obj_lightning.already &amp;&amp; !nearest_torch.can_light &amp;&amp; distance_to_object(nearest_torch) &gt; 0) hp -= 0.5;

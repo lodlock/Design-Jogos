@@ -279,15 +279,15 @@ enum states {
     <instance objName="obj_sign1" x="1709" y="560" name="inst_63AD5FDC" locked="0" code="text = &quot;Carefull with the spider. Your kid is too#afraid of enemies.Don't let them touch the kid#Otherwise you loose!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sign1" x="1857" y="560" name="inst_D3A8A626" locked="0" code="text = &quot;However if you use your pet you can attack# them with spacebar while near them.#But know this your kid will be scared if the#enemies hurt your pet so try to be carefull#Get back to your kid if he needs to regain courage!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sign1" x="1999" y="561" name="inst_78629177" locked="0" code="text = &quot;This type of enemies with a circle arround #can be transformed. When their health#is low you can transform them.# Try now!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign1" x="2429" y="720" name="inst_3AA1B55D" locked="0" code="text = &quot;If you transformed the spider you have an item#in your inventory,#press the number 1,2,3 or 4 to#equip the kid with the respective item!&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign1" x="2429" y="720" name="inst_3AA1B55D" locked="0" code="text = &quot;If you transformed the spider you have an item#in your inventory,#at the left upper corner#press the number 1,2,3 or 4 to#equip the kid with the respective item!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_e" x="8928" y="1984" name="inst_FEBF8EA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_e" x="9152" y="1760" name="inst_A98F8A71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign1" x="2569" y="720" name="inst_67F339D5" locked="0" code="text = &quot;Press spacebar to use the item#If it is a bow use your mouse!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign1" x="2569" y="720" name="inst_67F339D5" locked="0" code="text = &quot;Press spacebar to use the item#If it is a bow use your mouse!#You can only use one item each time&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="2779" y="752" name="inst_FC10CD86" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="3104" y="2368" name="inst_F4BFBE7B" locked="0" code="" scaleX="50" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="3136" y="3072" name="inst_39E5D941" locked="0" code="" scaleX="50" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="1440" y="3552" name="inst_289C7B88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fireball_pickup" x="702" y="346" name="inst_5533C036" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="2536" y="429" name="inst_6B82D914" locked="0" code="can_light = true;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

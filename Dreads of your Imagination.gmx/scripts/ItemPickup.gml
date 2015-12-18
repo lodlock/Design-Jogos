@@ -10,15 +10,11 @@ for(i=0;i<=maxInvSlots;i+=1)
         global.inventory[i,0] = argument0;
         i = maxInvSlots;
     }
-    else if (argument0 == spr_sword && global.inventory[i,0] == spr_fireball_pickup){
+    else if (argument0 == spr_fireball_pickup && global.inventory[i,0] == spr_fireball_pickup){
         global.inventory[i,0] = argument0;
         i = maxInvSlots;
     }
-    else if (argument0 == spr_sword && global.inventory[i,0] == spr_web_pickup){
-        global.inventory[i,0] = argument0;
-        i = maxInvSlots;
-    }
-    else if (argument0 == spr_sword && global.inventory[i,0] == spr_sword){
+    else if (argument0 == spr_web_pickup && global.inventory[i,0] == spr_web_pickup){
         global.inventory[i,0] = argument0;
         i = maxInvSlots;
     }
