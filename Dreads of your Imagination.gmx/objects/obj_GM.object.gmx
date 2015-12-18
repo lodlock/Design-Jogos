@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-999</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -87,6 +87,10 @@ else {
     if (instance_exists(obj_web_pickup))obj_web_pickup.image_alpha = 1.0;
 }
 
+if(keyboard_check(ord("R"))){
+    keyboard_clear(ord("R"));
+    scr_death();
+}
 
 with(obj_player){
     if(hp &lt; 0 ) scr_death();
@@ -98,6 +102,7 @@ with(obj_player){
     if(obj_lightning.darkness &amp;&amp; nearest_torch.can_light &amp;&amp; distance_to_object(nearest_torch) &gt; 200) hp -= 0.5;
     if(!obj_lightning.darkness &amp;&amp; obj_lightning.already &amp;&amp; !nearest_torch.can_light &amp;&amp; distance_to_object(nearest_torch) &gt; 0) hp -= 0.5;
     if(!obj_lightning.darkness &amp;&amp; obj_lightning.already &amp;&amp; distance_to_object(nearest_torch) &lt; 200 &amp;&amp; hp &lt; 100 &amp;&amp; distance_to_object(obj_pet) &lt; 150) hp +=0.5;
+    if(start_boss &amp;&amp; place_meeting(obj_pet.x,obj_pet.y,obj_boss_obscuro)) hp -=1.0;
 }
 </string>
           </argument>
@@ -149,15 +154,13 @@ draw_sprite(spr_healthbar_bg,1,view_xview[0]+46, view_yview[0]+34);
 draw_sprite_ext(spr_healthbar_inner,1,view_xview[0]+46, view_yview[0]+34, obj_player.hp/100,1,0,c_white,1);
 draw_sprite(spr_healthbar_border,1,view_xview[0]+15, view_yview[0]+15);
 if (instance_exists(obj_boss_obscuro)){
-    if(obj_boss_obscuro.can_be_transformed) {
-        draw_text_color(view_xview[0]+500, view_yview[0]+250, "PRESS T NOW TO GRAB OBSCURO",c_white,c_white,c_white,c_white,1);
-        if(keyboard_check(ord("T"))){
-            keyboard_clear(ord("T"));
-            obj_boss_obscuro.can_be_transformed = false;
+    if(obj_boss_obscuro.state = states.transforming &amp;&amp; start_boss) {
+        draw_text_color(view_xview[0]+500, view_yview[0]+250, "PRESS E NOW TO GRAB OBSCURO",c_white,c_white,c_white,c_white,1);
+        if(keyboard_check(ord("E"))){
+            keyboard_clear(ord("E"));
+            obj_boss_obscuro.state = states.chase;
             kid_can_transform = true;
-            obj_boss_obscuro.state = states.transforming;
-            obj_boss_obscuro.vsp = 0;
-            obj_boss_obscuro.hsp = 0;
+            start_boss=false;
             obj_pet.x = obj_boss_obscuro.x;
             obj_pet.y = obj_boss_obscuro.y;
             obj_pet.state = states.chase; //DEVIA SER GRAB MAS PARA TESTE
@@ -167,24 +170,28 @@ if (instance_exists(obj_boss_obscuro)){
     }
 
     if(kid_can_transform){
+        show_debug_message("TRANSFORMA");
+        obj_boss_obscuro.can_be_transformed = false;
         draw_text_color(view_xview[0]+500, view_yview[0]+250, "Pet: Go kid you have to be brave now!# Use the power of transformation, you can do it!!# He is too strong for me to do it alone!!",c_white,c_white,c_white,c_white,1);
         draw_text_color(view_xview[0]+500, view_yview[0]+500, "Press E!",c_white,c_white,c_white,c_white,1);
         obj_boss_obscuro.can_be_transformed = false;
-        if(keyboard_check(ord("T"))){
-            keyboard_clear(ord("T"));
+        if(keyboard_check(ord("E"))){
+            keyboard_clear(ord("E"));
             dialog1 = true;   
         }
     }
 
 
     if(dialog1){
+        obj_boss_obscuro.can_be_transformed = false;
         kid_can_transform = false;
         draw_text_colour(view_xview[0]+500, view_yview[0]+250, "Kid: But I am afraid!# I do not like to be on the dark!",c_white,c_white,c_white,c_white,1);
         draw_text_color(view_xview[0]+500, view_yview[0]+350, "Pet: Think about something funny, something you like!#Do it!!",c_white,c_white,c_white,c_white,1);
         draw_text_color(view_xview[0]+500, view_yview[0]+450, "Kid: I will be brave! I will face my fear of the dark! I know exactly what to do!!",c_white,c_white,c_white,c_white,1);
         draw_text_color(view_xview[0]+500, view_yview[0]+550, "Press E now to end your fear of the Dark",c_white,c_white,c_white,c_white,1);
-        if(keyboard_check(ord("T"))){
-            keyboard_clear(ord("T"));
+        
+        if(keyboard_check(ord("E"))){
+            keyboard_clear(ord("E"));
             chicken = true;
             with(obj_boss_obscuro) instance_change(obj_chicken,1);
             obj_pet.state = states.normal; 
@@ -193,6 +200,7 @@ if (instance_exists(obj_boss_obscuro)){
     }
 }
 if(chicken){
+    can_be_transformed = false;
     dialog1 = false;
     view_object[0] = obj_chicken;
     obj_pet.state = states.chase; 

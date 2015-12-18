@@ -29,8 +29,14 @@ if (instance_exists(torch) &&  keyboard_check(ord("E"))){
     torch.can_light = true;
 }
 
-if(collision_circle(x+10,y,5,obj_transformable_enemy,false,false) && key_space){
-    enemy = collision_circle(x+10,y,5,obj_transformable_enemy,false,false);
+if(collision_circle(x+25,y,5,obj_transformable_enemy,false,false) && key_space){
+    enemy = collision_circle(x+25,y,5,obj_transformable_enemy,false,false);
+    enemy.hp -= 10;
+    mouse_clear(mb_left);
+}
+
+if(collision_circle(x+25,y,25,obj_e,false,false) && key_space){
+    enemy = collision_circle(x+25,y,25,obj_e,false,false);
     enemy.hp -= 10;
     mouse_clear(mb_left);
 }

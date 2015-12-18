@@ -129,7 +129,12 @@ if (place_meeting(x,y+1,obj_box))
     y += yminus;
 }
 
-if(hp == 0) can_be_transformed = true;
+if(hp == 0){
+    state = states.transforming;
+    obj_boss_obscuro.vsp = 0;
+    obj_boss_obscuro.hsp = 0;
+    can_be_transformed = true;
+} 
 
 y += vsp;
 </string>

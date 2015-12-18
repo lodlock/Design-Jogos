@@ -126,10 +126,11 @@ image_speed = 0.2;
 
 if (instance_exists(torch) &amp;&amp; !torch.can_light){
     //torch.depth = -999;
-    //depth = -999;
+    depth = -999;
     draw_set_halign(fa_center);
     draw_text(torch.x,torch.y-42, "Press E to Light Torch");
 }
+else depth = -10;
 
 if(warn_player) draw_text(x,y-42, "Get back to the Kid!!!");
 
