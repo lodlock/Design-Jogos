@@ -54,7 +54,7 @@ if(place_meeting(x,y,obj_player)) {
     global.checkpoint = id;
     global.checkpointx = x;
     global.checkpointy = y;
-    global.checkpointR = room;
+    global.ckeckpointR = room;
 }
 
 if(global.checkpointR == room) {
