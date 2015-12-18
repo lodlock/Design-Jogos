@@ -121,11 +121,6 @@ draw_ellipse_colour(x - size/2 - view_xview,y - size/2 - view_yview,x + size/2 -
 surface_reset_target();
 draw_set_blend_mode(bm_normal);
 }
-if(point_in_circle(obj_player.x,obj_player.y,x,y,200) &amp;&amp; obj_lightning.darkness &amp;&amp; obj_player.hp &lt; 100)
-{
-    obj_player.hp +=0.5;
-}
-else if (!point_in_circle(obj_player.x,obj_player.y,x,y,200) &amp;&amp; obj_lightning.darkness) obj_player.hp -=0.005;
 draw_text(x,y-50,alarm[0]/room_speed);
 </string>
           </argument>

@@ -31,11 +31,11 @@ if(showtext == 1){
     depth = -999;
     draw_set_color(c_black);
     draw_set_halign(fa_center);
-    draw_text(x+1,y-63,"Only the pet# can light torches");
+    draw_text(x+1,y-63,text);
     
     draw_set_color(c_white);
     draw_set_halign(fa_center);
-    draw_text(x,y-64,"Only the pet# can light torches");
+    draw_text(x,y-64,text);
 }
 else depth = 0;
 </string>

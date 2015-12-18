@@ -109,13 +109,9 @@
     </objects>
     <objects name="Signs">
       <object>objects\obj_sign</object>
-      <object>objects\obj_sign6</object>
-      <object>objects\obj_sign2</object>
       <object>objects\obj_sign1</object>
       <object>objects\obj_sign3</object>
-      <object>objects\obj_sign7</object>
-      <object>objects\obj_sign5</object>
-      <object>objects\obj_sign4</object>
+      <object>objects\obj_sign11</object>
     </objects>
     <objects name="Pickups">
       <object>objects\obj_healing_potion</object>
@@ -158,10 +154,6 @@
       <object>objects\obj_menu</object>
     </objects>
     <object>objects\obj_chicken</object>
-    <object>objects\obj_sign8</object>
-    <object>objects\obj_sign9</object>
-    <object>objects\obj_sign10</object>
-    <object>objects\obj_sign11</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_initialize</room>

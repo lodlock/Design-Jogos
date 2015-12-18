@@ -3,7 +3,7 @@
   <spriteName>spr_pet_idle</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -125,8 +125,8 @@ state = states.normal;
 image_speed = 0.2;
 
 if (instance_exists(torch) &amp;&amp; !torch.can_light){
-    torch.depth = -999;
-    depth = -999;
+    //torch.depth = -999;
+    //depth = -999;
     draw_set_halign(fa_center);
     draw_text(torch.x,torch.y-42, "Press E to Light Torch");
 }

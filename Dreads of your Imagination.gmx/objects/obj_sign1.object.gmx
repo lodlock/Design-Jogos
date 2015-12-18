@@ -31,11 +31,11 @@ if(showtext == 1){
     depth = -999;
     draw_set_color(c_black);
     draw_set_halign(fa_left);
-    draw_text(x+1,y-63,"Press A and D# to move left and right");
+    draw_text(x+1,y-63,text);
     
     draw_set_color(c_white);
     draw_set_halign(fa_left);
-    draw_text(x,y-64,"Press A and D# to move left and right");
+    draw_text(x,y-64,text);
 }
 else depth = 0;
 </string>

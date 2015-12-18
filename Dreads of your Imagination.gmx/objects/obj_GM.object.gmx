@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -87,6 +87,18 @@ else {
     if (instance_exists(obj_web_pickup))obj_web_pickup.image_alpha = 1.0;
 }
 
+
+with(obj_player){
+    if(hp &lt; 0 ) scr_death();
+    nearest_torch = instance_nearest(x, y, obj_torch);
+    nearest_lightb = instance_nearest(x, y, obj_fireball);
+    if(obj_lightning.darkness &amp;&amp; nearest_torch.can_light &amp;&amp; distance_to_object(nearest_torch) &lt; 200 &amp;&amp; hp &lt; 100) hp += 0.5;
+    if(obj_lightning.darkness &amp;&amp; distance_to_object(nearest_lightb) &lt; 100 &amp;&amp; hp &lt; 100) hp += 0.5;
+    if(obj_lightning.darkness &amp;&amp; !nearest_torch.can_light) hp -= 0.5;
+    if(obj_lightning.darkness &amp;&amp; nearest_torch.can_light &amp;&amp; distance_to_object(nearest_torch) &gt; 200) hp -= 0.5;
+    if(!obj_lightning.darkness &amp;&amp; obj_lightning.already &amp;&amp; !nearest_torch.can_light &amp;&amp; distance_to_object(nearest_torch) &gt; 0) hp -= 0.5;
+    if(!obj_lightning.darkness &amp;&amp; obj_lightning.already &amp;&amp; distance_to_object(nearest_torch) &lt; 200 &amp;&amp; hp &lt; 100 &amp;&amp; distance_to_object(obj_pet) &lt; 150) hp +=0.5;
+}
 </string>
           </argument>
         </arguments>

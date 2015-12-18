@@ -37,6 +37,9 @@ if(collision_circle(x+10,y,5,obj_transformable_enemy,false,false) && key_space){
 
 if(keyboard_check(ord("F"))){
     keyboard_clear(ord("F"));
+    x      = obj_player.x - player_sprite_width;
+    y      = obj_player.y;
+    pet_dy = 0;
     obj_player.state = states.normal;
     state = states.normal;
 }

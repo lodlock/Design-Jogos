@@ -60,17 +60,15 @@ enum states {
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_pet" x="64" y="328" name="inst_379F1142" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pet" x="68" y="227" name="inst_379F1142" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_GM" x="48" y="16" name="inst_E98556B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inventory" x="80" y="16" name="inst_021E0458" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lightning" x="144" y="16" name="inst_6B2D92C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="688" y="320" name="inst_21F551A3" locked="0" code="can_light = true;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="647" y="264" name="inst_21F551A3" locked="0" code="can_light = true;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="1088" y="320" name="inst_8C4AE808" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="80" y="80" name="inst_DF64AE9C" locked="0" code="" scaleX="5" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="208" y="112" name="inst_DEE8E127" locked="0" code="" scaleX="5" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="336" y="192" name="inst_4659CAF9" locked="0" code="" scaleX="5" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="400" y="128" name="inst_859F9F80" locked="0" code="" scaleX="5" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="528" y="80" name="inst_EE2639F8" locked="0" code="" scaleX="5" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="480" y="160" name="inst_EE2639F8" locked="0" code="" scaleX="2" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="320" y="80" name="inst_F1D47699" locked="0" code="" scaleX="10" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="800" y="448" name="inst_71DB87A9" locked="0" code="" scaleX="50" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="640" y="1320" name="inst_094D141A" locked="0" code="" scaleX="40" scaleY="50" colour="4294967295" rotation="0"/>
@@ -85,7 +83,7 @@ enum states {
     <instance objName="obj_box" x="2800" y="320" name="inst_DC076FF6" locked="0" code="" scaleX="10" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="3328" y="368" name="inst_B3256DF0" locked="0" code="" scaleX="10" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2560" y="864" name="inst_DC526345" locked="0" code="" scaleX="10" scaleY="8" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="400" y="352" name="inst_20A30A5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="384" y="352" name="inst_20A30A5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="4272" y="112" name="inst_27CCB9DE" locked="0" code="" scaleX="50" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="4272" y="112" name="inst_8C551CB5" locked="0" code="" scaleX="50" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="4400" y="1664" name="inst_CD418228" locked="0" code="" scaleX="50" scaleY="50" colour="4294967295" rotation="0"/>
@@ -95,25 +93,24 @@ enum states {
     <instance objName="obj_box" x="6944" y="96" name="inst_2E13142A" locked="0" code="" scaleX="50" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="7536" y="288" name="inst_12AE797C" locked="0" code="" scaleX="50" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="8512" y="96" name="inst_A4FB9358" locked="0" code="" scaleX="50" scaleY="8" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="8848" y="768" name="inst_71E31B06" locked="0" code="" scaleX="7" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="9136" y="960" name="inst_F17762DB" locked="0" code="" scaleX="7" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="8823" y="1162" name="inst_3DAF4692" locked="0" code="" scaleX="7" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="9136" y="1391" name="inst_DCC7D65C" locked="0" code="" scaleX="7" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="8848" y="1648" name="inst_D832708A" locked="0" code="" scaleX="7" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="9136" y="1888" name="inst_F2B4A2A9" locked="0" code="" scaleX="7" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="8867" y="1984" name="inst_038F9950" locked="0" code="" scaleX="5" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="8864" y="768" name="inst_71E31B06" locked="0" code="" scaleX="7" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="9088" y="992" name="inst_F17762DB" locked="0" code="" scaleX="7" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="8864" y="1216" name="inst_3DAF4692" locked="0" code="" scaleX="7" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="9088" y="1440" name="inst_DCC7D65C" locked="0" code="" scaleX="7" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="8864" y="1664" name="inst_D832708A" locked="0" code="" scaleX="7" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="9088" y="1888" name="inst_F2B4A2A9" locked="0" code="" scaleX="7" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="8864" y="2112" name="inst_038F9950" locked="0" code="" scaleX="7" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="7936" y="3184" name="inst_42369A53" locked="0" code="" scaleX="80" scaleY="50" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="8020" y="2047" name="inst_CA58FE80" locked="0" code="" scaleX="50" scaleY="10" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="7968" y="2048" name="inst_CA58FE80" locked="0" code="" scaleX="50" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="7488" y="1488" name="inst_437EBCD8" locked="0" code="" scaleX="80" scaleY="25" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="6800" y="2672" name="inst_DE80B4D0" locked="0" code="" scaleX="50" scaleY="10" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="5200" y="2848" name="inst_00A158A2" locked="0" code="" scaleX="50" scaleY="10" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="5280" y="2848" name="inst_00A158A2" locked="0" code="" scaleX="50" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1824" y="2848" name="inst_8533EF1C" locked="0" code="" scaleX="50" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="784" y="3232" name="inst_6887A24C" locked="0" code="" scaleX="50" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="611" y="2572" name="inst_D8AE0768" locked="0" code="" scaleX="50" scaleY="12" colour="4294967295" rotation="25"/>
     <instance objName="obj_box" x="2656" y="2960" name="inst_7E67D749" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2656" y="2960" name="inst_313A434B" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="4352" y="2960" name="inst_F4462216" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_e2" x="2656" y="2848" name="inst_58D16223" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_e2" x="2656" y="2880" name="inst_58D16223" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="1568" y="320" name="inst_556D65F7" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="1920" y="752" name="inst_5888348F" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="1408" y="752" name="inst_0359420A" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
@@ -131,25 +128,20 @@ enum states {
     <instance objName="obj_box" x="5067" y="759" name="inst_7C822C6D" locked="0" code="" scaleX="5" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="5113" y="735" name="inst_0BE9E334" locked="0" code="" scaleX="5" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="4829" y="917" name="inst_1BEDF267" locked="0" code="" scaleX="5" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="3251" y="747" name="inst_A7B69BE3" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="3369" y="747" name="inst_A7B69BE3" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="3800" y="737" name="inst_567179EB" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="8841" y="641" name="inst_5F7BF0B7" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="8864" y="1024" name="inst_4DFE4FEF" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="8864" y="1088" name="inst_4DFE4FEF" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="9121" y="852" name="inst_D0B23847" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="8862" y="1520" name="inst_802AD50E" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="9134" y="1285" name="inst_553A66FE" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="9085" y="1778" name="inst_2E949974" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="8851" y="1882" name="inst_F697EF14" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign1" x="120" y="352" name="inst_BBA07610" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign2" x="352" y="352" name="inst_BE3D612B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign4" x="752" y="352" name="inst_77DC98AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign5" x="952" y="352" name="inst_A7BDA63D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign6" x="616" y="352" name="inst_B407BABB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign7" x="1536" y="352" name="inst_41981F5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="9088" y="1312" name="inst_553A66FE" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="9088" y="1760" name="inst_2E949974" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="8864" y="1984" name="inst_F697EF14" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign1" x="120" y="352" name="inst_BBA07610" locked="0" code="text = &quot;Press A and D to move left and right.&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_transforming" x="324" y="-355" name="inst_9A17049A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="-72" y="272" name="inst_AD973135" locked="0" code="" scaleX="5" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_musicBox" x="16" y="16" name="inst_7040BB6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="1816" y="640" name="inst_64603B8D" locked="0" code="" scaleX="10" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="1856" y="640" name="inst_64603B8D" locked="0" code="" scaleX="10" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="3840" y="823" name="inst_3ED3338A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="45"/>
     <instance objName="obj_box" x="3862" y="845" name="inst_F5772653" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="45"/>
     <instance objName="obj_box" x="3884" y="867" name="inst_FE2E47EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="45"/>
@@ -192,10 +184,8 @@ enum states {
     <instance objName="obj_torch" x="1349" y="3928" name="inst_EBAE6A16" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="1347" y="3695" name="inst_BA579745" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="1548" y="3545" name="inst_D2DEFCFA" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="1312" y="3041" name="inst_783BAC92" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="805" y="3027" name="inst_06A7A40B" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="1548" y="5694" name="inst_8CD2D924" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="1787" y="5693" name="inst_F1785310" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="1548" y="5690" name="inst_8CD2D924" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="1787" y="5690" name="inst_F1785310" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="2045" y="5695" name="inst_172B6985" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="2291" y="5694" name="inst_4956A1EA" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_e" x="4648" y="815" name="inst_81570C08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -203,58 +193,44 @@ enum states {
     <instance objName="obj_e" x="2528" y="277" name="inst_D6F69692" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fire_enemy" x="7085" y="511" name="inst_EF178FE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fire_enemy" x="8171" y="502" name="inst_874E9E2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_e" x="9080" y="764" name="inst_F095FBE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_e" x="9092" y="1178" name="inst_D6F1C510" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_e" x="9088" y="1648" name="inst_EA7244E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_e" x="9056" y="864" name="inst_F095FBE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_e" x="9152" y="1312" name="inst_D6F1C510" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_e" x="8896" y="1536" name="inst_EA7244E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_transformable_enemy" x="8723" y="2361" name="inst_0EFB47A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_transformable_enemy" x="8260" y="2361" name="inst_6B650C2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_transformable_enemy" x="7536" y="2362" name="inst_7105FCE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_e" x="7925" y="2356" name="inst_417A80C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_e" x="7190" y="2349" name="inst_FCE35FB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_e" x="8530" y="2351" name="inst_8C596675" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="9014" y="2323" name="inst_3645D8B5" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="8687" y="2316" name="inst_135CFA89" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="8320" y="2312" name="inst_7C22F12F" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="7695" y="2306" name="inst_0AB1D862" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="7990" y="2309" name="inst_9FFAEB4F" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_e" x="8530" y="2351" name="inst_8C596675" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="9014" y="2301" name="inst_3645D8B5" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="8687" y="2301" name="inst_135CFA89" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="8320" y="2301" name="inst_7C22F12F" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="7695" y="2301" name="inst_0AB1D862" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="7990" y="2301" name="inst_9FFAEB4F" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="7334" y="2304" name="inst_FE4D2C15" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="6912" y="2301" name="inst_078E6D80" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="7334" y="2304" name="inst_E75C4EFC" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="7334" y="2301" name="inst_E75C4EFC" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2856" y="2846" name="inst_C0557C2C" locked="0" code="" scaleX="10" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="3243" y="2843" name="inst_52531E1C" locked="0" code="" scaleX="10" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="3634" y="2841" name="inst_0A5465AC" locked="0" code="" scaleX="10" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="4031" y="2836" name="inst_85CDFC92" locked="0" code="" scaleX="10" scaleY="10" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="4390" y="2841" name="inst_A602C587" locked="0" code="" scaleX="10" scaleY="10" colour="4294967295" rotation="0"/>
-    <instance objName="obj_e2" x="3052" y="2883" name="inst_52D068FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_e2" x="3438" y="2895" name="inst_1933FC5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_e2" x="3830" y="2902" name="inst_B57011F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="4320" y="2848" name="inst_A602C587" locked="0" code="" scaleX="10" scaleY="10" colour="4294967295" rotation="0"/>
+    <instance objName="obj_e2" x="3040" y="2880" name="inst_52D068FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_e2" x="3424" y="2880" name="inst_1933FC5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_e2" x="3840" y="2880" name="inst_B57011F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="1158" y="2655" name="inst_43983335" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="2009" y="2651" name="inst_248E4EEC" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="1158" y="2655" name="inst_AD2D540A" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="1407" y="2652" name="inst_522E681A" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="1712" y="2652" name="inst_97A77BB3" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="2330" y="2648" name="inst_EC10DF0B" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="4400" y="2641" name="inst_3C14A67E" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="2762" y="2645" name="inst_8BE9EA0B" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="3235" y="2648" name="inst_8292B10F" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="3631" y="2638" name="inst_E9C37850" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="4002" y="2636" name="inst_FC1B9D2A" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="7061" y="2175" name="inst_8E4352F7" locked="0" code="" scaleX="10" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_fireball_pickup" x="6696" y="2367" name="inst_1D74466A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="7115" y="2099" name="inst_BE5E1BC7" locked="0" code="can_light = true;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="5279" y="586" name="inst_1E05EF50" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="5440" y="555" name="inst_3F67968F" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="5759" y="528" name="inst_4975C540" locked="0" code="" scaleX="15" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_web_pickup" x="5405" y="589" name="inst_9223115C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign8" x="2455" y="5737" name="inst_0CB54459" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign9" x="2541" y="5737" name="inst_0F56224B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign10" x="2628" y="5737" name="inst_E2365CBF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sign11" x="2922" y="5738" name="inst_060285B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="2492" y="5700" name="inst_B1734CD6" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="2493" y="5698" name="inst_B1734CD6" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="2690" y="5698" name="inst_15497D39" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="1676" y="537" name="inst_45F85DA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign3" x="457" y="352" name="inst_F979437E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="443" y="201" name="inst_B774E1DA" locked="0" code="" scaleX="2" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="4406" y="782" name="inst_F00909A1" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="4735" y="780" name="inst_A7E17217" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="4069" y="777" name="inst_116A356C" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
@@ -271,11 +247,47 @@ enum states {
     <instance objName="obj_torch" x="7744" y="499" name="inst_72373378" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="8592" y="497" name="inst_34CF630A" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_fireball_pickup" x="6696" y="2367" name="inst_A1C42E5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="1810" y="523" name="inst_80BCABCA" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="4297" y="2836" name="inst_4CB781E4" locked="0" code="" scaleX="10" scaleY="10" colour="4294967295" rotation="0"/>
-    <instance objName="obj_checkpoint" x="1898" y="479" name="inst_A4AF64B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_checkpoint" x="2132" y="752" name="inst_FECBE1F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_checkpoint" x="2130" y="703" name="inst_C594A44B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="1856" y="512" name="inst_80BCABCA" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="1504" y="320" name="inst_FECBE1F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="113" y="319" name="inst_F1230B79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="3765" y="752" name="inst_4B3B8792" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="6321" y="545" name="inst_6F09257B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="6260" y="511" name="inst_E3145392" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="8919" y="639" name="inst_1AA82D98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="9115" y="2334" name="inst_44831206" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="6068" y="2463" name="inst_269EBECC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="6611" y="2478" name="inst_B7157BEF" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="3927" y="2626" name="inst_D1314A6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="2368" y="5703" name="inst_41271957" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign3" x="480" y="352" name="inst_87F45212" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="6969" y="2368" name="inst_D3C69C7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="6029" y="2478" name="inst_3358A69A" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="6317" y="2478" name="inst_640E8500" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign1" x="5945" y="2671" name="inst_8EEB6162" locked="0" code="text = &quot;Remember your Lightball heals#you and goes the same way you do!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="5976" y="2643" name="inst_66F93CAA" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign1" x="4078" y="2660" name="inst_471F3F2B" locked="0" code="text = &quot;Your webs can stop enemies&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="1077" y="2641" name="inst_1F62E9D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="1347" y="5690" name="inst_2D8D96B1" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign1" x="326" y="352" name="inst_1AEF7C86" locked="0" code="text = &quot;Press W to Jump!&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="416" y="320" name="inst_B6E5EEF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="416" y="352" name="inst_5A80747F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="557" y="65" name="inst_ABAB408B" locked="0" code="" scaleX="5" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign1" x="746" y="352" name="inst_027644CA" locked="0" code="text = &quot;Only your pet can light torches.#To controll him press F.#He can also see in the dark&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign1" x="646" y="352" name="inst_1334C96C" locked="0" code="text = &quot;The kid has to stay in light#Otherwise fear will consume him#And you will loose the game!#Check your courage bar on the left upper corner#&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign1" x="1041" y="353" name="inst_DC9878CB" locked="0" code="text = &quot;Use the pet now to light the torches ahead#So the kid can move on!#But don't go too far#The kid will be scared if you do!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign1" x="1440" y="352" name="inst_287C574C" locked="0" code="text = &quot;This is a checkpoint, only the#kid can activate them!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign1" x="1709" y="560" name="inst_63AD5FDC" locked="0" code="text = &quot;Carefull with the spider. Your kid is too#afraid of enemies.Don't let them touch the kid#Otherwise you loose!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign1" x="1857" y="560" name="inst_D3A8A626" locked="0" code="text = &quot;However if you use your pet you can attack# them with spacebar while near them.#But know this your kid will be scared if the#enemies hurt your pet so try to be carefull#Get back to your kid if he needs to regain courage!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign1" x="1999" y="561" name="inst_78629177" locked="0" code="text = &quot;This type of enemies with a circle arround #can be transformed. When their health#is low you can transform them.# Try now!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign1" x="2429" y="720" name="inst_3AA1B55D" locked="0" code="text = &quot;If you transformed the spider you have an item#in your inventory,#press the number 1,2,3 or 4 to#equip the kid with the respective item!&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_e" x="8928" y="1984" name="inst_FEBF8EA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_e" x="9152" y="1760" name="inst_A98F8A71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign1" x="2569" y="720" name="inst_67F339D5" locked="0" code="text = &quot;Press spacebar to use the item#If it is a bow use your mouse!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="2779" y="752" name="inst_FC10CD86" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="3104" y="2368" name="inst_F4BFBE7B" locked="0" code="" scaleX="50" scaleY="10" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="3136" y="3072" name="inst_39E5D941" locked="0" code="" scaleX="50" scaleY="10" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="1440" y="3552" name="inst_289C7B88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fireball_pickup" x="702" y="346" name="inst_5533C036" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
