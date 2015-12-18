@@ -161,7 +161,7 @@ enum states {
     <instance objName="obj_boss_torch" x="3636" y="5579" name="inst_98953F9F" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_boss_torch" x="3325" y="5508" name="inst_3ED297B7" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_boss_torch" x="3112" y="5418" name="inst_395719BF" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boss_torch" x="3623" y="5307" name="inst_297280CE" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_boss_torch" x="3689" y="5328" name="inst_297280CE" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_boss_torch" x="2872" y="5502" name="inst_33834D98" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_boss_torch" x="3377" y="5385" name="inst_5D4DBE29" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_boss_torch" x="3814" y="5576" name="inst_29EB02CE" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
@@ -292,8 +292,9 @@ enum states {
     <instance objName="obj_sign1" x="2701" y="722" name="inst_5AA2264D" locked="0" code="text = &quot;If you need to go back to a checkpoint#Press R!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="8416" y="544" name="inst_B037852C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sign1" x="1926" y="5735" name="inst_2D913630" locked="0" code="text = &quot;You can feel a strong darkness nearby...&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign1" x="2643" y="5736" name="inst_F41CDD0C" locked="0" code="text = &quot;Light all the torches in the room# to defeat Obscuro&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="108" y="300" name="inst_5FBBE471" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign1" x="2643" y="5737" name="inst_F41CDD0C" locked="0" code="text = &quot;Light all the torches in the room# to defeat Obscuro#He is very strong, even your pet#won't see in the dark!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign1" x="2411" y="5734" name="inst_27542CA5" locked="0" code="text = &quot;Leave your kid here before facing Obscuro&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="107" y="294" name="inst_7440B011" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -35,6 +35,8 @@ hsp_dir = 1;
 vsp = 0;
 jumpspeed = 5;
 movespeed = 2;
+x = 3320;
+y = 5320;
 </string>
           </argument>
         </arguments>
