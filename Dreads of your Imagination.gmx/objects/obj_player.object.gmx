@@ -65,6 +65,11 @@ bow_rdy = false;
 fireball_rdy = false;
 web_rdy = false;
 
+if(global.checkpointR == room) {
+    x = global.checkpointx;
+    y = global.checkpointy;
+}
+
 //SEE THIS LATER
 lenx = 28;
 leny = 1;

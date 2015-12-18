@@ -98,7 +98,7 @@ if ((place_meeting(x,y, obj_transformable_enemy)  || place_meeting(x,y, obj_e)) 
     hp -= 0.5;
 }
 
-if (hp < 0) room_restart();
+if (hp < 0) scr_death();
 
 if instance_exists(rope){
     if point_distance(x, y, rope.x, rope.y) > 5

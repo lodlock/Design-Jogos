@@ -45,6 +45,7 @@
     <sprite>sprites\spr_healthbar_inner</sprite>
     <sprite>sprites\spr_healthbar_bg</sprite>
     <sprite>sprites\spr_selection_arrow</sprite>
+    <sprite>sprites\spr_checkpoint</sprite>
     <sprites name="Obscuro">
       <sprite>sprites\spr_obscuro_walk_and_iddle</sprite>
       <sprite>sprites\spr_obscuro_attack</sprite>
@@ -74,6 +75,7 @@
       <script>scripts\scr_player_normal.gml</script>
       <script>scripts\scr_iddle.gml</script>
       <script>scripts\scr_ledge_grab.gml</script>
+      <script>scripts\scr_death.gml</script>
     </scripts>
     <scripts name="Pet Scripts">
       <script>scripts\scr_pet_collisions.gml</script>
@@ -130,6 +132,7 @@
       <object>objects\obj_menu_transforming</object>
       <object>objects\obj_text</object>
       <object>objects\obj_lightning</object>
+      <object>objects\obj_checkpoint</object>
     </objects>
     <objects name="Enemies">
       <object>objects\obj_e</object>
@@ -161,6 +164,7 @@
     <object>objects\obj_sign11</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_initialize</room>
     <room>rooms\room0</room>
     <room>rooms\Start_menu</room>
   </rooms>

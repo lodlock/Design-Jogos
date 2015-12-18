@@ -252,7 +252,7 @@ enum states {
     <instance objName="obj_sign11" x="2922" y="5738" name="inst_060285B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="2492" y="5700" name="inst_B1734CD6" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="2690" y="5698" name="inst_15497D39" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="203" y="331" name="inst_45F85DA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="1676" y="537" name="inst_45F85DA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sign3" x="457" y="352" name="inst_F979437E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="443" y="201" name="inst_B774E1DA" locked="0" code="" scaleX="2" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="4406" y="782" name="inst_F00909A1" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
@@ -273,6 +273,9 @@ enum states {
     <instance objName="obj_fireball_pickup" x="6696" y="2367" name="inst_A1C42E5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="1810" y="523" name="inst_80BCABCA" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="4297" y="2836" name="inst_4CB781E4" locked="0" code="" scaleX="10" scaleY="10" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="1898" y="479" name="inst_A4AF64B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="2132" y="752" name="inst_FECBE1F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="2130" y="703" name="inst_C594A44B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
