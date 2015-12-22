@@ -104,7 +104,7 @@ if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy
     
     if(keyboard_check(vk_enter) || keyboard_check_pressed(ord("E")) &amp;&amp; obj_pet.state = states.transforming){
         switch(item){
-            case 0: with(obj_pet.enemy) instance_change(obj_fireball_pickup,1);
+            case 0: with(obj_pet.enemy) instance_change(obj_lightball_pickup,1);
                     keyboard_clear(ord("E"));
                     obj_pet.state = states.petcontroll;
                     obj_player.state = states.petcontroll;

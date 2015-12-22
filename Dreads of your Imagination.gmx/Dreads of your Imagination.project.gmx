@@ -10,56 +10,68 @@
     <sound>sound\snd_level</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_arrow</sprite>
-    <sprite>sprites\spr_bow</sprite>
-    <sprite>sprites\spr_box</sprite>
-    <sprite>sprites\spr_crate</sprite>
-    <sprite>sprites\spr_placeCrate</sprite>
-    <sprite>sprites\spr_e2</sprite>
-    <sprite>sprites\spr_enemy</sprite>
-    <sprite>sprites\spr_spider</sprite>
-    <sprite>sprites\spr_inventory_box_mask</sprite>
-    <sprite>sprites\spr_pet</sprite>
-    <sprite>sprites\spr_pet_idle</sprite>
-    <sprite>sprites\spr_placeHolder</sprite>
-    <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_player_sword</sprite>
-    <sprite>sprites\spr_player_bow</sprite>
-    <sprite>sprites\spr_sword</sprite>
-    <sprite>sprites\spr_torch_light</sprite>
-    <sprite>sprites\spr_torch</sprite>
-    <sprite>sprites\spr_box1</sprite>
-    <sprite>sprites\spr_sign</sprite>
-    <sprite>sprites\spr_bat</sprite>
-    <sprite>sprites\spr_bat_fly</sprite>
-    <sprite>sprites\spr_cursor</sprite>
-    <sprite>sprites\spr_chain</sprite>
-    <sprite>sprites\spr_cant_transform</sprite>
-    <sprite>sprites\spr_can_transform</sprite>
-    <sprite>sprites\spr_fire_enemy</sprite>
-    <sprite>sprites\spr_fire_enemy_transform</sprite>
-    <sprite>sprites\spr_healing_potion</sprite>
-    <sprite>sprites\spr_fireball_fire</sprite>
-    <sprite>sprites\spr_fireball_pickup</sprite>
-    <sprite>sprites\spr_web_pickup</sprite>
-    <sprite>sprites\spr_web</sprite>
-    <sprite>sprites\spr_healthbar_border</sprite>
-    <sprite>sprites\spr_healthbar_inner</sprite>
-    <sprite>sprites\spr_healthbar_bg</sprite>
-    <sprite>sprites\spr_selection_arrow</sprite>
-    <sprite>sprites\spr_checkpoint</sprite>
     <sprites name="Obscuro">
       <sprite>sprites\spr_obscuro_walk_and_iddle</sprite>
       <sprite>sprites\spr_obscuro_attack</sprite>
       <sprite>sprites\spr_obscuro_appear_dissapear</sprite>
       <sprite>sprites\spr_chicken_obscuro</sprite>
     </sprites>
+    <sprites name="Player">
+      <sprite>sprites\spr_player_bow</sprite>
+      <sprite>sprites\spr_player_sword</sprite>
+      <sprite>sprites\spr_player</sprite>
+    </sprites>
+    <sprites name="Tiles">
+      <sprite>sprites\spr_torch</sprite>
+      <sprite>sprites\spr_torch_light</sprite>
+      <sprite>sprites\spr_crate</sprite>
+      <sprite>sprites\spr_box</sprite>
+      <sprite>sprites\spr_placeCrate</sprite>
+      <sprite>sprites\spr_box1</sprite>
+      <sprite>sprites\spr_chain</sprite>
+    </sprites>
+    <sprites name="Objects">
+      <sprite>sprites\spr_checkpoint</sprite>
+      <sprite>sprites\spr_web_pickup</sprite>
+      <sprite>sprites\spr_fireball_pickup</sprite>
+      <sprite>sprites\spr_healing_potion</sprite>
+      <sprite>sprites\spr_sign</sprite>
+    </sprites>
+    <sprites name="HUD">
+      <sprite>sprites\spr_healthbar_inner</sprite>
+      <sprite>sprites\spr_healthbar_border</sprite>
+      <sprite>sprites\spr_healthbar_bg</sprite>
+      <sprite>sprites\spr_selection_arrow</sprite>
+      <sprite>sprites\spr_can_transform</sprite>
+      <sprite>sprites\spr_cant_transform</sprite>
+      <sprite>sprites\spr_cursor</sprite>
+    </sprites>
+    <sprites name="Enemies">
+      <sprite>sprites\spr_e2</sprite>
+      <sprite>sprites\spr_bat</sprite>
+      <sprite>sprites\spr_bat_fly</sprite>
+      <sprite>sprites\spr_pet_idle</sprite>
+      <sprite>sprites\spr_pet</sprite>
+      <sprite>sprites\spr_spider</sprite>
+      <sprite>sprites\spr_fire_enemy</sprite>
+    </sprites>
+    <sprites name="Ammo">
+      <sprite>sprites\spr_arrow</sprite>
+      <sprite>sprites\spr_fireball_fire</sprite>
+      <sprite>sprites\spr_web</sprite>
+    </sprites>
+    <sprites name="Transforms">
+      <sprite>sprites\spr_fire_enemy_transform</sprite>
+      <sprite>sprites\spr_enemy</sprite>
+    </sprites>
+    <sprites name="Weapons">
+      <sprite>sprites\spr_bow</sprite>
+      <sprite>sprites\spr_sword</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_fireball_mov.gml</script>
-    <script>scripts\scr_web_mov.gml</script>
     <script>scripts\ItemPickup.gml</script>
     <script>scripts\scr_text.gml</script>
     <script>scripts\scr_get_input.gml</script>
@@ -99,6 +111,8 @@
       <script>scripts\scr_move_up.gml</script>
       <script>scripts\scr_move_left.gml</script>
       <script>scripts\scr_move_right.gml</script>
+      <script>scripts\scr_web_mov.gml</script>
+      <script>scripts\scr_fireball_mov.gml</script>
     </scripts>
     <script>scripts\scr_chicken.gml</script>
   </scripts>
@@ -112,9 +126,9 @@
     </objects>
     <objects name="Signs">
       <object>objects\obj_sign</object>
-      <object>objects\obj_sign1</object>
-      <object>objects\obj_sign3</object>
-      <object>objects\obj_sign11</object>
+      <object>objects\obj_universal_sign</object>
+      <object>objects\obj_sign_trigger_darkness</object>
+      <object>objects\obj_sign_trigger_boss</object>
     </objects>
     <objects name="Pickups">
       <object>objects\obj_healing_potion</object>
@@ -122,7 +136,7 @@
       <object>objects\obj_sword</object>
       <object>objects\obj_placeCrate</object>
       <object>objects\obj_web_pickup</object>
-      <object>objects\obj_fireball_pickup</object>
+      <object>objects\obj_lightball_pickup</object>
     </objects>
     <objects name="GameManagers">
       <object>objects\obj_musicBox</object>
