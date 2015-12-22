@@ -22,9 +22,8 @@ else warn_player = false;
 
 torch = collision_circle(x, y, 50, obj_torch, 0, 1);
 
-//scr_pet_collisions();
 
-if (instance_exists(torch) &&  keyboard_check(ord("E"))){
+if (instance_exists(torch) &&  key_e){
     keyboard_clear(ord("E"));
     torch.can_light = true;
 }
@@ -41,7 +40,7 @@ if(collision_circle(x+25,y,25,obj_e,false,false) && key_space){
     mouse_clear(mb_left);
 }
 
-if(keyboard_check(ord("F"))){
+if(key_ff){
     keyboard_clear(ord("F"));
     x      = obj_player.x - player_sprite_width;
     y      = obj_player.y;

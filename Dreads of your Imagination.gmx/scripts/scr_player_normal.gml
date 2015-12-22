@@ -35,6 +35,7 @@ if(instance_exists(obj_pet)){
     if(key_f){
         keyboard_clear(ord("F"));
         obj_pet.state = states.petcontroll;
+        state = states.petcontroll;
     }
     //Change player state if pet is being controlled
     if(obj_pet.state = states.petcontroll){

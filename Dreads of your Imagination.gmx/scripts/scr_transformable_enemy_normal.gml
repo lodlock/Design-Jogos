@@ -2,7 +2,7 @@ script_execute(right_or_left);
 
 if(hp < 25){
     ask_transform = true;
-    if(keyboard_check(ord("E"))){
+    if(keyboard_check(ord("E")) || gamepad_button_check_pressed(0,gp_face2)){
         keyboard_clear(ord("E"));
         obj_pet.state = states.transforming;
     }

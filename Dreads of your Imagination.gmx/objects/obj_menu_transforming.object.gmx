@@ -71,7 +71,7 @@ menu_height = 50;
         item += image_number;
     }
     
-    if(keyboard_check(vk_enter) || keyboard_check_pressed(ord("E")) &amp;&amp; obj_pet.state = states.transforming){
+    if(keyboard_check(vk_enter) || keyboard_check(ord("E")) || gamepad_button_check_pressed(0,gp_face2) &amp;&amp; obj_pet.state = states.transforming){
         switch(item){
             case 0: with(obj_pet.enemy) instance_change(obj_web_pickup,1);
                     keyboard_clear(ord("E"));
@@ -102,7 +102,7 @@ if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy
         item += image_number;
     }
     
-    if(keyboard_check(vk_enter) || keyboard_check_pressed(ord("E")) &amp;&amp; obj_pet.state = states.transforming){
+    if(keyboard_check(vk_enter) || keyboard_check(ord("E")) || gamepad_button_check_pressed(0,gp_face2) &amp;&amp; obj_pet.state = states.transforming){
         switch(item){
             case 0: with(obj_pet.enemy) instance_change(obj_lightball_pickup,1);
                     keyboard_clear(ord("E"));
