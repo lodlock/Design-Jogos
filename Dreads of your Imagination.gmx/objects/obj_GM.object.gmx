@@ -91,7 +91,12 @@ else {
 
 if(keyboard_check(ord("L"))){
     keyboard_clear(ord("L"));
-    scr_death();
+    if(global.checkpoint != 0) {
+    room_goto(global.checkpointR);
+    }
+    else {
+        room_restart();
+    }
 }
 
 with(obj_player){

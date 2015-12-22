@@ -20,6 +20,10 @@
       <sprite>sprites\spr_player_bow</sprite>
       <sprite>sprites\spr_player_sword</sprite>
       <sprite>sprites\spr_player</sprite>
+      <sprite>sprites\spr_pet_idle</sprite>
+      <sprite>sprites\spr_pet_move</sprite>
+      <sprite>sprites\spr_pet_attack</sprite>
+      <sprite>sprites\spr_attack_detection</sprite>
     </sprites>
     <sprites name="Tiles">
       <sprite>sprites\spr_torch</sprite>
@@ -50,8 +54,6 @@
       <sprite>sprites\spr_e2</sprite>
       <sprite>sprites\spr_bat</sprite>
       <sprite>sprites\spr_bat_fly</sprite>
-      <sprite>sprites\spr_pet_idle</sprite>
-      <sprite>sprites\spr_pet</sprite>
       <sprite>sprites\spr_spider</sprite>
       <sprite>sprites\spr_fire_enemy</sprite>
     </sprites>
@@ -123,6 +125,7 @@
     <objects name="Player">
       <object>objects\obj_player</object>
       <object>objects\obj_pet</object>
+      <object>objects\obj_dog_attack</object>
     </objects>
     <objects name="Signs">
       <object>objects\obj_sign</object>
@@ -173,9 +176,9 @@
     <object>objects\obj_chicken</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Start_menu</room>
     <room>rooms\rm_initialize</room>
     <room>rooms\room0</room>
+    <room>rooms\Start_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

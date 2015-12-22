@@ -3,8 +3,7 @@ scr_get_input();
 //React to inputs
 move = key_left + key_right;
 if(move == 1) facing = 1; else if (move == -1) facing = -1;
-if (move == 0) sprite_index = spr_pet_idle;
-else sprite_index = spr_pet_idle;
+
 hsp = move * movespeed;
 if (vsp < 10) vsp += grav;
 
@@ -28,17 +27,44 @@ if (instance_exists(torch) &&  key_e){
     torch.can_light = true;
 }
 
-if(collision_circle(x+25,y,5,obj_transformable_enemy,false,false) && key_space){
-    enemy = collision_circle(x+25,y,5,obj_transformable_enemy,false,false);
-    enemy.hp -= 10;
-    mouse_clear(mb_left);
+if(key_space){
+   attack = true;
+   with(instance_create(x,y,obj_dog_attack)){
+        image_xscale = obj_pet.image_xscale;
+   }
 }
 
-if(collision_circle(x+25,y,25,obj_e,false,false) && key_space){
+if(attack){
+    sprite_index = spr_pet_attack;
+    if(image_index > 4){
+     attack = false;
+     
+     sprite_index = spr_pet_idle;
+    }
+
+}
+else if (move == 0 && !attack){ 
+    sprite_index = spr_pet_idle;
+    if(image_index > 3)
+        image_index = 3;
+}
+else if (move != 0 && !attack){
+    image_speed = 1;
+    if(image_index > 6){
+        sprite_index = spr_pet_move;
+        image_speed = 0.2;
+        }
+}
+
+/*if(collision_circle(x+25,y,5,obj_transformable_enemy,false,false) && key_space){
+    enemy = collision_circle(x+25,y,5,obj_transformable_enemy,false,false);
+    enemy.hp -= 10;
+}
+else if(collision_circle(x+25,y,25,obj_e,false,false) && key_space){
     enemy = collision_circle(x+25,y,25,obj_e,false,false);
     enemy.hp -= 10;
-    mouse_clear(mb_left);
-}
+}*/
+
 
 if(key_ff){
     keyboard_clear(ord("F"));
