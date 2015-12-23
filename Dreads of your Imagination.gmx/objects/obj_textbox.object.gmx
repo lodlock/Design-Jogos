@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -44,7 +44,7 @@ last_space = 0;
 line = 0;
 
 //Set the message
-msg = "I need this message to be quite long because I'm demonstrating the art of textbox. Did you know that 70% of the planet Earth is made of water? I hope thos message was usefull, once again this is only an example. And now just giberish oieyargfuyeadbr gkjusdrbfvkyjusdrgck yjgukfywbiyufgcyeug ckjdrfvg iuer5fv aeuc fgvgusev ygxsuae y4vyuja vgkjyeu vcekuyr vav gcreauk4tg cauoyvrgauikaygeryuaeav giuydervgukdrvg uayervgauyevgakjydarvg cakyuerv gcukyervg uaevgruayerg uayer cgkjyerv kuyse vgcusergv cyukgdvgrcsukeyv gcjuyev gcuekv ckujerv cgyuservg yucsv eryuv seruygv yukvhdzkjhvchgj vjcgryev";
+msg = "I need this message to be quite long because I'm demonstrating the art of textbox. Did you know that 70% of the planet Earth is made of water? I hope thos message was usefull, once again this is only an example. And now just giberish oieyargfuyeadbr gkjusdrbfvkyjusdrgck yjgukfywbiyufgcyeug ckjdrfvg iuer5fv aeuc fgvgusev ygxsuae y4vyuja vgkjyeu vcekuyr vav gcreauk4tg cauoyvrgauikaygeryuaeav giuydervgukdrvg uayervgauyevgakjydarvg cakyuerv gcukyervg uaevgruayerg uayer cgkjyerv kuyse vgcusergv cyukgdvgrcsukeyv gcjuyev gcuekv ckujerv cgyuservg yucsv eryuv seruygv yukvhdzkjhvchgj vjcgryev eriyge aorfaryufgaeu yaeuryf aeouiyf geasouygrfsuiyfbvfdjkbf b reyrs vofyus vfyur evurev gfusev guweyovguyidfvgusytgv rsygyusvg usroyvg suoy gvsou gvrtsu yfvcjyrgv skurtgvyuosv guysvtguyosv gisuyvg uysv guywv guowy vuyasvfuoyae vkjfhs vdjf wgfsuyw vuyerv uyiesvf yuse vjshdv jfgwejrvg jwke gvieuawrf vguiyewrg vkjhdv jhksv es evuifyverukyfsdv kjd vfjxzh vdkusyer guyea uiyrq vufyie varfyuae vfuyrev ffjvdjeauy rguyqegv ruiqyf rgvuiyqve fgvsgdvougye 4oip  piuwqe rvoyigwq veogv we irugeg werupig boierv gwerv hqoivgqovgfdshakjashdvgasdh kjtoryqeqrgv ylgqfevhdljvg aouiyvagov yig iwq qgiwrqgy ighqjv hqjgv qgv  qgrvqgvyqvyeveqggvhljfagvahj  hjgvag vfyuwyo uwrgvh alsjgvahj sav hg uovfyyou wvov gavhagvio  oyvfgw oyviulbkogyivf a oyivga oyviasgdv uf ouygso uvo ff oyu oygvasavdogyf t ogvasd ogaff780b w vsigd fwggvayuiw aogvi";
 str = "";
 </string>
           </argument>
