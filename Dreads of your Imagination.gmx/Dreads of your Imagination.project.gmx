@@ -70,6 +70,9 @@
       <sprite>sprites\spr_bow</sprite>
       <sprite>sprites\spr_sword</sprite>
     </sprites>
+    <sprites name="Textboxes">
+      <sprite>sprites\textbox_1</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
