@@ -6,7 +6,8 @@ if(key_dialogue) {
         obj_dialogue.line++;
     }
     
-    if(obj_dialogue.line == array_length_1d(obj_dialogue.text)) {
+    else {
+        obj_dialogue.hasTalked = true;
         obj_player.state = states.normal;
     }
 }
