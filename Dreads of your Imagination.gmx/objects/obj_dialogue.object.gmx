@@ -88,9 +88,10 @@ if(!hasTalked) {
 
 if(obj_player.state == states.talking) {
     draw_set_colour(c_white);
-    draw_rectangle(0, view_hview - 128, view_wview, view_hview, false);
+    //draw_rectangle(0, view_hview - 128, view_wview, view_hview, false);
+    draw_sprite(textbox_1, 0, 0, view_hview - 170);
     draw_set_colour(c_black);
-    draw_text(padding, view_hview - 128 + padding, string_copy(text[line], 1, end_of_line));
+    draw_text(40 + padding, view_hview - 128 + padding, string_copy(text[line], 1, end_of_line));
     if(end_of_line &lt;= string_length(text[line])) {
         end_of_line++;
     }

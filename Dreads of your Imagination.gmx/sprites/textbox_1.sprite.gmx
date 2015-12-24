@@ -7,18 +7,18 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>4</bbox_left>
-  <bbox_right>253</bbox_right>
-  <bbox_top>4</bbox_top>
-  <bbox_bottom>47</bbox_bottom>
+  <bbox_left>9</bbox_left>
+  <bbox_right>883</bbox_right>
+  <bbox_top>9</bbox_top>
+  <bbox_bottom>170</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>260</width>
-  <height>55</height>
+  <width>900</width>
+  <height>191</height>
   <frames>
     <frame index="0">images\textbox_1_0.png</frame>
   </frames>
