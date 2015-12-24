@@ -96,6 +96,7 @@
       <script>scripts\scr_iddle.gml</script>
       <script>scripts\scr_ledge_grab.gml</script>
       <script>scripts\scr_death.gml</script>
+      <script>scripts\scr_player_talking.gml</script>
     </scripts>
     <scripts name="Pet Scripts">
       <script>scripts\scr_pet_collisions.gml</script>
@@ -154,6 +155,7 @@
       <object>objects\obj_lightning</object>
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_textbox</object>
+      <object>objects\obj_dialogue</object>
     </objects>
     <objects name="Enemies">
       <object>objects\obj_e</object>

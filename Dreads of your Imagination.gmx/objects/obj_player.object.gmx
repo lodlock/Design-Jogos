@@ -105,6 +105,7 @@ pointy = mouse_y;
     case states.transforming: scr_player_transforming(); break;
     case states.petcontroll: scr_iddle(); break;  
     case states.grab_ledge: scr_ledge_grab(); break;
+    case states.talking: scr_player_talking(); break;
 }
 </string>
           </argument>
