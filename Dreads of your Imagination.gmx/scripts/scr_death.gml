@@ -1,4 +1,4 @@
-if(global.checkpoint != 0) {
+if(global.checkpointR != 0) {
     room_goto(global.checkpointR);
 }
 else {
