@@ -30,7 +30,7 @@ if (instance_exists(torch) &&  key_e){
 if(key_space){
    attack = true;
    with(instance_create(x,y,obj_dog_attack)){
-        image_xscale = obj_pet.image_xscale;
+        image_xscale = obj_pet.image_xscale * obj_pet.facing;
    }
 }
 

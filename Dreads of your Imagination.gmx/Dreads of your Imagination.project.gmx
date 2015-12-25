@@ -24,6 +24,7 @@
       <sprite>sprites\spr_pet_move</sprite>
       <sprite>sprites\spr_pet_attack</sprite>
       <sprite>sprites\spr_attack_detection</sprite>
+      <sprite>sprites\sprite43</sprite>
     </sprites>
     <sprites name="Tiles">
       <sprite>sprites\spr_torch</sprite>

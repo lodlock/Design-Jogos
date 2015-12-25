@@ -297,6 +297,7 @@ enum states {
     <instance objName="obj_universal_sign" x="2411" y="5734" name="inst_27542CA5" locked="0" code="text = &quot;Leave your kid here before facing Obscuro&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dialogue" x="252" y="317" name="inst_7A774B0C" locked="0" code="text[0] = &quot;The cake is a lie&quot;;&#xA;text[1] = &quot;Beware, of GLADDOS! If you see her, RUN!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="185" y="329" name="inst_1CD46260" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_transformable_enemy" x="838" y="357" name="inst_04130F15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
