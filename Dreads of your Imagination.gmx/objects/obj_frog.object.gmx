@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>obj_transformable_enemy</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -41,8 +41,6 @@
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -59,8 +57,60 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>path_endaction = 1;
-show_debug_message("ALO");
+            <string>facing = 0;
+state = states.normal;
+hp = 100;
+ask_transform = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(hp &lt; 25){
+    ask_transform = true;
+    if(keyboard_check(ord("E")) || gamepad_button_check_pressed(0,gp_face2)){
+        keyboard_clear(ord("E"));
+        obj_pet.state = states.transforming;
+        path_end();
+    }
+    
+} 
+if (obj_pet.state == states.transforming) {
+    state = states.transforming;
+}
+
+if(hp &lt; 0) instance_destroy();
+
+if (place_meeting(x,y, obj_arrow)){
+    with(obj_arrow)
+        instance_destroy();
+    obj_player.can_shoot = true;
+}
+
+if (place_meeting(x,y, obj_pet)){
+    with(obj_player) hp -= 0.2;
+}
+
+if (place_meeting(x,y, obj_player)){
+    with(obj_player) hp -= 0.1;
+}
 </string>
           </argument>
         </arguments>
@@ -83,17 +133,25 @@ show_debug_message("ALO");
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
-image_speed = 0.1;
-show_debug_message(path_position);
-if(path_position &gt; 0 &amp;&amp; path_position &lt; 0.4)
-    image_index = 1;
-if(path_position &gt; 0.5 &amp;&amp; path_position &lt; 0.9)
-    image_index = 1;
-else
+            <string>if(path_position &gt; 0 &amp;&amp; path_position &lt; 0.1)
+    image_xscale = 1;
+if(path_position &lt; 1 &amp;&amp; path_position &gt; 0.9)
+    image_xscale = -1;
+if(path_position &gt; 0 &amp;&amp; path_position &lt; 0.05)
     image_index = 0;
+else if(path_position &gt; 0.45 &amp;&amp; path_position &lt; 0.55)
+    image_index = 0;
+else if(path_position &gt; 0.95 &amp;&amp; path_position &lt; 1)
+    image_index = 0;
+else
+    image_index = 1;
 
-    
+show_debug_message(path_orientation);
+draw_self();
+image_speed = 0.2;
+draw_healthbar(x-25,y-35,x+25,y-40,hp,c_black,c_red,c_green,0,true,false);
+draw_circle_colour(x,y,50,c_green,c_green,2);
+if(ask_transform) draw_text(x,y-50,"Press E now to transform!!");
 </string>
           </argument>
         </arguments>

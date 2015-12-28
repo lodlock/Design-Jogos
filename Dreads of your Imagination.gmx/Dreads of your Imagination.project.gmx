@@ -8,6 +8,8 @@
     <sound>sound\snd_boss</sound>
     <sound>sound\snd_win</sound>
     <sound>sound\snd_level</sound>
+    <sound>sound\snd_lvl2</sound>
+    <sound>sound\snd_lostHaze</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Obscuro">
@@ -73,6 +75,7 @@
     <sprites name="Transforms">
       <sprite>sprites\spr_fire_enemy_transform</sprite>
       <sprite>sprites\spr_enemy</sprite>
+      <sprite>sprites\spr_frog</sprite>
     </sprites>
     <sprites name="Weapons">
       <sprite>sprites\spr_bow</sprite>
@@ -159,6 +162,7 @@
       <object>objects\obj_placeCrate</object>
       <object>objects\obj_web_pickup</object>
       <object>objects\obj_lightball_pickup</object>
+      <object>objects\obj_frog_jump</object>
     </objects>
     <objects name="GameManagers">
       <object>objects\obj_musicBox</object>

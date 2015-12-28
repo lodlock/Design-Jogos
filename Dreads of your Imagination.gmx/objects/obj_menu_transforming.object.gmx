@@ -112,6 +112,32 @@ if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy
         }
     }
 }
+
+if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_alien2){
+    if (keyboard_check_pressed(ord("D"))){
+        selected += 1;
+    }else if (keyboard_check_pressed(ord("A"))){
+        selected -= 1;
+    }
+    
+    rot -= scr_angle_difference(rot, selected * (360/image_number))/(0.2*room_speed);
+    
+    item = -selected mod image_number;
+    
+    if(item &lt; 0){
+        item += image_number;
+    }
+    
+    if(keyboard_check(vk_enter) || keyboard_check(ord("E")) || gamepad_button_check_pressed(0,gp_face2) &amp;&amp; obj_pet.state = states.transforming){
+        switch(item){
+            case 0: with(obj_pet.enemy) instance_change(obj_frog_jump,1);
+                    keyboard_clear(ord("E"));
+                    obj_pet.state = states.petcontroll;
+                    obj_player.state = states.petcontroll;
+                    break;
+        }
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -161,17 +187,33 @@ if(obj_pet.state == states.transforming &amp;&amp; obj_pet.enemy.sprite_index = 
     
     ds_priority_destroy(pr);
     
-    var text;
-    
-    switch(item){
-        case 0: text = "Web: Use the power of the Spider and send webs to vertical moving enemies.#       If they get hit they will be stopped for 5 seconds! You can just use one Web each time." break;
-        case 1: text = "Webow: A Bow made of Web. Use it like a grappling hook and reach different areas.#          Use the Mouse to choose where to place it!" break;
-        default: text = "" break;
-    }
 }
 
 if(obj_pet.state == states.transforming &amp;&amp; obj_pet.enemy.sprite_index = spr_fire_enemy){
     sprite_index = spr_fire_enemy_transform;
+    var pr, i;
+    i = 0;
+    pr = ds_priority_create();
+    
+    repeat(image_number){
+        ds_priority_add(pr,i,lengthdir_y(1,(rot-90)+i*(360/image_number)));
+        i+= 1;
+    }
+    
+    repeat(image_number){
+        i = ds_priority_delete_min(pr);
+        draw_sprite_ext(sprite_index,
+        i,menu_x+lengthdir_x(menu_width/2,(rot-90)+i*(360/image_number)),
+        menu_y+lengthdir_y(menu_height/2,(rot-90)+i*(360/image_number)),
+        1+lengthdir_y(menu_height/2,(rot-90)+i*(360/image_number))/(menu_height*2),
+        1+lengthdir_y(menu_height/2,(rot-90)+i*(360/image_number))/(menu_height*2),0,c_white,1);
+    }
+    
+    ds_priority_destroy(pr);
+}
+
+if(obj_pet.state == states.transforming &amp;&amp; obj_pet.enemy.sprite_index = spr_alien2){
+    sprite_index = spr_frog;
     var pr, i;
     i = 0;
     pr = ds_priority_create();
@@ -271,6 +313,34 @@ if(obj_pet.state == states.transforming &amp;&amp; obj_pet.enemy.sprite_index = 
     draw_text(view_xview[0]+view_wview[0]/2 + 1, view_yview[0]+view_hview[0]/2 - 127,"Press A or D to rotate.#E or Enter to choose.");
     
     draw_set_color(c_black);
+    draw_set_halign(fa_center);
+    draw_text(view_xview[0]+view_wview[0]/2, view_yview[0]+view_hview[0]/2 - 128,"Press A or D to rotate.#E or Enter to choose.");
+
+}
+
+if(obj_pet.state == states.transforming &amp;&amp; obj_pet.enemy.sprite_index = spr_alien2){
+    
+    var text;
+    
+    switch(item){
+        case 0: text = "FrogLegs: Use the power of the Frog and jump higher." break;
+        default: text = "" break;
+    }
+    draw_set_color(c_white);
+    draw_set_halign(fa_left);
+    draw_text(view_xview[0]+view_wview[0]/2-449 , view_yview[0]+view_hview[0]/2 + 200,text);
+    
+    draw_set_color(c_black);
+    draw_set_halign(fa_left);
+    draw_text(view_xview[0]+view_wview[0]/2-450 , view_yview[0]+view_hview[0]/2 + 201,text);
+    
+    
+    
+    draw_set_color(c_black);
+    draw_set_halign(fa_center);
+    draw_text(view_xview[0]+view_wview[0]/2 + 1, view_yview[0]+view_hview[0]/2 - 127,"Press A or D to rotate.#E or Enter to choose.");
+    
+    draw_set_color(c_white);
     draw_set_halign(fa_center);
     draw_text(view_xview[0]+view_wview[0]/2, view_yview[0]+view_hview[0]/2 - 128,"Press A or D to rotate.#E or Enter to choose.");
 
