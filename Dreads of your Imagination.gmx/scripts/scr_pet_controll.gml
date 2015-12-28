@@ -56,14 +56,9 @@ else if (move != 0 && !attack){
         }
 }
 
-/*if(collision_circle(x+25,y,5,obj_transformable_enemy,false,false) && key_space){
-    enemy = collision_circle(x+25,y,5,obj_transformable_enemy,false,false);
-    enemy.hp -= 10;
+if(instance_nearest(x,y,obj_transformable_enemy) && key_space){
+    enemy = instance_nearest(x,y,obj_transformable_enemy);
 }
-else if(collision_circle(x+25,y,25,obj_e,false,false) && key_space){
-    enemy = collision_circle(x+25,y,25,obj_e,false,false);
-    enemy.hp -= 10;
-}*/
 
 
 if(key_ff){

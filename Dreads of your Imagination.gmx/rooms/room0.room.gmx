@@ -61,15 +61,14 @@ enum states {
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_pet" x="128" y="320" name="inst_379F1142" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pet" x="144" y="368" name="inst_379F1142" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_GM" x="64" y="-32" name="inst_E98556B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inventory" x="96" y="-32" name="inst_021E0458" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lightning" x="128" y="-32" name="inst_6B2D92C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_universal_sign" x="176" y="368" name="inst_BBA07610" locked="0" code="text = &quot;Press A and D to move left and right.&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu_transforming" x="368" y="-256" name="inst_9A17049A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_musicBox" x="32" y="-32" name="inst_7040BB6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dialogue" x="252" y="317" name="inst_7A774B0C" locked="0" code="text[0] = &quot;The cake is a lie&quot;;&#xA;text[1] = &quot;Beware, of GLADDOS! If you see her, RUN!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="192" y="288" name="inst_1CD46260" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dialogue" x="224" y="352" name="inst_7A774B0C" locked="0" code="text[0] = &quot;PRESS SPACEBAR TO KEEP READING&quot;;&#xA;text[1] = &quot;Kid: What...? Where am I? What is Haze doing here? He looks bigger!&quot;;&#xA;text[2] = &quot;Haze: Hey Kid!&quot;;&#xA;text[3] = &quot;Kid: WAIT! WHAT? YOU CAN TALK! YOU ARE JUST A TOY!!!&quot;;&#xA;text[4] = &quot;Haze: Calm down Kid, yes I can talk. We are inside your Imagination here everything is possible.&quot;;&#xA;text[5] = &quot;Kid: Woow! This is amazing! But why I'm inside my Imagination?&quot;;&#xA;text[6] = &quot;Haze: Some people have the ability to do it, you are one of them. But... this may mean something...&quot;;&#xA;text[7] = &quot;Kid: What? What is the problem?&quot;;&#xA;text[8] = &quot;Haze: Sometimes it means you need to face one of your fears...&quot;;&#xA;text[9] = &quot;Kid: Oh no!! I have some fears but I don't want to face them. I'm really scared. Mainly I fear the Darkness...&quot;;&#xA;text[10] = &quot;Haze: Don't worry I'm here and it's not Dark is it?&quot;;&#xA;text[11] = &quot;Kid: No, it isn't, ok Haze let's go! Follow me!&quot;;&#xA;text[12] = &quot;PRESS 'A' or 'D' to move left and right!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="224" y="352" name="inst_1CD46260" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="32" y="416" name="inst_A9FA49E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="96" y="416" name="inst_E56F376F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="160" y="416" name="inst_DCB11191" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1289,6 +1288,8 @@ enum states {
     <instance objName="obj_checkpoint" x="176" y="2256" name="inst_1403F51E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="736" y="3344" name="inst_BF909BE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="208" y="2272" name="inst_FC56D803" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_transforming" x="336" y="-208" name="inst_7BC26E63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dialogue" x="528" y="352" name="inst_11C5E0E6" locked="0" code="text[0] = &quot;PRESS 'W' to jump!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
