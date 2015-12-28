@@ -129,7 +129,7 @@ pointy = mouse_y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index,image_index,x,y,-facing,1,0,c_white,1);
+            <string>draw_sprite_ext(sprite_index,image_index,x,y,-facing,1,1,c_white,1);
 image_speed = 0;
 if(instance_exists(arrow)){
     image_speed = 1;

@@ -58,6 +58,12 @@
       <sprite>sprites\spr_bat_fly</sprite>
       <sprite>sprites\spr_spider</sprite>
       <sprite>sprites\spr_fire_enemy</sprite>
+      <sprite>sprites\spr_teacher</sprite>
+      <sprite>sprites\spr_student</sprite>
+      <sprite>sprites\spr_alien1</sprite>
+      <sprite>sprites\spr_alien2</sprite>
+      <sprite>sprites\spr_alien3</sprite>
+      <sprite>sprites\spr_alien4</sprite>
     </sprites>
     <sprites name="Ammo">
       <sprite>sprites\spr_arrow</sprite>
@@ -78,8 +84,11 @@
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\background1</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\frog1_path</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\ItemPickup.gml</script>
     <script>scripts\scr_text.gml</script>
@@ -168,6 +177,7 @@
       <object>objects\obj_transformable_enemy</object>
       <object>objects\obj_fire_enemy</object>
       <object>objects\obj_boss_obscuro</object>
+      <object>objects\obj_frog</object>
     </objects>
     <objects name="Tiles">
       <object>objects\obj_crate</object>
@@ -189,6 +199,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_initialize</room>
+    <room>rooms\lvl_2</room>
     <room>rooms\room0</room>
     <room>rooms\Start_menu</room>
   </rooms>
