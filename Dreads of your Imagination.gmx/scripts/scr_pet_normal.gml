@@ -35,8 +35,6 @@ if (player_ydistance > 1.5 * player_sprite_height)
 {
     if (place_meeting(x, y + 1, obj_box)) pet_dy = obj_player.jumpspeed * -1;
 }
-if (obj_player.hsp != 0 || obj_player.vsp != 0) sprite_index = spr_pet_idle;
-else sprite_index = spr_pet_idle;
 
 scr_pet_collisions();
 

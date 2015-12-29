@@ -14,8 +14,34 @@ if (place_meeting(x,y+1, obj_box) || place_meeting(x,y+1, obj_crate)){
 if(hsp != 0){
     hsp_dir = sign(hsp);
 }
+if(frog_rdy){
+    jumpspeed = 10;
+}
+else jumpspeed = 5;
 
+//PLAYER ANIMATION AND PET
+if(place_meeting(x,y+1, obj_box)){
+    if(hsp == 0){
+        sprite_index = spr_player_idle;
+        obj_pet.sprite_index = spr_pet_idle;
+    }
+    else{
+        if(sprite_index != spr_player_move) image_index = 0;
+        sprite_index = spr_player_move;
+        obj_pet.sprite_index = spr_pet_move;
+    }   
+}
+else{
+    if(vsp < 0){
+        sprite_index = spr_player_jump;
+        image_index = 1;
+    }
+    else{
+        sprite_index = spr_player_jump;
+        image_index = 0;
+    }
 
+}
 
 //Begin Transforming SAVE FOR BOSS MECHANIC
 /*

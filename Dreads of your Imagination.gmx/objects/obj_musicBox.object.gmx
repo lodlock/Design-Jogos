@@ -29,9 +29,11 @@
 first_time_boss = true;
 first_time_chicken = true;
 if(room == room0){
+    audio_stop_all();
     audio_play_sound(snd_level, 1, true);
 }
 else if(room == lvl_2){
+    audio_stop_all();
     audio_play_sound(snd_lvl2, 1, true);
 }
 </string>

@@ -1,5 +1,5 @@
 scr_get_input();
-
+obj_player.sprite_index = spr_player_idle;
 //React to inputs
 move = key_left + key_right;
 if(move == 1) facing = 1; else if (move == -1) facing = -1;
@@ -45,15 +45,9 @@ if(attack){
 }
 else if (move == 0 && !attack){ 
     sprite_index = spr_pet_idle;
-    if(image_index > 3)
-        image_index = 3;
 }
 else if (move != 0 && !attack){
-    image_speed = 1;
-    if(image_index > 6){
-        sprite_index = spr_pet_move;
-        image_speed = 0.2;
-        }
+    sprite_index = spr_pet_move;
 }
 
 if(instance_nearest(x,y,obj_transformable_enemy) && key_space){

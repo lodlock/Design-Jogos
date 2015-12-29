@@ -10,6 +10,7 @@
     <sound>sound\snd_level</sound>
     <sound>sound\snd_lvl2</sound>
     <sound>sound\snd_lostHaze</sound>
+    <sound>sound\snd_main_menu</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Obscuro">
@@ -21,12 +22,13 @@
     <sprites name="Player">
       <sprite>sprites\spr_player_bow</sprite>
       <sprite>sprites\spr_player_sword</sprite>
-      <sprite>sprites\spr_player</sprite>
+      <sprite>sprites\spr_player_idle</sprite>
+      <sprite>sprites\spr_player_move</sprite>
+      <sprite>sprites\spr_player_jump</sprite>
       <sprite>sprites\spr_pet_idle</sprite>
       <sprite>sprites\spr_pet_move</sprite>
       <sprite>sprites\spr_pet_attack</sprite>
       <sprite>sprites\spr_attack_detection</sprite>
-      <sprite>sprites\sprite43</sprite>
     </sprites>
     <sprites name="Tiles">
       <sprite>sprites\spr_torch</sprite>
@@ -88,6 +90,7 @@
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\background1</background>
+    <background>background\background2</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\frog1_path</path>
@@ -166,6 +169,7 @@
     </objects>
     <objects name="GameManagers">
       <object>objects\obj_musicBox</object>
+      <object>objects\obj_musicBox_Menu</object>
       <object>objects\obj_inventory</object>
       <object>objects\obj_GM</object>
       <object>objects\obj_menu_transforming</object>
@@ -202,10 +206,10 @@
     <object>objects\obj_chicken</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Start_menu</room>
     <room>rooms\rm_initialize</room>
     <room>rooms\lvl_2</room>
     <room>rooms\room0</room>
-    <room>rooms\Start_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
