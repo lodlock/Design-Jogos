@@ -43,13 +43,6 @@ else{
 
 }
 
-//Begin Transforming SAVE FOR BOSS MECHANIC
-/*
-if (key_e && can_see && is_boss) {
-    keyboard_clear(ord("E"));
-    obj_player.state = states.transforming;
-}*/
-
 
 //IF PET IS IN THE ROOM
 if(instance_exists(obj_pet)){
@@ -70,39 +63,18 @@ if(instance_exists(obj_pet)){
 }
 
 
-//CHANGE THIS LATER
-
-//Shoot Arrows
-if (mouse_check_button(mb_left) && bow_rdy){
-    
-    ammo_x = mouse_x;
-    ammo_y = mouse_y;
-    
-    sprinte_index = spr_player_bow;
-    image_speed = 0.5;
-    
-    if (can_shoot)
-    {
-        arrow = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_arrow);
-        can_shoot = false;
-        if instance_exists(rope) with(rope) instance_destroy();
-    }   
-    mouse_clear(mb_left);
-}
-
-if (key_space && laser_gun_rdy){
+//LASER GUN ATTACK
+if (key_space && laser_gun_rdy && can_shoot){
     
     ammo_x = (x+32)*facing;
     ammo_y = y;
-    if (can_shoot)
-    {
-        laser = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_laser);
-        can_shoot = false;
-    }
-    
-
+    laser = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_laser);   
+    can_shoot = false;   
 }
-
+with laser obj_player.target = collision_circle(x, y, 50, obj_transformable_enemy, 0, 1);
+if(target != noone)
+    enemy = target;
+//WEB ATTACK
 if (key_space && web_rdy){
     
     ammo_x = (x+32)*facing;
@@ -113,6 +85,7 @@ if (key_space && web_rdy){
 
 }
 
+//LIGHTBALL ATTACK
 if (key_space && fireball_rdy){
     
     ammo_x = (x+32)*facing;
@@ -123,30 +96,8 @@ if (key_space && fireball_rdy){
     fireball = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_fireball);
 }
 
-
-//Sword attack
-if (key_space && sword_rdy){
-    image_index = 0;
-    attack = true;
-}
-
-
+//DEAD
 if hp <= 0 scr_death();
 
-
-
-if instance_exists(rope){
-    if point_distance(x, y, rope.x, rope.y) > 5
-    {
-    move_towards_point(rope.x, rope.y, 2);
-    grav = 0;
-    }
-    else {
-        speed = 0;
-        grav = 0.2;
-        with(rope) instance_destroy();
-        can_shoot = true;
-    }
-}
 view_object[0] = obj_player;
-scr_player_collision(self);
+scr_player_collision();

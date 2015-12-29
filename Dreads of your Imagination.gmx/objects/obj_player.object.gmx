@@ -48,6 +48,7 @@ fireball = noone;
 laser = noone;
 web = noone;
 target = noone;
+enemy = noone;
 can_see = false;
 globalvar transform;
 transform = false;

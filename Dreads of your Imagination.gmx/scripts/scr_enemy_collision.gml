@@ -12,9 +12,9 @@ if (place_meeting(x,y, obj_arrow)){
 }
 
 if (place_meeting(x,y, obj_laser)){
-    with(obj_arrow)
+    with(obj_laser)
         instance_destroy();
-    hp -= 0.2;
+    hp -= 10;
 }
 
 if (place_meeting(x,y, obj_pet)){

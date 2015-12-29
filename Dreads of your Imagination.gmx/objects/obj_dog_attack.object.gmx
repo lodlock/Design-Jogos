@@ -27,8 +27,6 @@
             <kind>1</kind>
             <string>x = obj_pet.x;
 y = obj_pet.y;
-
-show_debug_message(obj_pet.enemy);
 </string>
           </argument>
         </arguments>

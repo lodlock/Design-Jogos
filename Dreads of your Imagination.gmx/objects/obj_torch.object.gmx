@@ -65,14 +65,6 @@ draw_ellipse_colour(x - size/2 - view_xview,y - size/2 - view_yview,x + size/2 -
 surface_reset_target();
 draw_set_blend_mode(bm_normal);
 }
-
-/*if(distance_to_object(obj_player) &lt; 150 &amp;&amp; can_light &amp;&amp; obj_lightning.darkness &amp;&amp; obj_player.hp &lt; 100)
-{
-    obj_player.hp +=0.5;
-}
-else if (distance_to_object(obj_player) &gt; 100 &amp;&amp; obj_lightning.darkness || obj_lightning.already) obj_player.hp -=0.005;
-
-show_debug_message(distance_to_object(obj_player));*/
 </string>
           </argument>
         </arguments>
@@ -105,7 +97,7 @@ else if (can_light &amp;&amp; obj_lightning.darkness){
 sprite_index = spr_torch_light;
 image_speed = 0.1;
 }
-else sprite_index = spr_torch;
+else if (!can_light) sprite_index = spr_torch;
 </string>
           </argument>
         </arguments>

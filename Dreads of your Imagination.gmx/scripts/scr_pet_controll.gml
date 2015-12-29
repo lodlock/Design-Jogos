@@ -12,7 +12,6 @@ if (place_meeting(x,y+1, obj_box)){
     vsp = key_jump * -jumpspeed;
 }
 
-//show_debug_message(distance_to_object(obj_player));
 if(distance_to_object(obj_player) > 1000){
     warn_player = true;
     obj_player.hp -= 0.1;

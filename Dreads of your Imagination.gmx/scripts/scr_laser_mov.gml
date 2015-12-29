@@ -19,7 +19,6 @@ if not_wall{
     already_done = false;
 }
 
-
 if (obj_player.state = states.transforming) {
     state = states.transforming;
 }

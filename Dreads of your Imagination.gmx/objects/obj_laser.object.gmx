@@ -28,36 +28,13 @@
             <string>state = states.normal;
 facing = 0;
 already_done = false;
-alarm[0] = 2 * room_speed;
+alarm[0] = 2;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
     <event eventtype="1" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>obj_player.can_shoot = true;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -98,32 +75,10 @@ alarm[0] = 2 * room_speed;
           <argument>
             <kind>1</kind>
             <string>switch (state){
-    case states.normal: scr_web_mov(); break;
+    case states.normal: scr_laser_mov(); break;
     case states.transforming: scr_transforming(); break;
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_transformable_enemy">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>obj_player.target = collision_circle(x,y,10,obj_transformable_enemy,false,false);
+
 </string>
           </argument>
         </arguments>

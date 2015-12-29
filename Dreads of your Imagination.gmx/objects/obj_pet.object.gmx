@@ -73,10 +73,8 @@ state = states.normal;
             <kind>1</kind>
             <string>switch(state){
     case states.normal: scr_pet_normal(); break;
-    //case states.talking: scr_pet_talking(); break;  //TODO
     case states.transforming: scr_pet_transforming(self); break; 
     case states.petcontroll: scr_pet_controll(self); break;
-    //case states.petidle: scr_pet_idle(self); break;  
     case states.grab_ledge : scr_ledge_grab_pet(); break;
 }
 </string>
