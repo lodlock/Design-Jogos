@@ -11,6 +11,7 @@
     <sound>sound\snd_lvl2</sound>
     <sound>sound\snd_lostHaze</sound>
     <sound>sound\snd_main_menu</sound>
+    <sound>sound\snd_kid_dialog</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Obscuro">
@@ -40,6 +41,7 @@
       <sprite>sprites\spr_chain</sprite>
       <sprite>sprites\spr_wall</sprite>
       <sprite>sprites\spr_button</sprite>
+      <sprite>sprites\spr_invisiwall</sprite>
     </sprites>
     <sprites name="Objects">
       <sprite>sprites\spr_checkpoint</sprite>
@@ -94,6 +96,7 @@
     <background>background\background0</background>
     <background>background\background1</background>
     <background>background\background2</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\frog1_path</path>
@@ -154,6 +157,7 @@
     <objects name="Player">
       <object>objects\obj_player</object>
       <object>objects\obj_pet</object>
+      <object>objects\obj_teddy</object>
       <object>objects\obj_dog_attack</object>
     </objects>
     <objects name="Signs">
@@ -175,6 +179,7 @@
     <objects name="GameManagers">
       <object>objects\obj_musicBox</object>
       <object>objects\obj_musicBox_Menu</object>
+      <object>objects\obj_musicBox_kid</object>
       <object>objects\obj_inventory</object>
       <object>objects\obj_GM</object>
       <object>objects\obj_menu_transforming</object>
@@ -201,6 +206,7 @@
       <object>objects\obj_torch</object>
       <object>objects\obj_boss_torch</object>
       <object>objects\obj_button</object>
+      <object>objects\obj_inviwall</object>
     </objects>
     <objects name="Ammo">
       <object>objects\obj_arrow</object>
@@ -215,6 +221,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_initialize</room>
+    <room>rooms\lvl_room</room>
     <room>rooms\lvl_2</room>
     <room>rooms\room0</room>
     <room>rooms\Start_menu</room>

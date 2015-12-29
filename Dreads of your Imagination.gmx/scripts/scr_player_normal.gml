@@ -23,12 +23,14 @@ else jumpspeed = 5;
 if(place_meeting(x,y+1, obj_box)){
     if(hsp == 0){
         sprite_index = spr_player_idle;
-        obj_pet.sprite_index = spr_pet_idle;
+        if(instance_exists(obj_pet))
+            obj_pet.sprite_index = spr_pet_idle;
     }
     else{
         if(sprite_index != spr_player_move) image_index = 0;
         sprite_index = spr_player_move;
-        obj_pet.sprite_index = spr_pet_move;
+        if(instance_exists(obj_pet))
+            obj_pet.sprite_index = spr_pet_move;
     }   
 }
 else{
