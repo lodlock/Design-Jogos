@@ -45,6 +45,7 @@ attack = false;
 rope = noone;
 arrow = noone;
 fireball = noone;
+laser = noone;
 web = noone;
 target = noone;
 can_see = false;
@@ -65,6 +66,7 @@ bow_rdy = false;
 fireball_rdy = false;
 web_rdy = false;
 frog_rdy = false;
+laser_gun_rdy = false;
 
 if(global.checkpointR == room) {
     x = global.checkpointx;
@@ -150,44 +152,13 @@ if(attack){
 
 if(state == states.transforming) return 0;
 
-/*
-if(collision_line(x,y, mouse_x, mouse_y, obj_box,false, false) || distance_to_point(mouse_x,mouse_y) &gt;= 300){
-    if (collision_circle(mouse_x, mouse_y, 2, obj_transformable_enemy, 0, 1)){
-        cursor_sprite = spr_cant_transform;
-        draw_set_color(c_black);
-        draw_set_halign(fa_center);
-        draw_text(x+1, y - 63, "Too far or obstructed#to transform!");
-        
-        draw_set_color(c_white);
-        draw_set_halign(fa_center);
-        draw_text(x, y - 64, "Too far or obstructed#to transform!");
-    } 
-    
-    can_see = false;
-}
-else if (!collision_line(x,y, mouse_x, mouse_y, obj_box,false, false) &amp;&amp; distance_to_point(mouse_x,mouse_y) &lt; 300 &amp;&amp; collision_line(x,y, mouse_x, mouse_y, obj_transformable_enemy,false, false)){
-    target = collision_circle(mouse_x, mouse_y, 2, obj_transformable_enemy, 0, 1);
-    cursor_sprite = spr_can_transform;
-    
-    draw_set_color(c_black);
-    draw_set_halign(fa_center);
-    draw_text(x+1, y - 63, "Press E to start#transforming!");
-    
-    draw_set_color(c_white);
-    draw_set_halign(fa_center);
-    draw_text(x, y - 64, "Press E to start#transforming!");
-    
-    can_see = true;
-}
-else cursor_sprite = spr_cursor;
-*/
-
 if(web_rdy) draw_sprite_ext(spr_web,0,x+10,y,facing,1,0,c_white,1);
 if(fireball_rdy) draw_sprite_ext(spr_fireball_fire,0,x+10,y,facing,1,0,c_white,1);
 if(frog_rdy){
     draw_sprite_ext(spr_frog,0,x+10,y+25,0.3,0.3,0,c_white,1);
     draw_sprite_ext(spr_frog,0,x-10,y+25,0.3,0.3,0,c_white,1);
-} 
+}
+if(laser_gun_rdy) draw_sprite_ext(spr_laser_gun,0,x+10,y+5,facing,1,0,c_white,1);
 if (speed != 0) draw_line(x, y, rope.x, rope.y);
 </string>
           </argument>
@@ -218,6 +189,7 @@ if (speed != 0) draw_line(x, y, rope.x, rope.y);
         sword_rdy = false;
         web_rdy = false;
         frog_rdy = false;
+        laser_gun_rdy = false;
         sprite_index = spr_player_bow;
         return 0;
     }
@@ -234,12 +206,12 @@ else if (global.inventory[3,0] == spr_sword){
         web_rdy = false;
         frog_rdy = false;
         fireball_rdy = false;
-        sprite_index = spr_player_sword;
+        laser_gun_rdy = false;
+        sprite_index = spr_player_idle;
         return 0;
     }
     else{
         sword_rdy = false;
-        sprite_index = spr_player_idle;
         return 0;
     }
 } 
@@ -250,6 +222,7 @@ else if (global.inventory[3,0] == spr_web_pickup){
         sword_rdy = false;
         fireball_rdy = false;
         frog_rdy = false;
+        laser_gun_rdy = false;
         sprite_index = spr_player_idle;
         return 0;
     }
@@ -265,6 +238,7 @@ else if (global.inventory[3,0] == spr_fireball_pickup){
         sword_rdy = false;
         web_rdy = false;
         frog_rdy = false;
+        laser_gun_rdy = false;
         sprite_index = spr_player_idle;
         return 0;
     }
@@ -280,11 +254,28 @@ else if (global.inventory[3,0] == spr_frog){
         sword_rdy = false;
         web_rdy = false;
         fireball_rdy = false;
+        laser_gun_rdy = false;
         sprite_index = spr_player_idle;
         return 0;
     }
     else{
         frog_rdy = false;
+        return 0;
+    }
+}
+else if (global.inventory[3,0] == spr_laser_gun){
+    if (!laser_gun_rdy){
+        laser_gun_rdy = true;
+        frog_rdy = false;
+        bow_rdy = false;
+        sword_rdy = false;
+        web_rdy = false;
+        fireball_rdy = false;
+        sprite_index = spr_player_idle;
+        return 0;
+    }
+    else{
+        laser_gun_rdy = false;
         return 0;
     }
 } 
@@ -317,6 +308,7 @@ else if (global.inventory[3,0] == spr_frog){
         sword_rdy = false;
         web_rdy = false;
         frog_rdy = false;
+        laser_gun_rdy = false;
         sprite_index = spr_player_bow;
         return 0;
     }
@@ -333,12 +325,12 @@ else if (global.inventory[2,0] == spr_sword){
         web_rdy = false;
         frog_rdy = false;
         fireball_rdy = false;
-        sprite_index = spr_player_sword;
+        laser_gun_rdy = false;
+        sprite_index = spr_player_idle;
         return 0;
     }
     else{
         sword_rdy = false;
-        sprite_index = spr_player_idle;
         return 0;
     }
 } 
@@ -349,6 +341,7 @@ else if (global.inventory[2,0] == spr_web_pickup){
         sword_rdy = false;
         fireball_rdy = false;
         frog_rdy = false;
+        laser_gun_rdy = false;
         sprite_index = spr_player_idle;
         return 0;
     }
@@ -364,6 +357,7 @@ else if (global.inventory[2,0] == spr_fireball_pickup){
         sword_rdy = false;
         web_rdy = false;
         frog_rdy = false;
+        laser_gun_rdy = false;
         sprite_index = spr_player_idle;
         return 0;
     }
@@ -379,11 +373,28 @@ else if (global.inventory[2,0] == spr_frog){
         sword_rdy = false;
         web_rdy = false;
         fireball_rdy = false;
+        laser_gun_rdy = false;
         sprite_index = spr_player_idle;
         return 0;
     }
     else{
         frog_rdy = false;
+        return 0;
+    }
+}
+else if (global.inventory[2,0] == spr_laser_gun){
+    if (!laser_gun_rdy){
+        laser_gun_rdy = true;
+        frog_rdy = false;
+        bow_rdy = false;
+        sword_rdy = false;
+        web_rdy = false;
+        fireball_rdy = false;
+        sprite_index = spr_player_idle;
+        return 0;
+    }
+    else{
+        laser_gun_rdy = false;
         return 0;
     }
 } 
@@ -416,12 +427,13 @@ else if (global.inventory[2,0] == spr_frog){
         sword_rdy = false;
         web_rdy = false;
         frog_rdy = false;
+        laser_gun_rdy = false;
         sprite_index = spr_player_bow;
         return 0;
     }
     else{
         bow_rdy = false;
-        sprite_index = spr_player;
+        sprite_index = spr_player_idle;
         return 0;
     } 
 }
@@ -432,12 +444,12 @@ else if (global.inventory[1,0] == spr_sword){
         web_rdy = false;
         frog_rdy = false;
         fireball_rdy = false;
-        sprite_index = spr_player_sword;
+        laser_gun_rdy = false;
+        sprite_index = spr_player_idle;
         return 0;
     }
     else{
         sword_rdy = false;
-        sprite_index = spr_player;
         return 0;
     }
 } 
@@ -448,6 +460,7 @@ else if (global.inventory[1,0] == spr_web_pickup){
         sword_rdy = false;
         fireball_rdy = false;
         frog_rdy = false;
+        laser_gun_rdy = false;
         sprite_index = spr_player_idle;
         return 0;
     }
@@ -463,6 +476,7 @@ else if (global.inventory[1,0] == spr_fireball_pickup){
         sword_rdy = false;
         web_rdy = false;
         frog_rdy = false;
+        laser_gun_rdy = false;
         sprite_index = spr_player_idle;
         return 0;
     }
@@ -478,11 +492,28 @@ else if (global.inventory[1,0] == spr_frog){
         sword_rdy = false;
         web_rdy = false;
         fireball_rdy = false;
+        laser_gun_rdy = false;
         sprite_index = spr_player_idle;
         return 0;
     }
     else{
         frog_rdy = false;
+        return 0;
+    }
+}
+else if (global.inventory[1,0] == spr_laser_gun){
+    if (!laser_gun_rdy){
+        laser_gun_rdy = true;
+        frog_rdy = false;
+        bow_rdy = false;
+        sword_rdy = false;
+        web_rdy = false;
+        fireball_rdy = false;
+        sprite_index = spr_player_idle;
+        return 0;
+    }
+    else{
+        laser_gun_rdy = false;
         return 0;
     }
 } 
@@ -515,12 +546,13 @@ else if (global.inventory[1,0] == spr_frog){
         sword_rdy = false;
         web_rdy = false;
         frog_rdy = false;
+        laser_gun_rdy = false;
         sprite_index = spr_player_bow;
         return 0;
     }
     else{
         bow_rdy = false;
-        sprite_index = spr_player;
+        sprite_index = spr_player_idle;
         return 0;
     } 
 }
@@ -531,12 +563,12 @@ else if (global.inventory[0,0] == spr_sword){
         web_rdy = false;
         frog_rdy = false;
         fireball_rdy = false;
-        sprite_index = spr_player_sword;
+        laser_gun_rdy = false;
+        sprite_index = spr_player_idle;
         return 0;
     }
     else{
         sword_rdy = false;
-        sprite_index = spr_player;
         return 0;
     }
 } 
@@ -547,6 +579,7 @@ else if (global.inventory[0,0] == spr_web_pickup){
         sword_rdy = false;
         fireball_rdy = false;
         frog_rdy = false;
+        laser_gun_rdy = false;
         sprite_index = spr_player_idle;
         return 0;
     }
@@ -562,7 +595,8 @@ else if (global.inventory[0,0] == spr_fireball_pickup){
         sword_rdy = false;
         web_rdy = false;
         frog_rdy = false;
-        sprite_index = spr_player;
+        laser_gun_rdy = false;
+        sprite_index = spr_player_idle;
         return 0;
     }
     else{
@@ -577,11 +611,28 @@ else if (global.inventory[0,0] == spr_frog){
         sword_rdy = false;
         web_rdy = false;
         fireball_rdy = false;
+        laser_gun_rdy = false;
         sprite_index = spr_player_idle;
         return 0;
     }
     else{
         frog_rdy = false;
+        return 0;
+    }
+}
+else if (global.inventory[0,0] == spr_laser_gun){
+    if (!laser_gun_rdy){
+        laser_gun_rdy = true;
+        frog_rdy = false;
+        bow_rdy = false;
+        sword_rdy = false;
+        web_rdy = false;
+        fireball_rdy = false;
+        sprite_index = spr_player_idle;
+        return 0;
+    }
+    else{
+        laser_gun_rdy = false;
         return 0;
     }
 } 

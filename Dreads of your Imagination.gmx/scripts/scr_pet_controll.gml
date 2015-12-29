@@ -27,6 +27,13 @@ if (instance_exists(torch) &&  key_e){
     torch.can_light = true;
 }
 
+button = collision_circle(x, y, 50, obj_button, 0, 1);
+
+if (instance_exists(button) &&  key_e){
+    keyboard_clear(ord("E"));
+    button.activated = true;
+}
+
 if(key_space){
    attack = true;
    with(instance_create(x,y,obj_dog_attack)){

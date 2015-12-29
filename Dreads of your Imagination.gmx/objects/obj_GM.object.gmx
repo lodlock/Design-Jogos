@@ -75,6 +75,7 @@ if(instance_exists(obj_pet)){
         if (instance_exists(obj_web_pickup))obj_web_pickup.image_alpha = 0.2;
         if (instance_exists(obj_sign))obj_sign.image_alpha = 0.2;
         if (instance_exists(obj_bow))obj_bow.image_alpha = 0.2;
+                if (instance_exists(obj_frog_jump))obj_frog_jump.image_alpha = 0.2;
     }
     else {
         if (instance_exists(obj_player))obj_player.image_alpha = 1.0;
@@ -90,6 +91,7 @@ if(instance_exists(obj_pet)){
         if (instance_exists(obj_lightball_pickup))obj_lightball_pickup.image_alpha = 1.0;
         if (instance_exists(obj_web_pickup))obj_web_pickup.image_alpha = 1.0;
         if (instance_exists(obj_bow))obj_bow.image_alpha = 1.0;
+        if (instance_exists(obj_frog_jump))obj_frog_jump.image_alpha = 1.0;
     }
 }
 

@@ -19,15 +19,6 @@ if not_wall{
     already_done = false;
 }
 
-if(collision_circle(x,y,10,obj_e2,false,false) && first_contact){
-    alarm[1] = -1;
-    first_contact = false;
-    stop_enemy = collision_circle(x,y,10,obj_e2,false,false);
-    stop_enemy.movespeed = 0;
-    stop_enemy.invulnerable = false;
-    alarm[0] = 5*room_speed;
-    hspd = 0;
-}
 
 if (obj_player.state = states.transforming) {
     state = states.transforming;

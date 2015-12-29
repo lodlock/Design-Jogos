@@ -90,27 +90,37 @@ if (mouse_check_button(mb_left) && bow_rdy){
     mouse_clear(mb_left);
 }
 
-
-if (key_space && web_rdy){
+if (key_space && laser_gun_rdy){
     
     ammo_x = (x+32)*facing;
     ammo_y = y;
     if (can_shoot)
     {
-        web = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_web);
+        laser = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_laser);
         can_shoot = false;
     }
+    
+
+}
+
+if (key_space && web_rdy){
+    
+    ammo_x = (x+32)*facing;
+    ammo_y = y;
+    if(instance_exists(web))
+        with web instance_destroy();
+    web = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_web);
+
 }
 
 if (key_space && fireball_rdy){
     
     ammo_x = (x+32)*facing;
     ammo_y = y;
-    if (can_shoot)
-    {
+    
+    if(instance_exists(fireball))
+        with fireball instance_destroy();
     fireball = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_fireball);
-    can_shoot = false;
-    }
 }
 
 
@@ -121,9 +131,7 @@ if (key_space && sword_rdy){
 }
 
 
-if ((place_meeting(x,y, obj_transformable_enemy)  || place_meeting(x,y, obj_e)) && !attack || place_meeting(x,y, obj_e2)){
-    hp -= 0.5;
-}
+if hp <= 0 scr_death();
 
 
 

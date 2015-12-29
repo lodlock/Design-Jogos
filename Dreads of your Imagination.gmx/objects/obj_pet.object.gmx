@@ -45,6 +45,7 @@ movespeed = 4;
 attack = false;
 
 torch = noone;
+button = noone;
 enemy = noone;
 warn_player = false;
 state = states.normal;
@@ -125,19 +126,21 @@ state = states.normal;
             <kind>1</kind>
             <string>draw_sprite_ext(sprite_index,image_index,x,y,facing,1,0,c_white,1);
 
-
-
 image_speed = 0.1;
 
 if (instance_exists(torch) &amp;&amp; !torch.can_light){
-    //torch.depth = -999;
     depth = -999;
     draw_set_halign(fa_center);
     draw_text(torch.x,torch.y-42, "Press E to Light Torch");
 }
 else depth = -10;
 
-
+if (instance_exists(button) &amp;&amp; !button.activated){
+    depth = -999;
+    draw_set_halign(fa_center);
+    draw_text(button.x,button.y-42, "Press E to activate!");
+}
+else depth = -10;
 
 if(warn_player) draw_text(x,y-42, "Get back to the Kid!!!");
 

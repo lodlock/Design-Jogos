@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>image_speed = 0;
 image_index = scr_auto_tile();
+activated = false;
 </string>
           </argument>
         </arguments>

@@ -78,11 +78,6 @@ menu_height = 50;
                     obj_pet.state = states.petcontroll;
                     obj_player.state = states.petcontroll;
                     break;
-            case 1: with(obj_pet.enemy) instance_change(obj_bow,1);
-                    keyboard_clear(ord("E"));
-                    obj_pet.state = states.petcontroll;
-                    obj_player.state = states.petcontroll;
-                    break;
         }
     }
 }
@@ -266,8 +261,7 @@ if(obj_pet.state == states.transforming &amp;&amp; obj_pet.enemy.sprite_index = 
     var text;
     
     switch(item){
-        case 0: text = "Web: Use the power of the Spider and send webs to vertical moving enemies.#       If they get hit they will be stopped for 5 seconds! You can just use one Web each time." break;
-        case 1: text = "Webow: A Bow made of Web. Use it like a grappling hook and reach different areas.#          Use the Mouse to choose where to place it!" break;
+        case 0: text = "Web: Use the power of the Spider and stop Ghosts for 5 seconds#making you invulnerable to them! You can just use one Web each time." break;
         default: text = "" break;
     }
     draw_set_color(c_white);

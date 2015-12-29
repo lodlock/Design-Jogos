@@ -29,6 +29,7 @@
 state = states.normal;
 hp = 100;
 movespeed = 1;
+invulnerable = true;
 </string>
           </argument>
         </arguments>
@@ -79,7 +80,7 @@ movespeed = 1;
           <argument>
             <kind>1</kind>
             <string>draw_self();
-image_speed = 0.2;
+image_speed = 0.1;
 </string>
           </argument>
         </arguments>

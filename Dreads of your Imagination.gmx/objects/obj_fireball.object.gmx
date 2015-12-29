@@ -29,6 +29,7 @@
 state = states.normal;
 facing = 0;
 hspd = 0;
+already_done = false;
 </string>
           </argument>
         </arguments>
@@ -52,7 +53,6 @@ hspd = 0;
           <argument>
             <kind>1</kind>
             <string>instance_destroy();
-obj_player.can_shoot = true;
 </string>
           </argument>
         </arguments>

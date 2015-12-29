@@ -39,6 +39,7 @@
       <sprite>sprites\spr_box1</sprite>
       <sprite>sprites\spr_chain</sprite>
       <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_button</sprite>
     </sprites>
     <sprites name="Objects">
       <sprite>sprites\spr_checkpoint</sprite>
@@ -73,6 +74,7 @@
       <sprite>sprites\spr_arrow</sprite>
       <sprite>sprites\spr_fireball_fire</sprite>
       <sprite>sprites\spr_web</sprite>
+      <sprite>sprites\spr_laser</sprite>
     </sprites>
     <sprites name="Transforms">
       <sprite>sprites\spr_fire_enemy_transform</sprite>
@@ -82,6 +84,7 @@
     <sprites name="Weapons">
       <sprite>sprites\spr_bow</sprite>
       <sprite>sprites\spr_sword</sprite>
+      <sprite>sprites\spr_laser_gun</sprite>
     </sprites>
     <sprites name="Textboxes">
       <sprite>sprites\textbox_1</sprite>
@@ -137,6 +140,7 @@
       <script>scripts\scr_move_left.gml</script>
       <script>scripts\scr_move_right.gml</script>
       <script>scripts\scr_web_mov.gml</script>
+      <script>scripts\scr_laser_mov.gml</script>
       <script>scripts\scr_fireball_mov.gml</script>
     </scripts>
     <script>scripts\scr_chicken.gml</script>
@@ -166,6 +170,7 @@
       <object>objects\obj_web_pickup</object>
       <object>objects\obj_lightball_pickup</object>
       <object>objects\obj_frog_jump</object>
+      <object>objects\obj_laser_gun</object>
     </objects>
     <objects name="GameManagers">
       <object>objects\obj_musicBox</object>
@@ -190,15 +195,18 @@
     <objects name="Tiles">
       <object>objects\obj_crate</object>
       <object>objects\obj_box</object>
+      <object>objects\obj_moving_box</object>
       <object>objects\obj_box1</object>
       <object>objects\obj_chain</object>
       <object>objects\obj_torch</object>
       <object>objects\obj_boss_torch</object>
+      <object>objects\obj_button</object>
     </objects>
     <objects name="Ammo">
       <object>objects\obj_arrow</object>
       <object>objects\obj_web</object>
       <object>objects\obj_fireball</object>
+      <object>objects\obj_laser</object>
     </objects>
     <objects name="Menu">
       <object>objects\obj_menu</object>
@@ -206,10 +214,10 @@
     <object>objects\obj_chicken</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Start_menu</room>
     <room>rooms\rm_initialize</room>
     <room>rooms\lvl_2</room>
     <room>rooms\room0</room>
+    <room>rooms\Start_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
