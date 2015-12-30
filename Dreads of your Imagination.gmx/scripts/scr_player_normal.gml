@@ -98,6 +98,18 @@ if (key_space && fireball_rdy){
     fireball = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_fireball);
 }
 
+//DIALOGUE EVENT
+dialogue = collision_circle(x, y, 2, obj_dialogue, 0, 1);
+if(instance_exists(dialogue)) {
+    with(dialogue) {
+        if(!hasTalked) {
+            obj_player.state = states.talking;
+            end_of_line = 0;
+            line = 0;
+        }
+    }
+}
+
 //DEAD
 if hp <= 0 scr_death();
 

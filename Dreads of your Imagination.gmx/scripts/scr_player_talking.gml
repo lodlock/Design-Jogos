@@ -1,13 +1,15 @@
+//argument0 = instance of obj_dialogue
+
 scr_get_input()
 
 if(key_dialogue) {
-    if(obj_dialogue.line < array_length_1d(obj_dialogue.text) - 1) {
-        obj_dialogue.end_of_line = 0;
-        obj_dialogue.line++;
+    if(argument0.line < array_length_1d(argument0.text) - 1) {
+        argument0.end_of_line = 0;
+        argument0.line++;
     }
     
     else {
-        obj_dialogue.hasTalked = true;
+        argument0.hasTalked = true;
         obj_player.state = states.normal;
     }
 }
