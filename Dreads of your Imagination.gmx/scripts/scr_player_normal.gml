@@ -102,11 +102,9 @@ if (key_space && fireball_rdy){
 dialogue = collision_circle(x, y, 2, obj_dialogue, 0, 1);
 if(instance_exists(dialogue)) {
     with(dialogue) {
-        if(!hasTalked) {
-            obj_player.state = states.talking;
-            end_of_line = 0;
-            line = 0;
-        }
+        obj_player.state = states.talking;
+        end_of_line = 0;
+        line = 0;
     }
 }
 
