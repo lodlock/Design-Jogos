@@ -8,7 +8,7 @@ else facing = 1;
 
 if (pet_out_of_view)
 {
-    x      = obj_player.x - player_sprite_width;
+    x      = obj_player.x;
     y      = obj_player.y;
     pet_dy = 0;
     

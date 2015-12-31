@@ -133,7 +133,7 @@ if (instance_exists(torch) &amp;&amp; !torch.can_light){
 }
 else depth = -10;
 
-if (instance_exists(button) &amp;&amp; !button.activated){
+if (instance_exists(button) &amp;&amp; !button.activated &amp;&amp; button.visible){
     depth = -999;
     draw_set_halign(fa_center);
     draw_text(button.x,button.y-42, "Press E to activate!");

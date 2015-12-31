@@ -28,7 +28,7 @@ if (instance_exists(torch) &&  key_e){
 
 button = collision_circle(x, y, 50, obj_button, 0, 1);
 
-if (instance_exists(button) &&  key_e){
+if (instance_exists(button) &&  key_e && button.visible){
     keyboard_clear(ord("E"));
     button.activated = true;
 }
@@ -63,9 +63,7 @@ if(instance_nearest(x,y,obj_transformable_enemy) && key_space){
 
 if(key_ff){
     keyboard_clear(ord("F"));
-    x      = obj_player.x - player_sprite_width;
-    y      = obj_player.y;
-    pet_dy = 0;
+    pet_out_of_view = true;
     obj_player.state = states.normal;
     state = states.normal;
 }

@@ -49,6 +49,7 @@
       <sprite>sprites\spr_fireball_pickup</sprite>
       <sprite>sprites\spr_healing_potion</sprite>
       <sprite>sprites\spr_sign</sprite>
+      <sprite>sprites\spr_super_eyes</sprite>
     </sprites>
     <sprites name="HUD">
       <sprite>sprites\spr_healthbar_inner</sprite>
@@ -97,6 +98,9 @@
     <background>background\background1</background>
     <background>background\background2</background>
     <background>background\background3</background>
+    <background>background\background4</background>
+    <background>background\background5</background>
+    <background>background\background6</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\frog1_path</path>
@@ -175,6 +179,7 @@
       <object>objects\obj_lightball_pickup</object>
       <object>objects\obj_frog_jump</object>
       <object>objects\obj_laser_gun</object>
+      <object>objects\obj_super_eyes</object>
     </objects>
     <objects name="GameManagers">
       <object>objects\obj_musicBox</object>
@@ -221,10 +226,10 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_initialize</room>
-    <room>rooms\room0</room>
-    <room>rooms\lvl_room</room>
     <room>rooms\lvl_2</room>
     <room>rooms\Start_menu</room>
+    <room>rooms\room0</room>
+    <room>rooms\lvl_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

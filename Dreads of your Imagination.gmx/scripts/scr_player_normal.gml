@@ -64,6 +64,12 @@ if(instance_exists(obj_pet)){
     }   
 }
 
+//SUPER EYES
+if(super_eyes_rdy){
+    button = collision_circle(x, y, 150, obj_button, 0, 1);
+    if(instance_exists(button))
+        with button visible = true;
+}
 
 //LASER GUN ATTACK
 if (key_space && laser_gun_rdy && can_shoot){
