@@ -72,6 +72,7 @@
       <sprite>sprites\spr_alien2</sprite>
       <sprite>sprites\spr_alien3</sprite>
       <sprite>sprites\spr_alien4</sprite>
+      <sprite>sprites\spr_bee</sprite>
     </sprites>
     <sprites name="Ammo">
       <sprite>sprites\spr_arrow</sprite>
@@ -104,6 +105,7 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\frog1_path</path>
+    <path>paths\bee1_path</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\ItemPickup.gml</script>
@@ -201,6 +203,7 @@
       <object>objects\obj_fire_enemy</object>
       <object>objects\obj_boss_obscuro</object>
       <object>objects\obj_frog</object>
+      <object>objects\obj_bee</object>
     </objects>
     <objects name="Tiles">
       <object>objects\obj_crate</object>
@@ -211,6 +214,10 @@
       <object>objects\obj_torch</object>
       <object>objects\obj_boss_torch</object>
       <object>objects\obj_button</object>
+      <object>objects\obj_special_button1</object>
+      <object>objects\obj_special_button2</object>
+      <object>objects\obj_special_button3</object>
+      <object>objects\obj_special_button4</object>
       <object>objects\obj_inviwall</object>
     </objects>
     <objects name="Ammo">
@@ -227,8 +234,8 @@
   <rooms name="rooms">
     <room>rooms\Start_menu</room>
     <room>rooms\rm_initialize</room>
-    <room>rooms\room0</room>
     <room>rooms\lvl_2</room>
+    <room>rooms\room0</room>
     <room>rooms\lvl_room</room>
   </rooms>
   <help>

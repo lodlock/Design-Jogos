@@ -56,7 +56,34 @@ alarm[1] = 1 * room_speed;
             <string>if(instance_exists(stop_enemy)){
     stop_enemy.movespeed = 1;
     stop_enemy.invulnerable = true;
+    stop_enemy.stoppath = false;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_destroy();
+stop_enemy.stoppath = false;
+stop_enemy.invulnerable = true;
+already_done = false;
 </string>
           </argument>
         </arguments>

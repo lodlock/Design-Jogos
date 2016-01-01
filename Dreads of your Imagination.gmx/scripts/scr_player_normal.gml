@@ -71,6 +71,13 @@ if(super_eyes_rdy){
         with button visible = true;
 }
 
+button = collision_circle(x, y, 50, obj_button, 0, 1);
+
+if (instance_exists(button) &&  key_e && button.visible){
+    keyboard_clear(ord("E"));
+    button.activated = true;
+}
+
 //LASER GUN ATTACK
 if (key_space && laser_gun_rdy && can_shoot){
     

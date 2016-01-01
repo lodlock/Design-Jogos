@@ -95,7 +95,10 @@ ask_transform = false;
 } 
 if (obj_pet.state == states.transforming) {
     state = states.transforming;
+    path_speed = 0;
 }
+else
+    path_speed = 2;
 
 if(hp &lt; 0) instance_destroy();
 
@@ -111,7 +114,7 @@ if (place_meeting(x,y, obj_pet)){
 }
 
 if (place_meeting(x,y, obj_player)){
-    with(obj_player) hp -= 0.1;
+    with(obj_player) hp = 0.0;
 }
 </string>
           </argument>

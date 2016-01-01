@@ -157,6 +157,12 @@ if(attack){
     }
 }
 
+if (instance_exists(button) &amp;&amp; !button.activated &amp;&amp; button.visible){
+    depth = -999;
+    draw_set_halign(fa_center);
+    draw_text(button.x,button.y-42, "Press E to activate!");
+}
+
 if(state == states.transforming) return 0;
 
 if(web_rdy) draw_sprite_ext(spr_web,0,x+10,y,facing,1,0,c_white,1);
