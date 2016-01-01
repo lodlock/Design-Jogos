@@ -242,7 +242,7 @@ else if (global.inventory[3,0] == spr_web_pickup){
         return 0;
     }
 }
-else if (global.inventory[0,0] == spr_fireball_pickup){
+else if (global.inventory[3,0] == spr_fireball_pickup){
     if (!fireball_rdy){
         fireball_rdy = true;
         bow_rdy = false;
@@ -384,7 +384,7 @@ else if (global.inventory[2,0] == spr_web_pickup){
         return 0;
     }
 }
-else if (global.inventory[0,0] == spr_fireball_pickup){
+else if (global.inventory[2,0] == spr_fireball_pickup){
     if (!fireball_rdy){
         fireball_rdy = true;
         bow_rdy = false;
