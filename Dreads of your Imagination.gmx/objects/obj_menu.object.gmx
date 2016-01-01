@@ -32,7 +32,7 @@ menu[2] = "Exit";
 space = 64;
 mpos = 0;
 
-//Used for persistant instances
+//Used for persistant obj_dialogue instances
 for(c = 0;c &lt; 100;c += 1){
   for(d = 0;d &lt; 100;d += 1){
     global.itemflag[c,d] = false; //100 item flags for each of the first 100 rooms added in the game
