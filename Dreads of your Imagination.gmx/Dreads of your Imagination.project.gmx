@@ -225,10 +225,10 @@
     <object>objects\obj_chicken</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_initialize</room>
-    <room>rooms\lvl_2</room>
     <room>rooms\Start_menu</room>
+    <room>rooms\rm_initialize</room>
     <room>rooms\room0</room>
+    <room>rooms\lvl_2</room>
     <room>rooms\lvl_room</room>
   </rooms>
   <help>

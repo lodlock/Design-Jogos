@@ -107,6 +107,7 @@ if (key_space && fireball_rdy){
 //DIALOGUE EVENT
 dialogue = collision_circle(x, y, 25, obj_dialogue, 0, 1);
 if(instance_exists(dialogue)) {
+    global.itemflag[room, dialogue.itemid] = true;
     with(dialogue) {
         obj_player.state = states.talking;
         end_of_line = 0;

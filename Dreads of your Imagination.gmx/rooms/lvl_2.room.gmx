@@ -626,7 +626,7 @@ enum states {
     <instance objName="obj_box" x="2912" y="3392" name="inst_97F751BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2848" y="3008" name="inst_B74F054D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button" x="2848" y="2944" name="inst_5E20D00C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="1680" y="1152" name="inst_B843F85E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="1696" y="1152" name="inst_B843F85E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="800" y="672" name="inst_6355C5DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="864" y="672" name="inst_76C79198" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="928" y="672" name="inst_258C6518" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

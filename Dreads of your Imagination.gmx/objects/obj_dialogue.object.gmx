@@ -28,6 +28,9 @@
             <string>padding = 16;
 end_of_line = 0;
 line = 0;
+
+//For persistant instances
+count_id = 0;
 </string>
           </argument>
         </arguments>
