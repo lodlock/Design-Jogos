@@ -18,6 +18,17 @@ enum states {
     petcontroll,
     chase,
     talking
+}
+
+//For persistant obj_dialogue instances
+var c;
+c = 0;
+with(obj_dialogue){
+ itemid = c;
+ c += 1;
+ if(global.itemflag[room,itemid]){
+  instance_destroy();
+ }
 }</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
