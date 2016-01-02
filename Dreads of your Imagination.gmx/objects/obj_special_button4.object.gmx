@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>obj_button</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -54,8 +54,6 @@ if(activated){
     with(special4_1)
         instance_destroy();
     with(special4_2)
-        instance_destroy();
-    with(special4_3)
         instance_destroy();
 }
 else

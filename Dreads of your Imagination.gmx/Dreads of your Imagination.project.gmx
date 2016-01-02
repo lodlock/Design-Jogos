@@ -42,6 +42,7 @@
       <sprite>sprites\spr_wall</sprite>
       <sprite>sprites\spr_button</sprite>
       <sprite>sprites\spr_invisiwall</sprite>
+      <sprite>sprites\spr_invisi_trigger</sprite>
     </sprites>
     <sprites name="Objects">
       <sprite>sprites\spr_checkpoint</sprite>
@@ -73,6 +74,7 @@
       <sprite>sprites\spr_alien3</sprite>
       <sprite>sprites\spr_alien4</sprite>
       <sprite>sprites\spr_bee</sprite>
+      <sprite>sprites\spr_snake</sprite>
     </sprites>
     <sprites name="Ammo">
       <sprite>sprites\spr_arrow</sprite>
@@ -195,13 +197,17 @@
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_textbox</object>
       <object>objects\obj_dialogue</object>
+      <object>objects\obj_trigger_dark_lvl2</object>
     </objects>
     <objects name="Enemies">
       <object>objects\obj_e</object>
+      <object>objects\obj_snake</object>
       <object>objects\obj_e2</object>
       <object>objects\obj_transformable_enemy</object>
       <object>objects\obj_fire_enemy</object>
+      <object>objects\obj_eyes_enemy</object>
       <object>objects\obj_boss_obscuro</object>
+      <object>objects\obj_boss_obscuro_lvl2</object>
       <object>objects\obj_frog</object>
       <object>objects\obj_bee</object>
     </objects>
@@ -218,6 +224,7 @@
       <object>objects\obj_special_button2</object>
       <object>objects\obj_special_button3</object>
       <object>objects\obj_special_button4</object>
+      <object>objects\obj_trigger_boss_lvl2</object>
       <object>objects\obj_inviwall</object>
     </objects>
     <objects name="Ammo">

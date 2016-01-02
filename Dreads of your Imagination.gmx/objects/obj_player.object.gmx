@@ -50,6 +50,8 @@ web = noone;
 target = noone;
 enemy = noone;
 button = noone;
+ground = noone;
+torch = noone;
 
 can_see = false;
 globalvar transform;
@@ -142,27 +144,18 @@ pointy = mouse_y;
             <string>draw_sprite_ext(sprite_index,image_index,x,y,facing,1,1,c_white,1);
 
 image_speed = 0.1;
-if(instance_exists(arrow)){
-    image_speed = 1;
-    if(image_index &gt; 18){
-        image_speed = 0;
-    }
-}
-
-if(attack){
-    image_speed = 1;
-    if(image_index &gt; 11){
-        image_speed = 0;
-        attack = false;
-    }
-}
 
 if (instance_exists(button) &amp;&amp; !button.activated &amp;&amp; button.visible){
     depth = -999;
     draw_set_halign(fa_center);
     draw_text(button.x,button.y-42, "Press E to activate!");
 }
-
+if (instance_exists(torch) &amp;&amp; !torch.can_light){
+    depth = -999;
+    draw_set_halign(fa_center);
+    draw_text(torch.x,torch.y-42, "Press E to Light Torch");
+}
+else depth = -10;
 if(state == states.transforming) return 0;
 
 if(web_rdy) draw_sprite_ext(spr_web,0,x+10,y,facing,1,0,c_white,1);
@@ -171,9 +164,8 @@ if(frog_rdy){
     draw_sprite_ext(spr_frog,0,x+10,y+25,0.3,0.3,0,c_white,1);
     draw_sprite_ext(spr_frog,0,x-10,y+25,0.3,0.3,0,c_white,1);
 }
-if(laser_gun_rdy) draw_sprite_ext(spr_laser_gun,0,x+10,y+5,facing,1,0,c_white,1);
+if(bow_rdy) draw_sprite_ext(spr_bow,0,x+10,y+5,-facing,1,0,c_white,1);
 if(super_eyes_rdy) draw_sprite_ext(spr_super_eyes,0,x,y-5,facing,1,0,c_white,1);
-if (speed != 0) draw_line(x, y, rope.x, rope.y);
 </string>
           </argument>
         </arguments>

@@ -7,17 +7,25 @@ hsp = move * movespeed;
 if (vsp < 10) vsp += grav;
 
 //Check if object can Jump
-if (place_meeting(x,y+1, obj_box) || place_meeting(x,y+1, obj_crate)){
+if (place_meeting(x,y+1, obj_box)){
     vsp = key_jump * -jumpspeed;
 }
 
 if(hsp != 0){
     hsp_dir = sign(hsp);
 }
-if(frog_rdy){
-    jumpspeed = 10;
+
+
+//LIGHT TORCHES
+
+if(room = lvl_2){
+    torch = collision_circle(x, y, 50, obj_torch, 0, 1);
+    
+    if (instance_exists(torch) &&  key_e){
+        keyboard_clear(ord("E"));
+        torch.can_light = true;
+    }
 }
-else jumpspeed = 5;
 
 //PLAYER ANIMATION AND PET
 if(place_meeting(x,y+1, obj_box)){
@@ -53,7 +61,7 @@ if(instance_exists(obj_pet)){
     obj_player.state = states.normal;
     } 
     //Give controll to pet
-    if(key_f){
+    if(key_f && obj_pet.state != states.lasttime){
         keyboard_clear(ord("F"));
         obj_pet.state = states.petcontroll;
         state = states.petcontroll;
@@ -64,12 +72,7 @@ if(instance_exists(obj_pet)){
     }   
 }
 
-//SUPER EYES
-if(super_eyes_rdy){
-    button = collision_circle(x, y, 150, obj_button, 0, 1);
-    if(instance_exists(button))
-        with button visible = true;
-}
+//BUTTON ACTIVATE
 
 button = collision_circle(x, y, 50, obj_button, 0, 1);
 
@@ -78,15 +81,35 @@ if (instance_exists(button) &&  key_e && button.visible){
     button.activated = true;
 }
 
-//LASER GUN ATTACK
-if (key_space && laser_gun_rdy && can_shoot){
+
+
+
+///////////////////////////////////////////////////////////////POWERS
+//SUPER EYES
+if(super_eyes_rdy){
+    button = collision_circle(x, y, 150, obj_button, 0, 1);
+    if(instance_exists(button))
+        with button visible = true;
+    ground = collision_circle(x, y, 150, obj_moving_box, 0, 1);
+    if(instance_exists(ground))
+        with ground visible = true;
+}
+    
+//FROG JUMP
+if(frog_rdy){
+    jumpspeed = 10;
+}
+else jumpspeed = 5;
+
+//BOW ATTACK
+if (key_space && bow_rdy && can_shoot){
     
     ammo_x = (x+32)*facing;
     ammo_y = y;
-    laser = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_laser);   
+    arrow = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_arrow);   
     can_shoot = false;   
 }
-with laser obj_player.target = collision_circle(x, y, 50, obj_transformable_enemy, 0, 1);
+with arrow obj_player.target = collision_circle(x, y, 50, obj_transformable_enemy, 0, 1);
 if(target != noone)
     enemy = target;
 //WEB ATTACK
@@ -110,6 +133,13 @@ if (key_space && fireball_rdy){
         with fireball instance_destroy();
     fireball = instance_create(x + lengthdir_x(lenx, image_angle) - lengthdir_y(leny, image_angle), y + lengthdir_y(lenx,image_angle)+lengthdir_x(leny, image_angle), obj_fireball);
 }
+///////////////////////////////////////////////////////////////POWERS
+
+
+
+
+
+
 
 //DIALOGUE EVENT
 dialogue = collision_circle(x, y, 25, obj_dialogue, 0, 1);

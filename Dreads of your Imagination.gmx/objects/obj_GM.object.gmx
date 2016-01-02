@@ -26,10 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>globalvar start_boss;
+globalvar lvl2boss;
+lvl2boss = false;
 start_boss = false;
 dialog1 = false;
 chicken = false;
 kid_can_transform = false;
+lvl2bossrdy = true;
+
 </string>
           </argument>
         </arguments>
@@ -104,18 +108,36 @@ if(keyboard_check(ord("L"))){
         room_restart();
     }
 }
+if(room = room0){
+    with(obj_player){
+        nearest_torch = instance_nearest(x, y, obj_torch);
+        nearest_lightb = instance_nearest(x, y, obj_fireball);
+        if(obj_lightning.darkness &amp;&amp; nearest_torch.can_light &amp;&amp; distance_to_object(nearest_torch) &lt; 200 &amp;&amp; hp &lt; 100) hp += 0.5;
+        if(obj_lightning.darkness &amp;&amp; distance_to_object(nearest_lightb) &lt; 100 &amp;&amp; hp &lt; 100) hp += 0.6;
+        if(obj_lightning.darkness &amp;&amp; !nearest_torch.can_light) hp -= 0.5;
+        if(obj_lightning.darkness &amp;&amp; nearest_torch.can_light &amp;&amp; distance_to_object(nearest_torch) &gt; 200) hp -= 0.5;
+        if(!obj_lightning.darkness &amp;&amp; obj_lightning.already &amp;&amp; !nearest_torch.can_light &amp;&amp; distance_to_object(nearest_torch) &gt; 0) hp -= 0.5;
+        if(!obj_lightning.darkness &amp;&amp; obj_lightning.already &amp;&amp; distance_to_object(nearest_torch) &lt; 200 &amp;&amp; hp &lt; 100 &amp;&amp; distance_to_object(obj_pet) &lt; 150) hp +=0.5;
+        if(start_boss &amp;&amp; place_meeting(obj_pet.x,obj_pet.y,obj_boss_obscuro)) hp -=1.0;
+    }
+}
 
-with(obj_player){
-    if(hp &lt; 0 ) scr_death();
-    nearest_torch = instance_nearest(x, y, obj_torch);
-    nearest_lightb = instance_nearest(x, y, obj_fireball);
-    if(obj_lightning.darkness &amp;&amp; nearest_torch.can_light &amp;&amp; distance_to_object(nearest_torch) &lt; 200 &amp;&amp; hp &lt; 100) hp += 0.5;
-    if(obj_lightning.darkness &amp;&amp; distance_to_object(nearest_lightb) &lt; 100 &amp;&amp; hp &lt; 100) hp += 0.6;
-    if(obj_lightning.darkness &amp;&amp; !nearest_torch.can_light) hp -= 0.5;
-    if(obj_lightning.darkness &amp;&amp; nearest_torch.can_light &amp;&amp; distance_to_object(nearest_torch) &gt; 200) hp -= 0.5;
-    if(!obj_lightning.darkness &amp;&amp; obj_lightning.already &amp;&amp; !nearest_torch.can_light &amp;&amp; distance_to_object(nearest_torch) &gt; 0) hp -= 0.5;
-    if(!obj_lightning.darkness &amp;&amp; obj_lightning.already &amp;&amp; distance_to_object(nearest_torch) &lt; 200 &amp;&amp; hp &lt; 100 &amp;&amp; distance_to_object(obj_pet) &lt; 150) hp +=0.5;
-    if(start_boss &amp;&amp; place_meeting(obj_pet.x,obj_pet.y,obj_boss_obscuro)) hp -=1.0;
+if(room = lvl_2){
+    
+    if(lvl2boss &amp;&amp; lvl2bossrdy){
+        instance_create(2112,3072, obj_snake);
+        instance_create(2112,3072, obj_e);
+        if(instance_number(obj_snake) &gt; 10 || instance_number(obj_e) &gt; 5)
+            lvl2bossrdy = false;
+    }
+    if(lvl2boss){
+        if(instance_number(obj_snake) = 5 &amp;&amp; instance_number(obj_e) = 2)
+            {
+                instance_create(2656,3264, obj_boss_obscuro_lvl2);
+                instance_create(2112,3072, obj_e);
+            }
+    }
+    
 }
 </string>
           </argument>

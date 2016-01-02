@@ -59,6 +59,10 @@ if(obj_pet.state = states.petcontroll &amp;&amp; !start_boss) darkness = false;
 if(start_boss) darkness = true;
 if(obj_player.state = states.normal &amp;&amp; already) darkness = true;
 if(darkness) draw_set_color(c_white);
+if(room = lvl_2 &amp;&amp; obj_trigger_dark_lvl2.lvl2_dark){
+    darkness = true;
+    already = true;
+}
 else draw_set_color(c_gray);
 draw_rectangle(0,0,view_wview,view_hview,false);
 surface_reset_target();
