@@ -75,6 +75,8 @@
       <sprite>sprites\spr_alien4</sprite>
       <sprite>sprites\spr_bee</sprite>
       <sprite>sprites\spr_snake</sprite>
+      <sprite>sprites\spr_rat</sprite>
+      <sprite>sprites\spr_speedy</sprite>
     </sprites>
     <sprites name="Ammo">
       <sprite>sprites\spr_arrow</sprite>
@@ -175,14 +177,10 @@
       <object>objects\obj_sign_trigger_boss</object>
     </objects>
     <objects name="Pickups">
-      <object>objects\obj_healing_potion</object>
       <object>objects\obj_bow</object>
-      <object>objects\obj_sword</object>
-      <object>objects\obj_placeCrate</object>
       <object>objects\obj_web_pickup</object>
       <object>objects\obj_lightball_pickup</object>
       <object>objects\obj_frog_jump</object>
-      <object>objects\obj_laser_gun</object>
       <object>objects\obj_super_eyes</object>
     </objects>
     <objects name="GameManagers">
@@ -205,6 +203,8 @@
       <object>objects\obj_e2</object>
       <object>objects\obj_transformable_enemy</object>
       <object>objects\obj_fire_enemy</object>
+      <object>objects\obj_rat</object>
+      <object>objects\obj_speedy</object>
       <object>objects\obj_eyes_enemy</object>
       <object>objects\obj_boss_obscuro</object>
       <object>objects\obj_boss_obscuro_lvl2</object>
@@ -214,6 +214,7 @@
     <objects name="Tiles">
       <object>objects\obj_crate</object>
       <object>objects\obj_box</object>
+      <object>objects\obj_fake_box</object>
       <object>objects\obj_moving_box</object>
       <object>objects\obj_box1</object>
       <object>objects\obj_chain</object>
@@ -224,6 +225,10 @@
       <object>objects\obj_special_button2</object>
       <object>objects\obj_special_button3</object>
       <object>objects\obj_special_button4</object>
+      <object>objects\obj_lvl3_special1</object>
+      <object>objects\obj_lvl3_special2</object>
+      <object>objects\obj_lvl3_special3</object>
+      <object>objects\obj_lvl3_special4</object>
       <object>objects\obj_trigger_boss_lvl2</object>
       <object>objects\obj_inviwall</object>
     </objects>
@@ -241,8 +246,9 @@
   <rooms name="rooms">
     <room>rooms\Start_menu</room>
     <room>rooms\rm_initialize</room>
-    <room>rooms\room0</room>
+    <room>rooms\lvl_3</room>
     <room>rooms\lvl_2</room>
+    <room>rooms\room0</room>
     <room>rooms\lvl_room</room>
   </rooms>
   <help>

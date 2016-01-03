@@ -56,7 +56,7 @@ menu_height = 50;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_spider || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_spider){
+            <string>if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_spider || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_spider){
     if (keyboard_check_pressed(ord("D"))){
         selected += 1;
     }else if (keyboard_check_pressed(ord("A"))){
@@ -91,7 +91,7 @@ menu_height = 50;
     }
 }
 
-if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_fire_enemy || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_fire_enemy){
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_fire_enemy || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_fire_enemy){
     if (keyboard_check_pressed(ord("D"))){
         selected += 1;
     }else if (keyboard_check_pressed(ord("A"))){
@@ -123,7 +123,7 @@ if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy
     }
 }
 
-if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_alien2 || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_alien2){
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_alien2 || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_alien2){
     if (keyboard_check_pressed(ord("D"))){
         selected += 1;
     }else if (keyboard_check_pressed(ord("A"))){
@@ -155,7 +155,7 @@ if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy
     }
 }
 
-if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_alien3 || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_alien3){
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_alien3 || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_alien3){
     if (keyboard_check_pressed(ord("D"))){
         selected += 1;
     }else if (keyboard_check_pressed(ord("A"))){
@@ -213,7 +213,7 @@ image_speed = 0;
 
 display_set_gui_size(1024, 768);
 
-if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_spider || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_spider){
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_spider || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_spider){
     sprite_index = spr_enemy;
     var pr, i;
     i = 0;
@@ -237,7 +237,7 @@ if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy
     
 }
 
-if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_fire_enemy || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_fire_enemy){
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_fire_enemy || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_fire_enemy){
     sprite_index = spr_fire_enemy_transform;
     var pr, i;
     i = 0;
@@ -260,7 +260,7 @@ if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy
     ds_priority_destroy(pr);
 }
 
-if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_alien2 || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_alien2){
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_alien2 || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_alien2){
     sprite_index = spr_frog;
     var pr, i;
     i = 0;
@@ -283,7 +283,7 @@ if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy
     ds_priority_destroy(pr);
 }
 
-if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_alien3 || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_alien3){
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_alien3 || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_alien3){
     sprite_index = spr_frog;
     var pr, i;
     i = 0;
@@ -332,7 +332,7 @@ image_speed = 0;
 
 display_set_gui_size(1024, 768);
 
-if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp;  obj_pet.enemy.sprite_index = spr_spider || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_spider){
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp;  obj_pet.enemy.sprite_index = spr_spider || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_spider){
     
     var text;
     
@@ -360,7 +360,7 @@ if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy
 
 }
 
-if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_fire_enemy || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_fire_enemy){
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_fire_enemy || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_fire_enemy){
     
     var text;
     
@@ -388,7 +388,7 @@ if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy
 
 }
 
-if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_alien2 || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_alien2){
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_alien2 || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_alien2){
     
     var text;
     
@@ -416,7 +416,7 @@ if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy
 
 }
 
-if(obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_alien3 || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_alien3){
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_alien3 || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_alien3){
     
     var text;
     

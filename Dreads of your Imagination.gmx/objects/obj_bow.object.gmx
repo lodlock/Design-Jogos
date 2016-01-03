@@ -28,14 +28,16 @@
             <string>if (place_meeting(x,y, obj_player) || place_meeting(x,y, obj_pet)){
     ItemPickup(spr_bow);
     arrows = 3;
-    with(bow1)
-        instance_destroy();
-    with(bow2)
-        instance_destroy();
-    with(bow3)
-        instance_destroy();
-    with(bow4)
-        instance_destroy();
+    if(room == lvl_2){
+        with(bow1)
+            instance_destroy();
+        with(bow2)
+            instance_destroy();
+        with(bow3)
+            instance_destroy();
+        with(bow4)
+            instance_destroy();
+    }
     instance_destroy();
 }
 </string>

@@ -85,6 +85,17 @@ if (instance_exists(button) &&  key_e && button.visible){
 
 
 ///////////////////////////////////////////////////////////////POWERS
+
+//SUPER SPEED
+
+if(speed_rdy){
+    movespeed = 5;
+    wood_crate = collision_circle(x, y, 50, obj_crate, 0, 1);
+    if(instance_exists(wood_crate))
+        with wood_crate instance_destroy();
+}
+else
+    movespeed = 2;
 //SUPER EYES
 if(super_eyes_rdy){
     button = collision_circle(x, y, 150, obj_button, 0, 1);

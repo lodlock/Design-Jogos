@@ -30,8 +30,8 @@ grav = 0.2;
 hsp = 0;
 hsp_dir = 1;
 vsp = 0;
-jumpspeed = 10;
-movespeed = 10;
+jumpspeed = 5;
+movespeed = 2;
 
 hp = 100;
 
@@ -52,6 +52,7 @@ enemy = noone;
 button = noone;
 ground = noone;
 torch = noone;
+wood_crate = noone;
 
 can_see = false;
 globalvar transform;
@@ -72,7 +73,9 @@ fireball_rdy = false;
 web_rdy = false;
 frog_rdy = false;
 laser_gun_rdy = false;
+small_rdy = false;
 super_eyes_rdy = false;
+speed_rdy = false;
 
 if(global.checkpointR == room) {
     x = global.checkpointx;
@@ -115,8 +118,7 @@ pointy = mouse_y;
             <string>switch(state){
     case states.normal: scr_player_normal(); break;
     case states.transforming: scr_player_transforming(); break;
-    case states.petcontroll: scr_iddle(); break;  
-    case states.grab_ledge: scr_ledge_grab(); break;
+    case states.petcontroll: scr_iddle(); break;
     case states.talking: scr_player_talking(dialogue); break;
 }
 </string>
@@ -141,7 +143,19 @@ pointy = mouse_y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index,image_index,x,y,facing,1,1,c_white,1);
+            <string>if(!small_rdy)
+{
+    draw_sprite_ext(sprite_index,image_index,x,y,facing/2,0.5,1,c_white,1);
+    image_xscale = 0.5;
+    image_yscale = 0.5;
+}
+else
+{
+    draw_sprite_ext(sprite_index,image_index,x,y,facing,1,1,c_white,1);
+    image_xscale = 1;
+    image_yscale = 1;
+}
+
 
 image_speed = 0.1;
 

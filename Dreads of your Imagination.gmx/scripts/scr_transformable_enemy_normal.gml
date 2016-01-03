@@ -4,12 +4,13 @@ if(hp < 25){
     ask_transform = true;
     if(keyboard_check(ord("E")) || gamepad_button_check_pressed(0,gp_face2)){
         keyboard_clear(ord("E"));
-        obj_pet.state = states.transforming;
+        if(instance_exists(obj_pet))
+            obj_pet.state = states.transforming;
         obj_player.state = states.transforming;
     }
     
 } 
-if (obj_pet.state == states.transforming) {
+if (obj_player.state == states.transforming) {
     state = states.transforming;
 }
 
