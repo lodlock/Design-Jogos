@@ -75,7 +75,7 @@ else if(room == lvl_2) {draw_set_color(c_gray);}
 
 if(room == lvl_3)
 {
-    if(obj_lvl3_special1.dark_button_lvl3)
+    if(obj_lvl3_special1.dark_button_lvl3 || obj_trigger_dark_lvl2.lvl2_dark)
         darkness = true;
     else
         darkness = false;

@@ -51,6 +51,8 @@
       <sprite>sprites\spr_healing_potion</sprite>
       <sprite>sprites\spr_sign</sprite>
       <sprite>sprites\spr_super_eyes</sprite>
+      <sprite>sprites\spr_speed_pickup</sprite>
+      <sprite>sprites\spr_small_pickup</sprite>
     </sprites>
     <sprites name="HUD">
       <sprite>sprites\spr_healthbar_inner</sprite>
@@ -182,6 +184,8 @@
       <object>objects\obj_lightball_pickup</object>
       <object>objects\obj_frog_jump</object>
       <object>objects\obj_super_eyes</object>
+      <object>objects\obj_speed</object>
+      <object>objects\obj_small</object>
     </objects>
     <objects name="GameManagers">
       <object>objects\obj_musicBox</object>
@@ -229,6 +233,8 @@
       <object>objects\obj_lvl3_special2</object>
       <object>objects\obj_lvl3_special3</object>
       <object>objects\obj_lvl3_special4</object>
+      <object>objects\obj_lvl3_special5</object>
+      <object>objects\obj_lvl3_special6</object>
       <object>objects\obj_trigger_boss_lvl2</object>
       <object>objects\obj_inviwall</object>
     </objects>

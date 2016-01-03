@@ -30,6 +30,14 @@ for(i=0;i<=maxInvSlots;i+=1)
         global.inventory[i,0] = argument0;
         i = maxInvSlots;
     }
+    else if (argument0 == spr_speed_pickup && global.inventory[i,0] == spr_speed_pickup){
+        global.inventory[i,0] = argument0;
+        i = maxInvSlots;
+    }
+    else if (argument0 == spr_small_pickup && global.inventory[i,0] == spr_small_pickup){
+        global.inventory[i,0] = argument0;
+        i = maxInvSlots;
+    }
     else if global.inventory[i,0] == ""  {
         global.inventory[i,0] = argument0;
         i = maxInvSlots;

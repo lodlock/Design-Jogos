@@ -74,14 +74,13 @@ menu_height = 50;
     if(keyboard_check(vk_enter) || keyboard_check(ord("E")) || gamepad_button_check_pressed(0,gp_face2) &amp;&amp; obj_pet.state = states.transforming){
         switch(item){
             case 0: keyboard_clear(ord("E"));
-                    if(instance_exists(obj_pet.enemy)){
+                    if(instance_exists(obj_pet) &amp;&amp; instance_exists(obj_pet.enemy)){
                         with(obj_pet.enemy) instance_change(obj_web_pickup,1);
                         obj_pet.state = states.petcontroll;
                         obj_player.state = states.petcontroll;
                     } 
                     if(instance_exists(obj_player.enemy)){
                         with(obj_player.enemy) instance_change(obj_web_pickup,1);
-                        obj_pet.state = states.normal;
                         obj_player.state = states.normal;
                     } 
                     
@@ -109,14 +108,13 @@ if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp
     if(keyboard_check(vk_enter) || keyboard_check(ord("E")) || gamepad_button_check_pressed(0,gp_face2) &amp;&amp; obj_pet.state = states.transforming){
         switch(item){
             case 0: keyboard_clear(ord("E"));
-                    if(instance_exists(obj_pet.enemy)){
+                    if(instance_exists(obj_pet) &amp;&amp; instance_exists(obj_pet.enemy)){
                         with(obj_pet.enemy) instance_change(obj_lightball_pickup,1);
                         obj_pet.state = states.petcontroll;
                         obj_player.state = states.petcontroll;
                     } 
                     if(instance_exists(obj_player.enemy)){
                         with(obj_player.enemy) instance_change(obj_lightball_pickup,1);
-                        obj_pet.state = states.normal;
                         obj_player.state = states.normal;
                     } 
         }
@@ -141,14 +139,13 @@ if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp
     if(keyboard_check(vk_enter) || keyboard_check(ord("E")) || gamepad_button_check_pressed(0,gp_face2) &amp;&amp; obj_pet.state = states.transforming){
         switch(item){
             case 0: keyboard_clear(ord("E"));
-                    if(instance_exists(obj_pet.enemy)){
+                    if(instance_exists(obj_pet) &amp;&amp; instance_exists(obj_pet.enemy)){
                         with(obj_pet.enemy) instance_change(obj_frog_jump,1);
                         obj_pet.state = states.petcontroll;
                         obj_player.state = states.petcontroll;
                     } 
                     if(instance_exists(obj_player.enemy)){
                         with(obj_player.enemy) instance_change(obj_frog_jump,1);
-                        obj_pet.state = states.normal;
                         obj_player.state = states.normal;
                     } 
         }
@@ -173,14 +170,75 @@ if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp
     if(keyboard_check(vk_enter) || keyboard_check(ord("E")) || gamepad_button_check_pressed(0,gp_face2) &amp;&amp; obj_pet.state = states.transforming){
         switch(item){
             case 0: keyboard_clear(ord("E"));
-                    if(instance_exists(obj_pet.enemy)){
+                    if(instance_exists(obj_pet) &amp;&amp; instance_exists(obj_pet.enemy)){
                         with(obj_pet.enemy) instance_change(obj_super_eyes,1);
                         obj_pet.state = states.petcontroll;
                         obj_player.state = states.petcontroll;
                     } 
                     if(instance_exists(obj_player.enemy)){
                         with(obj_player.enemy) instance_change(obj_super_eyes,1);
-                        obj_pet.state = states.normal;
+                        obj_player.state = states.normal;
+                    } 
+        }
+    }
+}
+
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_rat || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_rat){
+    if (keyboard_check_pressed(ord("D"))){
+        selected += 1;
+    }else if (keyboard_check_pressed(ord("A"))){
+        selected -= 1;
+    }
+    
+    rot -= scr_angle_difference(rot, selected * (360/image_number))/(0.2*room_speed);
+    
+    item = -selected mod image_number;
+    
+    if(item &lt; 0){
+        item += image_number;
+    }
+    
+    if(keyboard_check(vk_enter) || keyboard_check(ord("E")) || gamepad_button_check_pressed(0,gp_face2) &amp;&amp; obj_pet.state = states.transforming){
+        switch(item){
+            case 0: keyboard_clear(ord("E"));
+                    if(instance_exists(obj_pet) &amp;&amp; instance_exists(obj_pet.enemy)){
+                        with(obj_pet.enemy) instance_change(obj_small,1);
+                        obj_pet.state = states.petcontroll;
+                        obj_player.state = states.petcontroll;
+                    } 
+                    if(instance_exists(obj_player.enemy)){
+                        with(obj_player.enemy) instance_change(obj_small,1);
+                        obj_player.state = states.normal;
+                    } 
+        }
+    }
+}
+
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_speedy || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_speedy){
+    if (keyboard_check_pressed(ord("D"))){
+        selected += 1;
+    }else if (keyboard_check_pressed(ord("A"))){
+        selected -= 1;
+    }
+    
+    rot -= scr_angle_difference(rot, selected * (360/image_number))/(0.2*room_speed);
+    
+    item = -selected mod image_number;
+    
+    if(item &lt; 0){
+        item += image_number;
+    }
+    
+    if(keyboard_check(vk_enter) || keyboard_check(ord("E")) || gamepad_button_check_pressed(0,gp_face2) &amp;&amp; obj_pet.state = states.transforming){
+        switch(item){
+            case 0: keyboard_clear(ord("E"));
+                    if(instance_exists(obj_pet) &amp;&amp; instance_exists(obj_pet.enemy)){
+                        with(obj_pet.enemy) instance_change(obj_speed,1);
+                        obj_pet.state = states.petcontroll;
+                        obj_player.state = states.petcontroll;
+                    } 
+                    if(instance_exists(obj_player.enemy)){
+                        with(obj_player.enemy) instance_change(obj_speed,1);
                         obj_player.state = states.normal;
                     } 
         }
@@ -284,7 +342,53 @@ if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp
 }
 
 if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_alien3 || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_alien3){
-    sprite_index = spr_frog;
+    sprite_index = spr_super_eyes;
+    var pr, i;
+    i = 0;
+    pr = ds_priority_create();
+    
+    repeat(image_number){
+        ds_priority_add(pr,i,lengthdir_y(1,(rot-90)+i*(360/image_number)));
+        i+= 1;
+    }
+    
+    repeat(image_number){
+        i = ds_priority_delete_min(pr);
+        draw_sprite_ext(sprite_index,
+        i,menu_x+lengthdir_x(menu_width/2,(rot-90)+i*(360/image_number)),
+        menu_y+lengthdir_y(menu_height/2,(rot-90)+i*(360/image_number)),
+        1+lengthdir_y(menu_height/2,(rot-90)+i*(360/image_number))/(menu_height*2),
+        1+lengthdir_y(menu_height/2,(rot-90)+i*(360/image_number))/(menu_height*2),0,c_white,1);
+    }
+    
+    ds_priority_destroy(pr);
+}
+
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_rat || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_rat){
+    sprite_index = spr_small_pickup;
+    var pr, i;
+    i = 0;
+    pr = ds_priority_create();
+    
+    repeat(image_number){
+        ds_priority_add(pr,i,lengthdir_y(1,(rot-90)+i*(360/image_number)));
+        i+= 1;
+    }
+    
+    repeat(image_number){
+        i = ds_priority_delete_min(pr);
+        draw_sprite_ext(sprite_index,
+        i,menu_x+lengthdir_x(menu_width/2,(rot-90)+i*(360/image_number)),
+        menu_y+lengthdir_y(menu_height/2,(rot-90)+i*(360/image_number)),
+        1+lengthdir_y(menu_height/2,(rot-90)+i*(360/image_number))/(menu_height*2),
+        1+lengthdir_y(menu_height/2,(rot-90)+i*(360/image_number))/(menu_height*2),0,c_white,1);
+    }
+    
+    ds_priority_destroy(pr);
+}
+
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp; obj_pet.enemy.sprite_index = spr_speedy || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_speedy){
+    sprite_index = spr_speed_pickup;
     var pr, i;
     i = 0;
     pr = ds_priority_create();
@@ -422,6 +526,62 @@ if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp
     
     switch(item){
         case 0: text = "Natureyes: Discover hidden objects with Natureyes." break;
+        default: text = "" break;
+    }
+    draw_set_color(c_white);
+    draw_set_halign(fa_left);
+    draw_text(view_xview[0]+view_wview[0]/2-449 , view_yview[0]+view_hview[0]/2 + 200,text);
+    
+    draw_set_color(c_black);
+    draw_set_halign(fa_left);
+    draw_text(view_xview[0]+view_wview[0]/2-450 , view_yview[0]+view_hview[0]/2 + 201,text);
+    
+    
+    
+    draw_set_color(c_black);
+    draw_set_halign(fa_center);
+    draw_text(view_xview[0]+view_wview[0]/2 + 1, view_yview[0]+view_hview[0]/2 - 127,"Press A or D to rotate.#E or Enter to choose.");
+    
+    draw_set_color(c_white);
+    draw_set_halign(fa_center);
+    draw_text(view_xview[0]+view_wview[0]/2, view_yview[0]+view_hview[0]/2 - 128,"Press A or D to rotate.#E or Enter to choose.");
+
+}
+
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp;  obj_pet.enemy.sprite_index = spr_rat || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_rat){
+    
+    var text;
+    
+    switch(item){
+        case 0: text = "Mousmall: Become small, like..a  mouse?." break;
+        default: text = "" break;
+    }
+    draw_set_color(c_white);
+    draw_set_halign(fa_left);
+    draw_text(view_xview[0]+view_wview[0]/2-449 , view_yview[0]+view_hview[0]/2 + 200,text);
+    
+    draw_set_color(c_black);
+    draw_set_halign(fa_left);
+    draw_text(view_xview[0]+view_wview[0]/2-450 , view_yview[0]+view_hview[0]/2 + 201,text);
+    
+    
+    
+    draw_set_color(c_black);
+    draw_set_halign(fa_center);
+    draw_text(view_xview[0]+view_wview[0]/2 + 1, view_yview[0]+view_hview[0]/2 - 127,"Press A or D to rotate.#E or Enter to choose.");
+    
+    draw_set_color(c_white);
+    draw_set_halign(fa_center);
+    draw_text(view_xview[0]+view_wview[0]/2, view_yview[0]+view_hview[0]/2 - 128,"Press A or D to rotate.#E or Enter to choose.");
+
+}
+
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp;&amp; instance_exists(obj_pet.enemy) &amp;&amp;  obj_pet.enemy.sprite_index = spr_speedy || obj_player.state == states.transforming &amp;&amp; instance_exists(obj_player.enemy) &amp;&amp; obj_player.enemy.sprite_index = spr_speedy){
+    
+    var text;
+    
+    switch(item){
+        case 0: text = "Speedy: Run Tommy run!" break;
         default: text = "" break;
     }
     draw_set_color(c_white);
