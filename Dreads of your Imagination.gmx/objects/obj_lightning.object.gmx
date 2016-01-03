@@ -63,7 +63,7 @@ if(room = lvl_2 &amp;&amp; obj_trigger_dark_lvl2.lvl2_dark){
     darkness = true;
     already = true;
 }
-else draw_set_color(c_gray);
+else if(room = lvl_2) {draw_set_color(c_gray);}
 draw_rectangle(0,0,view_wview,view_hview,false);
 surface_reset_target();
 </string>

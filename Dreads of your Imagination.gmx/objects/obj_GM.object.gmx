@@ -29,9 +29,7 @@
 globalvar lvl2boss;
 lvl2boss = false;
 start_boss = false;
-dialog1 = false;
-chicken = false;
-kid_can_transform = false;
+lvl_1_boss_dialogue = false;
 lvl2bossrdy = true;
 
 </string>
@@ -122,6 +120,18 @@ if(room = room0){
     }
 }
 
+if(room = room0){
+    if(lvl_1_boss_dialogue) {
+        with(boss_dialogue) {
+            obj_player.dialogue = boss_dialogue;
+            global.itemflag[room, itemid] = true;
+            obj_player.state = states.talking;
+            end_of_line = 0;
+            line = 0;
+        }
+    }
+}
+
 if(room = lvl_2){
     
     if(lvl2boss &amp;&amp; lvl2bossrdy){
@@ -188,61 +198,6 @@ if(room = lvl_2){
 draw_sprite(spr_healthbar_bg,1,view_xview[0]+46, view_yview[0]+34);
 draw_sprite_ext(spr_healthbar_inner,1,view_xview[0]+46, view_yview[0]+34, obj_player.hp/100,1,0,c_white,1);
 draw_sprite(spr_healthbar_border,1,view_xview[0]+15, view_yview[0]+15);
-if (instance_exists(obj_boss_obscuro)){
-    if(obj_boss_obscuro.state = states.transforming &amp;&amp; start_boss) {
-        draw_text_color(view_xview[0]+500, view_yview[0]+250, "PRESS E NOW TO GRAB OBSCURO",c_white,c_white,c_white,c_white,1);
-        if(keyboard_check(ord("E"))){
-            keyboard_clear(ord("E"));
-            obj_boss_obscuro.state = states.chase;
-            kid_can_transform = true;
-            start_boss=false;
-            obj_pet.x = obj_boss_obscuro.x;
-            obj_pet.y = obj_boss_obscuro.y;
-            obj_pet.state = states.chase; //DEVIA SER GRAB MAS PARA TESTE
-            obj_player.state = states.normal;
-        }
-    
-    }
-
-    if(kid_can_transform){
-        show_debug_message("TRANSFORMA");
-        obj_boss_obscuro.can_be_transformed = false;
-        draw_text_color(view_xview[0]+500, view_yview[0]+250, "Pet: Go kid you have to be brave now!# Use the power of transformation, you can do it!!# He is too strong for me to do it alone!!",c_white,c_white,c_white,c_white,1);
-        draw_text_color(view_xview[0]+500, view_yview[0]+500, "Press E!",c_white,c_white,c_white,c_white,1);
-        obj_boss_obscuro.can_be_transformed = false;
-        if(keyboard_check(ord("E"))){
-            keyboard_clear(ord("E"));
-            dialog1 = true;   
-        }
-    }
-
-
-    if(dialog1){
-        obj_boss_obscuro.can_be_transformed = false;
-        kid_can_transform = false;
-        draw_text_colour(view_xview[0]+500, view_yview[0]+250, "Kid: But I am afraid!# I do not like to be on the dark!",c_white,c_white,c_white,c_white,1);
-        draw_text_color(view_xview[0]+500, view_yview[0]+350, "Pet: Think about something funny, something you like!#Do it!!",c_white,c_white,c_white,c_white,1);
-        draw_text_color(view_xview[0]+500, view_yview[0]+450, "Kid: I will be brave! I will face my fear of the dark! I know exactly what to do!!",c_white,c_white,c_white,c_white,1);
-        draw_text_color(view_xview[0]+500, view_yview[0]+550, "Press E now to end your fear of the Dark",c_white,c_white,c_white,c_white,1);
-        
-        if(keyboard_check(ord("E"))){
-            keyboard_clear(ord("E"));
-            chicken = true;
-            with(obj_boss_obscuro) instance_change(obj_chicken,1);
-            obj_pet.state = states.normal; 
-            obj_player.state = states.normal;
-        }
-    }
-}
-if(chicken){
-    can_be_transformed = false;
-    dialog1 = false;
-    view_object[0] = obj_chicken;
-    obj_pet.state = states.chase; 
-    obj_player.state = states.chase;
-    draw_text_color(view_xview[0]+500, view_yview[0]+250, "Pet: Great job Kid!! You did it!!# Now you can transform like me# What lies ahead??",c_white,c_white,c_white,c_white,1);
-    draw_text_color(view_xview[0]+500, view_yview[0]+500, "End of level 1. Congratulations!",c_white,c_white,c_white,c_white,1);
-}
 </string>
           </argument>
         </arguments>

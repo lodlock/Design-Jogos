@@ -32,7 +32,7 @@ y = obj_pet.y;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_snake">
+    <event eventtype="4" ename="obj_transformable_enemy">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -57,7 +57,7 @@ y = obj_pet.y;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_transformable_enemy">
+    <event eventtype="4" ename="obj_snake">
       <action>
         <libid>1</libid>
         <id>603</id>

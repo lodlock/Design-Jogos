@@ -241,8 +241,8 @@
   <rooms name="rooms">
     <room>rooms\Start_menu</room>
     <room>rooms\rm_initialize</room>
-    <room>rooms\lvl_2</room>
     <room>rooms\room0</room>
+    <room>rooms\lvl_2</room>
     <room>rooms\lvl_room</room>
   </rooms>
   <help>
