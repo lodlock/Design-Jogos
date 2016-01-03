@@ -68,5 +68,7 @@ if(key_ff){
     state = states.normal;
 }
 
+if(obj_player.hp <= 0) scr_death();
+
 view_object[0] = obj_pet;
 scr_pet_collision_controlled();

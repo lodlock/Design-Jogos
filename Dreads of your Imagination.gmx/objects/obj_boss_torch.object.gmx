@@ -67,13 +67,13 @@ surface_reset_target();
 draw_set_blend_mode(bm_normal);
 }
 
-if(can_light &amp;&amp; first_light &amp;&amp; obj_boss_obscuro.state == states.normal){
+if(can_light &amp;&amp; first_light &amp;&amp; (obj_boss_obscuro.state == states.normal || obj_boss_obscuro.state == states.chase)){
     first_light = false;
-    obj_boss_obscuro.hp -= 20;
+    obj_boss_obscuro.hp -= 200;
 }
 else
 
-if(collision_circle(x,y,10,obj_boss_obscuro,false,false) &amp;&amp; can_light &amp;&amp; obj_boss_obscuro.state == states.normal) {
+if(collision_circle(x,y,10,obj_boss_obscuro,false,false) &amp;&amp; can_light &amp;&amp; (obj_boss_obscuro.state == states.normal || obj_boss_obscuro.state == states.chase)) {
     can_light = false; 
     first_light = true;
     obj_boss_obscuro.hp += 20;

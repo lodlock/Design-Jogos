@@ -3,8 +3,8 @@
   <caption></caption>
   <width>4200</width>
   <height>4000</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -236,13 +236,13 @@ with(obj_dialogue){
     <instance objName="obj_box" x="736" y="416" name="inst_0927F6C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="736" y="480" name="inst_D20DBACC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1952" y="448" name="inst_5AE43E4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button" x="2064" y="384" name="inst_6C6D4129" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button" x="2016" y="384" name="inst_6C6D4129" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_moving_box" x="1952" y="352" name="inst_CCBFC480" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1952" y="288" name="inst_93AE162D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="160" y="288" name="inst_83E315DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="544" y="480" name="inst_85634A06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_moving_box" x="416" y="128" name="inst_CDE202CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button" x="512" y="160" name="inst_79B40BFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button" x="480" y="160" name="inst_79B40BFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="96" y="96" name="inst_076EDF5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="160" y="96" name="inst_B6726ABD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="224" y="96" name="inst_89BEA676" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -271,7 +271,7 @@ with(obj_dialogue){
     <instance objName="obj_box" x="1504" y="736" name="inst_E4934A40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1568" y="736" name="inst_73FAA285" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1632" y="448" name="inst_222DCB13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_frog" x="1568" y="624" name="inst_10BFCE38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_frog" x="1568" y="616" name="inst_10BFCE38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2400" y="32" name="inst_736A6AB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2400" y="96" name="inst_D37E2488" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2400" y="160" name="inst_0D5032C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -609,11 +609,11 @@ with(obj_dialogue){
     <instance objName="obj_torch" x="1856" y="2784" name="inst_6B3E692F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="1984" y="2912" name="inst_120BD264" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="2112" y="3008" name="inst_609323A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_checkpoint" x="736" y="144" name="inst_2C5A8E53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_checkpoint" x="2400" y="368" name="inst_07F6AF96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_checkpoint" x="3664" y="1680" name="inst_220703A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_checkpoint" x="1632" y="1680" name="inst_5D54EEB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_checkpoint" x="2656" y="3040" name="inst_A5DD9920" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="736" y="160" name="inst_2C5A8E53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="2400" y="384" name="inst_07F6AF96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="3680" y="1696" name="inst_220703A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="1632" y="1696" name="inst_5D54EEB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="2304" y="2912" name="inst_A5DD9920" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2080" y="3200" name="inst_0C9592D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2080" y="3264" name="inst_8FE1B482" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2080" y="3328" name="inst_07B25752" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -623,7 +623,7 @@ with(obj_dialogue){
     <instance objName="obj_box" x="2912" y="3328" name="inst_246B8FE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2912" y="3392" name="inst_97F751BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2848" y="2976" name="inst_B74F054D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="2656" y="3072" name="inst_B843F85E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="192" y="160" name="inst_B843F85E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="800" y="672" name="inst_6355C5DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="864" y="672" name="inst_76C79198" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="928" y="672" name="inst_258C6518" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -753,9 +753,8 @@ with(obj_dialogue){
     <instance objName="obj_moving_box" x="1376" y="1152" name="bow3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_moving_box" x="1376" y="1088" name="bow2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_moving_box" x="1376" y="1024" name="bow1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_frog" x="1312" y="624" name="inst_DEFD0132" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_frog" x="1312" y="616" name="inst_DEFD0132" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_e" x="1744" y="1696" name="inst_91F0F088" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_super_eyes" x="2496" y="992" name="inst_BFDE0009" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1776" y="1168" name="inst_28E7939E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_moving_box" x="1824" y="512" name="special3_2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_moving_box" x="1824" y="576" name="special3_1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -796,7 +795,6 @@ with(obj_dialogue){
     <instance objName="obj_moving_box" x="3680" y="1600" name="special2_1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_special_button2" x="3520" y="1536" name="inst_81CDFF9E" locked="0" code="visible = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_special_button3" x="2272" y="576" name="inst_F6DCB7CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
-    <instance objName="obj_frog_jump" x="2496" y="912" name="inst_B5672FAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2464" y="1056" name="inst_87115E5B" locked="0" code="visible = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2528" y="1056" name="inst_0D79992A" locked="0" code="visible = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2592" y="1056" name="inst_A22A52F5" locked="0" code="visible = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

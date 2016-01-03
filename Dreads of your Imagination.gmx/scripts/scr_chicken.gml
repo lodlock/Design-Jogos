@@ -35,3 +35,5 @@ if (place_meeting(x,y+1,obj_box))
 
 
 y += vsp;
+
+view_object[0] = obj_chicken;
