@@ -12,6 +12,7 @@
     <sound>sound\snd_lostHaze</sound>
     <sound>sound\snd_main_menu</sound>
     <sound>sound\snd_kid_dialog</sound>
+    <sound>sound\snd_lvl3</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Obscuro">
@@ -43,6 +44,7 @@
       <sprite>sprites\spr_button</sprite>
       <sprite>sprites\spr_invisiwall</sprite>
       <sprite>sprites\spr_invisi_trigger</sprite>
+      <sprite>sprites\spr_red_button</sprite>
     </sprites>
     <sprites name="Objects">
       <sprite>sprites\spr_checkpoint</sprite>
@@ -64,13 +66,12 @@
       <sprite>sprites\spr_cursor</sprite>
     </sprites>
     <sprites name="Enemies">
+      <sprite>sprites\spr_dark_player</sprite>
       <sprite>sprites\spr_e2</sprite>
       <sprite>sprites\spr_bat</sprite>
       <sprite>sprites\spr_bat_fly</sprite>
       <sprite>sprites\spr_spider</sprite>
       <sprite>sprites\spr_fire_enemy</sprite>
-      <sprite>sprites\spr_teacher</sprite>
-      <sprite>sprites\spr_student</sprite>
       <sprite>sprites\spr_alien1</sprite>
       <sprite>sprites\spr_alien2</sprite>
       <sprite>sprites\spr_alien3</sprite>
@@ -214,6 +215,7 @@
       <object>objects\obj_boss_obscuro_lvl2</object>
       <object>objects\obj_frog</object>
       <object>objects\obj_bee</object>
+      <object>objects\obj_dark_player</object>
     </objects>
     <objects name="Tiles">
       <object>objects\obj_crate</object>

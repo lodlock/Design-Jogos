@@ -70,6 +70,7 @@ laser_gun_rdy = false;
 small_rdy = false;
 super_eyes_rdy = false;
 speed_rdy = false;
+coming_back_big = true;
 
 if(global.checkpointR == room) {
     x = global.checkpointx;
@@ -142,6 +143,15 @@ pointy = mouse_y;
     draw_sprite_ext(sprite_index,image_index,x,y,facing/2,0.5,1,c_white,1);
     image_xscale = 0.5;
     image_yscale = 0.5;
+    coming_back_big = true;
+}
+else if(coming_back_big &amp;&amp; !small_rdy)
+{
+    coming_back_big = false;
+    y = y- 15;
+    draw_sprite_ext(sprite_index,image_index,x,y,facing,1,1,c_white,1);
+    image_xscale = 1;
+    image_yscale = 1;
 }
 else
 {
@@ -171,6 +181,10 @@ if(fireball_rdy) draw_sprite_ext(spr_fireball_fire,0,x+10,y,facing,1,0,c_white,1
 if(frog_rdy){
     draw_sprite_ext(spr_frog,0,x+10,y+25,0.3,0.3,0,c_white,1);
     draw_sprite_ext(spr_frog,0,x-10,y+25,0.3,0.3,0,c_white,1);
+}
+if(speed_rdy){
+    draw_sprite_ext(spr_speed_pickup,0,x+10,y+25,0.3,0.3,0,c_white,1);
+    draw_sprite_ext(spr_speed_pickup,0,x-10,y+25,0.3,0.3,0,c_white,1);
 }
 if(bow_rdy) draw_sprite_ext(spr_bow,0,x+10,y+5,-facing,1,0,c_white,1);
 if(super_eyes_rdy) draw_sprite_ext(spr_super_eyes,0,x,y-5,facing,1,0,c_white,1);

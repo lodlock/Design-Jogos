@@ -1,6 +1,7 @@
 if(hp < 0){
     instance_destroy();
-    obj_player.hp = 100;
+    if(room == lvl_2 || room == lvl_3)
+        obj_player.hp = 100;
 }
 
 if (place_meeting(x,y, obj_arrow)){
@@ -18,5 +19,9 @@ if(instance_exists(obj_pet)){
 }
 
 if (place_meeting(x,y, obj_player)){
-    with(obj_player) hp = 0;
+    if(room == room0 || room == lvl_2)
+        obj_player.hp = 0;
+    else
+        obj_player.hp -= 0.1;
+    
 }

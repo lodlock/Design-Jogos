@@ -926,10 +926,7 @@ with(obj_dialogue){
     <instance objName="obj_box" x="1536" y="1856" name="inst_F948468A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1472" y="1920" name="inst_A0EC8DCC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1408" y="1984" name="inst_436663DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_super_eyes" x="2752" y="3072" name="inst_2F3E1325" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_frog_jump" x="2112" y="3072" name="inst_F963B3F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_boss_lvl2" x="2848" y="3040" name="inst_AEFA1769" locked="0" code="visible = false;&#xA;" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bow" x="2784" y="3072" name="inst_A87C37AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
