@@ -1,7 +1,7 @@
 switch(mpos) {
     case 0: //Start
     {
-        room_goto_next();
+        instance_create(0,0,obj_fade);
         break;
     }
     case 1: //Options

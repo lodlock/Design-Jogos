@@ -250,6 +250,7 @@
       <object>objects\obj_menu</object>
     </objects>
     <object>objects\obj_chicken</object>
+    <object>objects\obj_fade</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_menu</room>

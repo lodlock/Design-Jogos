@@ -14,7 +14,7 @@ if(key_dialogue) {
         
         //Cutscene events
         if(argument0 == cutscene_intro) {
-            room_goto_next();
+            instance_create(0,0,obj_fade);
         }
     }
 }
