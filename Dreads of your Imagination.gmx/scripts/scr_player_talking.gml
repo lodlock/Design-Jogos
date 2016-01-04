@@ -9,12 +9,17 @@ if(key_dialogue) {
     }
     
     else {
-        //instance_deactivate_object(argument0);
         with(argument0) instance_destroy();
         obj_player.state = states.normal;
+        
+        //Cutscene events
+        if(argument0 == cutscene_intro) {
+            room_goto_next();
+        }
     }
 }
 
+//Boss dialogue event
 with(argument0){
     if(argument0 == inst_B49C88C6)
     {

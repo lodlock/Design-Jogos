@@ -66,7 +66,7 @@ if(instance_exists(obj_pet)){
         if (instance_exists(obj_e2))obj_e2.image_alpha = 0.2;
         if (instance_exists(obj_transformable_enemy))obj_transformable_enemy.image_alpha = 0.2;
         if (instance_exists(obj_pet))obj_pet.image_alpha = 0.2;
-        if (instance_exists(obj_sword))obj_sword.image_alpha = 0.2;
+        //if (instance_exists(obj_sword))obj_sword.image_alpha = 0.2;
         if (instance_exists(obj_torch))obj_torch.image_alpha = 0.2;
         if (instance_exists(obj_lightball_pickup))obj_lightball_pickup.image_alpha = 0.2;
         if (instance_exists(obj_web_pickup))obj_web_pickup.image_alpha = 0.2;
@@ -82,7 +82,7 @@ if(instance_exists(obj_pet)){
         if (instance_exists(obj_e2))obj_e2.image_alpha = 1.0;
         if (instance_exists(obj_transformable_enemy))obj_transformable_enemy.image_alpha = 1.0;
         if (instance_exists(obj_pet))obj_pet.image_alpha = 1.0;
-        if (instance_exists(obj_sword))obj_sword.image_alpha = 1.0;
+        //if (instance_exists(obj_sword))obj_sword.image_alpha = 1.0;
         if (instance_exists(obj_torch))obj_torch.image_alpha = 1.0;
         if (instance_exists(obj_sign))obj_sign.image_alpha = 1.0;
         if (instance_exists(obj_lightball_pickup))obj_lightball_pickup.image_alpha = 1.0;
