@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>activated = false;
+once = true;
 </string>
           </argument>
         </arguments>
@@ -54,6 +55,10 @@ if(activated){
     lvl2boss = true;
     if(instance_exists(obj_pet))
         obj_pet.state = states.lasttime;
+    if(once){
+        obj_player.state = states.normal;
+        once = false;
+    }
 }
 else
     image_index = 1;

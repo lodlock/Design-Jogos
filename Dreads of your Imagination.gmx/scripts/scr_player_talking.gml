@@ -54,7 +54,7 @@ with(argument0){
         view_object[0] = obj_boss_obscuro_lvl2;
         if(argument0.line < array_length_1d(argument0.text) - 1)
         {
-            if(argument0.line == 9 && first_shot)
+            if(argument0.line == 10 && first_shot)
             {
                 instance_create(2716,3264, obj_dark_special_ammo);
                 first_shot = false;

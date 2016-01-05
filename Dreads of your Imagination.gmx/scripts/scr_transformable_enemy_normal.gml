@@ -2,6 +2,7 @@ script_execute(right_or_left);
 
 if(hp < 25){
     ask_transform = true;
+    depth = -999;
     if(keyboard_check(ord("E")) || gamepad_button_check_pressed(0,gp_face2)){
         keyboard_clear(ord("E"));
         if(instance_exists(obj_pet))
