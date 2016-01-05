@@ -75,7 +75,7 @@ state = states.normal;
     case states.normal: scr_pet_normal(); break;
     case states.transforming: scr_pet_transforming(self); break; 
     case states.petcontroll: scr_pet_controll(self); break;
-    case states.lasttime : { x = 2496; y = 3328;}
+    case states.lasttime : { obj_player.state = states.normal; x = 2496; y = 3328;}
 }
 </string>
           </argument>

@@ -28,6 +28,7 @@
             <string>first_time_haze = true;
 first_time_boss = true;
 first_time_chicken = true;
+first_time_boss3 = true;
 if(room == room0){
     audio_stop_all();
     audio_play_sound(snd_level, 1, true);
@@ -36,10 +37,15 @@ else if(room == lvl_2){
     audio_stop_all();
     audio_play_sound(snd_lvl2, 1, true);
 }
-else if(room == lvl_2){
+else if(room == lvl_3){
     audio_stop_all();
     audio_play_sound(snd_lvl3, 1, true);
 }
+else if(room == lvl_room5){
+    audio_stop_all();
+    audio_play_sound(snd_win, 1, true);
+}
+
 </string>
           </argument>
         </arguments>
@@ -77,6 +83,12 @@ else if (haze_death &amp;&amp; first_time_haze){
     audio_play_sound(snd_lostHaze, 1, true);
     first_time_haze = false;
 }
+else if (instance_exists(obj_trigger_boss_lvl3) &amp;&amp; obj_trigger_boss_lvl3.boss_lvl3 &amp;&amp; first_time_boss3){
+    audio_stop_all();
+    audio_play_sound(snd_boss_lvl3, 1, true);
+    first_time_boss3 = false;
+}
+    
 </string>
           </argument>
         </arguments>
