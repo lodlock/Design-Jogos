@@ -63,13 +63,11 @@ else if(room == lvl_2){
     audio_play_sound(snd_boss, 1, true);
     first_time_boss = false;
 }
-/*
-else if (obj_GM.chicken &amp;&amp; first_time_chicken){
+else if (instance_exists(obj_chicken) &amp;&amp; first_time_chicken){
     audio_stop_all();
     audio_play_sound(snd_win, 1, true);
     first_time_chicken = false;
 }
-*/
 </string>
           </argument>
         </arguments>

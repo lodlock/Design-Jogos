@@ -23,22 +23,24 @@ if(key_dialogue) {
 with(argument0){
     if(argument0 == inst_B49C88C6)
     {
-        show_debug_message(argument0.line);
         if(argument0.line < array_length_1d(argument0.text) - 1)
         {
             if(argument0.line == 5)
             {
                 with(obj_boss_obscuro)
-                    instance_change(obj_chicken,false);
+                    instance_destroy();
+                if(first_chicken){
+                    instance_create(952,3296,obj_chicken);
+                    first_chicken = false;
+                }
             }
         }
         else{
-            with(obj_torch) instance_destroy();
-            with(obj_GM) instance_destroy();
-            with(obj_inventory) instance_destroy();
-            with(obj_musicBox) instance_destroy();
-            
-            room_goto_next();
+            with (all)
+            {
+                instance_destroy();
+            }
+            instance_create(0,0,obj_fade);
             }
     }
 

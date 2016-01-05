@@ -81,6 +81,7 @@ invulnerable = true;
             <kind>1</kind>
             <string>draw_self();
 image_speed = 0.1;
+depth = -999;
 </string>
           </argument>
         </arguments>

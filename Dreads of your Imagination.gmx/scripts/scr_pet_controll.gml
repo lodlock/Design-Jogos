@@ -59,6 +59,9 @@ else if (move != 0 && !attack){
 if(instance_nearest(x,y,obj_transformable_enemy) && key_space){
     enemy = instance_nearest(x,y,obj_transformable_enemy);
 }
+if(instance_nearest(x,y,obj_frog) && key_space){
+    enemy = instance_nearest(x,y,obj_transformable_enemy);
+}
 
 
 if(key_ff){

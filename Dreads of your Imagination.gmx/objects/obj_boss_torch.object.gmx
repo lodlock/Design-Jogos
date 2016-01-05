@@ -69,7 +69,7 @@ draw_set_blend_mode(bm_normal);
 
 if(can_light &amp;&amp; first_light &amp;&amp; (obj_boss_obscuro.state == states.normal || obj_boss_obscuro.state == states.chase)){
     first_light = false;
-    obj_boss_obscuro.hp -= 200;
+    obj_boss_obscuro.hp -= 20;
 }
 else
 
