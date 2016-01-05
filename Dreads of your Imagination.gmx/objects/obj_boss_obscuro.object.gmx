@@ -138,10 +138,10 @@ if(hp == 0){
     obj_pet.x = x;
     obj_pet.y = y;
     obj_pet.state = states.chase;
-    instance_activate_object(inst_B49C88C6); 
-    inst_B49C88C6.x = obj_player.x;
-    inst_B49C88C6.y = obj_player.y;  
-    with(inst_B49C88C6) {
+    instance_activate_object(boss1_talk); 
+    boss1_talk.x = obj_player.x;
+    boss1_talk.y = obj_player.y;  
+    with(boss1_talk) {
         if(obj_boss_obscuro.not_normal){
             obj_player.state = states.normal;
             obj_boss_obscuro.not_normal = false;

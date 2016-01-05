@@ -71,7 +71,6 @@ small_rdy = false;
 super_eyes_rdy = false;
 speed_rdy = false;
 coming_back_big = true;
-first_chicken = true;
 
 if(global.checkpointR == room) {
     x = global.checkpointx;

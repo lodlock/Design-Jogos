@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>first_time_haze = true;
 first_time_boss = true;
 first_time_chicken = true;
 if(room == room0){
@@ -35,6 +35,10 @@ if(room == room0){
 else if(room == lvl_2){
     audio_stop_all();
     audio_play_sound(snd_lvl2, 1, true);
+}
+else if(room == lvl_2){
+    audio_stop_all();
+    audio_play_sound(snd_lvl3, 1, true);
 }
 </string>
           </argument>
@@ -67,6 +71,11 @@ else if (instance_exists(obj_chicken) &amp;&amp; first_time_chicken){
     audio_stop_all();
     audio_play_sound(snd_win, 1, true);
     first_time_chicken = false;
+}
+else if (haze_death &amp;&amp; first_time_haze){
+    audio_stop_all();
+    audio_play_sound(snd_lostHaze, 1, true);
+    first_time_haze = false;
 }
 </string>
           </argument>

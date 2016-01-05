@@ -19,9 +19,9 @@ if(key_dialogue) {
     }
 }
 
-//Boss dialogue event
+//Boss dialogue event LVL 1
 with(argument0){
-    if(argument0 == inst_B49C88C6)
+    if(argument0 == boss1_talk)
     {
         if(argument0.line < array_length_1d(argument0.text) - 1)
         {
@@ -33,6 +33,32 @@ with(argument0){
                     instance_create(952,3296,obj_chicken);
                     first_chicken = false;
                 }
+            }
+        }
+        else{
+            with (all)
+            {
+                instance_destroy();
+            }
+            instance_create(0,0,obj_fade);
+            }
+    }
+
+}
+
+//Boss dialogue event LVL 2
+with(argument0){
+    if(argument0 == boss2_talk)
+    {
+        haze_death = true;
+        view_object[0] = obj_boss_obscuro_lvl2;
+        if(argument0.line < array_length_1d(argument0.text) - 1)
+        {
+            if(argument0.line == 9 && first_shot)
+            {
+                instance_create(2816,3264, obj_dark_special_ammo);
+                first_shot = false;
+                
             }
         }
         else{
