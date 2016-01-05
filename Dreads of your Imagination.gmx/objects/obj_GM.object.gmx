@@ -144,7 +144,7 @@ if(room = lvl_2){
                 boss2_talk.x = obj_player.x;
                 boss2_talk.y = obj_player.y;
                 instance_create(2656,3264, obj_boss_obscuro_lvl2);
-                instance_create(2816,3264, obj_dark_deformed_player);
+                instance_create(2716,3264, obj_dark_deformed_player);
             }
     }
     
