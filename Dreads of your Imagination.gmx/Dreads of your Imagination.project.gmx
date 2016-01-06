@@ -114,6 +114,7 @@
     <background>background\background6</background>
     <background>background\background7</background>
     <background>background\cave</background>
+    <background>background\background9</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\frog1_path</path>
