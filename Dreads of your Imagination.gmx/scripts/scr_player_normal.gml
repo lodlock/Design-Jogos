@@ -166,5 +166,5 @@ if(instance_exists(dialogue)) {
 //DEAD
 if hp <= 0 scr_death();
 
-view_object[0] = obj_player;
+//view_object[0] = obj_player;
 scr_player_collision();
