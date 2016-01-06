@@ -104,6 +104,8 @@ draw_set_valign(fa_middle);
 draw_set_font(fnt);
 draw_set_colour(c_black);
 
+
+
 var m;
 for(m = 0; m &lt; array_length_1d(menu); m += 1) {
     draw_text(x + space, y + (m * space), string(menu[m]));
