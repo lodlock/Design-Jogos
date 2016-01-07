@@ -122,6 +122,9 @@
     <background>background\clouds</background>
     <background>background\coulds_2</background>
     <background>background\sun</background>
+    <background>background\tree1</background>
+    <background>background\tree2</background>
+    <background>background\cloud1</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\frog1_path</path>
@@ -258,7 +261,9 @@
       <object>objects\obj_special_button_lvl2_1</object>
       <object>objects\obj_special_button_lvl2_2_button1</object>
       <object>objects\obj_special_button_lvl2_2_button2</object>
-      <object>objects\obj_special_button4</object>
+      <object>objects\obj_special_button_lvl2_4_button1</object>
+      <object>objects\obj_special_button_lvl2_4_button2</object>
+      <object>objects\obj_special_button_lvl2_4_button3</object>
       <object>objects\obj_lvl3_special1</object>
       <object>objects\obj_lvl3_special2</object>
       <object>objects\obj_lvl3_special3</object>
@@ -294,6 +299,8 @@
     <room>rooms\lvl2_1</room>
     <room>rooms\lvl2_2</room>
     <room>rooms\lvl2_3</room>
+    <room>rooms\lvl2_4</room>
+    <room>rooms\lvl2_5</room>
     <room>rooms\lvl_3</room>
     <room>rooms\lvl_room</room>
     <room>rooms\lvl_2</room>

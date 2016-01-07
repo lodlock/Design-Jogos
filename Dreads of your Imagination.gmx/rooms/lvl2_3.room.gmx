@@ -49,7 +49,7 @@ with(obj_dialogue){
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="1024" vborder="384" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="1024" vborder="384" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -311,6 +311,17 @@ with(obj_dialogue){
     <tile bgName="cave" x="1260" y="248" w="70" h="70" xo="910" yo="210" id="10000983" name="inst_53EBA14B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="cave" x="1470" y="248" w="70" h="70" xo="910" yo="210" id="10000984" name="inst_583EB2EB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="cave" x="1750" y="248" w="70" h="70" xo="910" yo="210" id="10000985" name="inst_A76BE541" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="cloud1" x="70" y="227" w="190" h="127" xo="0" yo="0" id="10001160" name="inst_FEEF8913" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="cloud1" x="502" y="109" w="190" h="127" xo="0" yo="0" id="10001161" name="inst_6DBA37E0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="cloud1" x="1114" y="78" w="190" h="127" xo="0" yo="0" id="10001162" name="inst_0BDCB260" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="cloud1" x="1764" y="64" w="190" h="127" xo="0" yo="0" id="10001163" name="inst_4B36215D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tree1" x="1175" y="534" w="129" h="230" xo="0" yo="0" id="10001164" name="inst_4B303813" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tree1" x="1388" y="534" w="129" h="230" xo="0" yo="0" id="10001165" name="inst_21EBD374" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tree1" x="1897" y="539" w="129" h="230" xo="0" yo="0" id="10001166" name="inst_CFD947AA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tree2" x="1681" y="533" w="106" h="241" xo="0" yo="0" id="10001167" name="inst_8E6539AB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tree2" x="864" y="45" w="106" h="241" xo="0" yo="0" id="10001168" name="inst_C12808E2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tree2" x="567" y="523" w="106" h="241" xo="0" yo="0" id="10001169" name="inst_1123A13B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tree1" x="47" y="538" w="129" h="230" xo="0" yo="0" id="10001170" name="inst_5697B3DC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

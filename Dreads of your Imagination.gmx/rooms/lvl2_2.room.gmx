@@ -49,7 +49,7 @@ with(obj_dialogue){
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="1024" vborder="384" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="1024" vborder="384" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -165,7 +165,6 @@ with(obj_dialogue){
     <instance objName="obj_box" x="224" y="608" name="inst_2051B5EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="248" y="608" name="inst_7726F327" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="945" y="411" name="inst_C5B9D2B3" locked="0" code="" scaleX="1" scaleY="0.200000002980232" colour="4294967295" rotation="0"/>
-    <instance objName="obj_frog_jump" x="147" y="520" name="inst_131AF6B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1856" y="686" name="inst_5A7E3E8A" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1920" y="686" name="inst_84EFA417" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1984" y="686" name="inst_97DEC453" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
@@ -211,6 +210,14 @@ with(obj_dialogue){
     <tile bgName="background7" x="1890" y="667" w="72" h="72" xo="576" yo="288" id="10000889" name="inst_C3519C1D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background7" x="1960" y="667" w="72" h="72" xo="576" yo="216" id="10000891" name="inst_7314F9C6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background7" x="1750" y="667" w="72" h="72" xo="576" yo="360" id="10000894" name="inst_FC50A76D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="cloud1" x="224" y="160" w="190" h="127" xo="0" yo="0" id="10001152" name="inst_508B5C3F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="cloud1" x="608" y="288" w="190" h="127" xo="0" yo="0" id="10001153" name="inst_946AA2CB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="cloud1" x="960" y="160" w="190" h="127" xo="0" yo="0" id="10001154" name="inst_3422DA46" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="cloud1" x="1376" y="352" w="190" h="127" xo="0" yo="0" id="10001155" name="inst_20AAC13B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="cloud1" x="1760" y="192" w="190" h="127" xo="0" yo="0" id="10001156" name="inst_FEA2CAB5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tree1" x="1376" y="544" w="129" h="230" xo="0" yo="0" id="10001157" name="inst_B65BF547" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tree2" x="1760" y="448" w="106" h="241" xo="0" yo="0" id="10001158" name="inst_A112871C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tree2" x="1024" y="544" w="106" h="241" xo="0" yo="0" id="10001159" name="inst_AC29A3AF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

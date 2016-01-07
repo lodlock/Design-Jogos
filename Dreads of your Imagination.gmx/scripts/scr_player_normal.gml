@@ -18,7 +18,7 @@ if(hsp != 0){
 
 //LIGHT TORCHES
 
-if(room == lvl2_1 || room  == lvl_3){
+if(room == lvl2_5 || room  == lvl_3){
     torch = collision_circle(x, y, 50, obj_torch, 0, 1);
     
     if (instance_exists(torch) &&  key_e){

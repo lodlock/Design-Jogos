@@ -67,7 +67,7 @@ if(room == lvl1_2 || room == lvl1_3 || room == lvl1_4){
     } 
 }
 
-if(room == lvl_2 &amp;&amp; obj_trigger_dark_lvl2.lvl2_dark){
+if(room == lvl2_5 &amp;&amp; obj_trigger_dark_lvl2.lvl2_dark){
     darkness = true;
     already = true;
 }

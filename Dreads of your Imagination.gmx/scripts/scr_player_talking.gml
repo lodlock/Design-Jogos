@@ -56,7 +56,7 @@ with(argument0){
         {
             if(argument0.line == 10 && first_shot)
             {
-                instance_create(2716,3264, obj_dark_special_ammo);
+                instance_create(1192,470, obj_dark_special_ammo);
                 first_shot = false;
                 
             }

@@ -131,12 +131,12 @@ if(room = lvl1_2 || room = lvl1_3 || room = lvl1_4){
     }
 }
 
-if(room = lvl2_1){
+if(room = lvl2_5){
     
     if(lvl2boss &amp;&amp; lvl2bossrdy){
-        instance_create(2112,3072, obj_snake_boss);
-        instance_create(2112,3072, obj_bat_boss);
-        if(instance_number(obj_snake_boss) &gt; 3 || instance_number(obj_bat_boss) &gt; 3)
+        instance_create(1216,743, obj_snake_boss);
+        instance_create(1500,743, obj_bat_boss);
+        if(instance_number(obj_snake_boss) &gt; 2 || instance_number(obj_bat_boss) &gt; 2)
             lvl2bossrdy = false;
     }
     if(lvl2boss &amp;&amp; !lvl2bossrdy){
@@ -144,8 +144,8 @@ if(room = lvl2_1){
             {
                 boss2_talk.x = obj_player.x;
                 boss2_talk.y = obj_player.y;
-                instance_create(2656,3264, obj_boss_obscuro_lvl2);
-                instance_create(2716,3264, obj_dark_deformed_player);
+                instance_create(1636,437, obj_boss_obscuro_lvl2);
+                instance_create(1192,470, obj_dark_deformed_player);
             }
     }
     
