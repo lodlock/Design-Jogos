@@ -3,8 +3,8 @@
   <caption></caption>
   <width>2048</width>
   <height>768</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -143,17 +143,17 @@ with(obj_dialogue){
     <instance objName="obj_box" x="32" y="800" name="inst_759F8EB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2080" y="800" name="inst_1DA437D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="224" y="800" name="inst_B1AA125C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="72" y="720" name="inst_9CB251C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="88" y="736" name="inst_9CB251C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_controll_lvl1_3" x="0" y="-140" name="inst_BB00E7A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_firefly" x="128" y="144" name="inst_56DC47DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="112" y="696" name="inst_FCCB6A75" locked="0" code="can_light = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_pet" x="56" y="728" name="inst_1595513E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pet" x="32" y="752" name="inst_1595513E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_e" x="256" y="672" name="inst_2A06CF0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_e" x="480" y="608" name="inst_15E2A814" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fire_enemy" x="704" y="544" name="inst_49BB4246" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_fall" x="608" y="864" name="inst_89B51C0F" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_transforming" x="128" y="-320" name="inst_B3E06FE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_checkpoint" x="64" y="736" name="inst_4851703B" locked="0" code="visible = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="88" y="736" name="inst_4851703B" locked="0" code="visible = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="192" y="736" name="inst_48E639AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="256" y="736" name="inst_53645CEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="320" y="736" name="inst_93BFC5FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -167,6 +167,7 @@ with(obj_dialogue){
     <instance objName="obj_torch" x="544" y="576" name="inst_A96063AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="320" y="640" name="inst_FD432B66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_next_room" x="2080" y="736" name="inst_2C1DC96A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="776" y="544" name="inst_CF8C4522" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="cave" x="1984" y="704" w="70" h="70" xo="840" yo="70" id="10000416" name="inst_368B7DDF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
