@@ -131,7 +131,7 @@ if(room = lvl1_2 || room = lvl1_3 || room = lvl1_4){
     }
 }
 
-if(room = lvl_2){
+if(room = lvl2_1){
     
     if(lvl2boss &amp;&amp; lvl2bossrdy){
         instance_create(2112,3072, obj_snake_boss);

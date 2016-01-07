@@ -115,11 +115,13 @@
     <background>background\background7</background>
     <background>background\cave</background>
     <background>background\background9</background>
-    <background>background\relva_meio</background>
     <background>background\moon</background>
     <background>background\hills1</background>
     <background>background\hills2</background>
     <background>background\mountains</background>
+    <background>background\clouds</background>
+    <background>background\coulds_2</background>
+    <background>background\sun</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\frog1_path</path>
@@ -220,6 +222,7 @@
       <object>objects\obj_player_fall</object>
       <object>objects\obj_camera</object>
       <object>objects\obj_controll_lvl1_3</object>
+      <object>objects\obj_controll_lvl2_1</object>
     </objects>
     <objects name="Enemies">
       <object>objects\obj_e</object>
@@ -252,9 +255,9 @@
       <object>objects\obj_torch</object>
       <object>objects\obj_boss_torch</object>
       <object>objects\obj_button</object>
-      <object>objects\obj_special_button1</object>
-      <object>objects\obj_special_button2</object>
-      <object>objects\obj_special_button3</object>
+      <object>objects\obj_special_button_lvl2_1</object>
+      <object>objects\obj_special_button_lvl2_2_button1</object>
+      <object>objects\obj_special_button_lvl2_2_button2</object>
       <object>objects\obj_special_button4</object>
       <object>objects\obj_lvl3_special1</object>
       <object>objects\obj_lvl3_special2</object>
@@ -288,6 +291,9 @@
     <room>rooms\lvl1_2</room>
     <room>rooms\lvl1_3</room>
     <room>rooms\lvl1_4</room>
+    <room>rooms\lvl2_1</room>
+    <room>rooms\lvl2_2</room>
+    <room>rooms\lvl2_3</room>
     <room>rooms\lvl_3</room>
     <room>rooms\lvl_room</room>
     <room>rooms\lvl_2</room>
