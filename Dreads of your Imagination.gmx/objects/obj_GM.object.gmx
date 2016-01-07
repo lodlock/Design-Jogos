@@ -111,7 +111,7 @@ if(keyboard_check(ord("L"))){
         room_restart();
     }
 }
-if(room = room0){
+if(room = lvl1_2 || room = lvl1_3){
     with(obj_player){
         nearest_torch = instance_nearest(x, y, obj_torch);
         nearest_lightb = instance_nearest(x, y, obj_fireball);

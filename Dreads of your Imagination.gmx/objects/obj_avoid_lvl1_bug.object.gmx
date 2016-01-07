@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(collision_circle(x,y,150,obj_player,false,false))
+            <string>if(collision_circle(x,y,100,obj_player,false,false))
     instance_destroy();
 </string>
           </argument>

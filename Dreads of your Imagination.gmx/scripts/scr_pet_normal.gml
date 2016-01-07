@@ -41,6 +41,3 @@ scr_pet_collisions();
 if (obj_player.state = states.transforming) {
     state = states.transforming; 
 }
-
-
-view_object[0] = obj_player;
