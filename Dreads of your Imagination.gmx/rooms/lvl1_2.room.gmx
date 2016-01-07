@@ -149,10 +149,7 @@ with(obj_dialogue){
     <instance objName="obj_box" x="96" y="800" name="inst_BCBE1596" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="32" y="800" name="inst_759F8EB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="228" y="64" name="inst_F789DF9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_GM" x="-32" y="-128" name="inst_A8F14754" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lightning" x="0" y="-128" name="inst_84EEEBE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_transforming" x="64" y="-224" name="inst_E8E0E364" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_camera" x="64" y="-128" name="inst_AC4ECA99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="2080" y="800" name="inst_1DA437D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="226" y="736" name="inst_083977FF" locked="0" code="visible = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dialogue" x="224" y="736" name="inst_E3D39EA7" locked="0" code="text[0] = &quot;Tommy: Oh no... MOM!! Somebody please hold me!&quot;;&#xA;text[1] = &quot;Haze: Don't worry Tommy, I'm here to help! Let me light your way I can see in the dark&quot;;&#xA;text[2] = &quot;Tommy: Ok... But please don't go too far away I'm scared...&quot;;&#xA;text[3] = &quot;Haze: Don't you worry! We'll get through this, you'll see!&quot;;&#xA;&#xA;itemid = obj_dialogue.count_id;&#xA;obj_dialogue.count_id++;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -215,6 +212,7 @@ with(obj_dialogue){
     <instance objName="obj_trigger_next_room" x="2016" y="736" name="inst_C9C4752E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_dark_lvl1" x="228" y="756" name="inst_848960DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_avoid_lvl1_bug" x="2080" y="736" name="inst_8AB4FEED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="1920" y="704" name="inst_0D8E6DA8" locked="0" code="can_light = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="cave" x="0" y="0" w="70" h="70" xo="630" yo="70" id="10000341" name="inst_40EA7C98" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

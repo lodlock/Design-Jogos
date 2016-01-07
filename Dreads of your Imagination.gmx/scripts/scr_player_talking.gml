@@ -30,7 +30,7 @@ with(argument0){
                 with(obj_boss_obscuro)
                     instance_destroy();
                 if(first_chicken){
-                    instance_create(952,3296,obj_chicken);
+                    instance_create(1920,384,obj_chicken);
                     first_chicken = false;
                 }
             }

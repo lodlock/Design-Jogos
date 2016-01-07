@@ -64,11 +64,8 @@ lvl2bossrdy = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(instance_exists(obj_sign_trigger_boss))
-    if(obj_sign_trigger_boss.showtext == 1) start_boss = true;
-
-if(instance_exists(obj_pet)){
-    if (obj_pet.state == states.transforming){
+            <string>if(instance_exists(obj_player)){
+    if (obj_player.state == states.transforming){
         if (instance_exists(obj_player))obj_player.image_alpha = 0.2;
         if (instance_exists(obj_box))obj_box.image_alpha = 0.2;
         if (instance_exists(obj_crate))obj_crate.image_alpha = 0.2;
@@ -111,7 +108,7 @@ if(keyboard_check(ord("L"))){
         room_restart();
     }
 }
-if(room = lvl1_2 || room = lvl1_3){
+if(room = lvl1_2 || room = lvl1_3 || room = lvl1_4){
     with(obj_player){
         nearest_torch = instance_nearest(x, y, obj_torch);
         nearest_lightb = instance_nearest(x, y, obj_fireball);
@@ -200,7 +197,7 @@ if(room = lvl_2){
             <kind>1</kind>
             <string>depth = -999;
 draw_sprite(spr_healthbar_bg,1,view_xview[0]+46, view_yview[0]+34);
-draw_sprite_ext(spr_healthbar_inner,1,view_xview[0]+46, view_yview[0]+34, obj_player.hp/100,1,0,c_white,1);
+if(instance_exists(obj_player))draw_sprite_ext(spr_healthbar_inner,1,view_xview[0]+46, view_yview[0]+34, obj_player.hp/100,1,0,c_white,1);
 draw_sprite(spr_healthbar_border,1,view_xview[0]+15, view_yview[0]+15);
 </string>
           </argument>

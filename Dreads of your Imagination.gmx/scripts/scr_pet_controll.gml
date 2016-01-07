@@ -66,7 +66,7 @@ if(instance_nearest(x,y,obj_frog) && key_space){
 
 if(key_ff){
     keyboard_clear(ord("F"));
-    pet_out_of_view = true;
+    
     obj_player.state = states.normal;
     state = states.normal;
 }
