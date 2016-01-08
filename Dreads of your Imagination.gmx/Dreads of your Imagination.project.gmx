@@ -293,6 +293,7 @@
   <rooms name="rooms">
     <room>rooms\rm_initialize</room>
     <room>rooms\Start_menu</room>
+    <room>rooms\lvl3_1</room>
     <room>rooms\lvl1_1</room>
     <room>rooms\lvl1_2</room>
     <room>rooms\lvl1_3</room>
@@ -302,7 +303,6 @@
     <room>rooms\lvl2_3</room>
     <room>rooms\lvl2_4</room>
     <room>rooms\lvl2_5</room>
-    <room>rooms\lvl3_1</room>
     <room>rooms\lvl3_2</room>
     <room>rooms\lvl3_3</room>
     <room>rooms\lvl3_4</room>
