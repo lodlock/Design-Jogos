@@ -91,7 +91,7 @@ draw_set_blend_mode(bm_normal);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(can_light &amp;&amp; collision_circle(x,y,220,obj_player,false,false)){
+            <string>if(can_light &amp;&amp; collision_circle(x,y,220,obj_player,false,false) &amp;&amp; (room == lvl1_2 || room == lvl1_3 || room == lvl1_4)){
     with(obj_player){
         if(hp &lt; 100 &amp;&amp; hp &gt; 0)
             hp += 1;
