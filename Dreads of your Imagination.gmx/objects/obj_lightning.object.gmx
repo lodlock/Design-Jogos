@@ -52,6 +52,7 @@ already = false;
           <argument>
             <kind>1</kind>
             <string>surface_set_target(light);
+if(room == lvl1_1) draw_set_color(c_black);
 
 if(room == lvl1_2 || room == lvl1_3 || room == lvl1_4){
     if(instance_exists(obj_trigger_dark_lvl1))
@@ -70,19 +71,20 @@ if(room == lvl1_2 || room == lvl1_3 || room == lvl1_4){
 if(room == lvl2_5 &amp;&amp; obj_trigger_dark_lvl2.lvl2_dark){
     darkness = true;
     already = true;
+    if(instance_exists(obj_pet) &amp;&amp; obj_pet.state = states.petcontroll) {darkness = false; draw_set_color(c_gray);}
+    if(instance_exists(obj_player)) if(obj_player.state = states.normal &amp;&amp; already) darkness = true;
 }
-else if(room == lvl_2) {draw_set_color(c_gray);}
 
 if(room == lvl2_1 || room == lvl2_2){
     draw_set_color(c_black);
 }
 
-if(room == lvl_3)
+if(room == lvl3_1 || room == lvl3_2)
 {
-    if(obj_lvl3_special1.dark_button_lvl3 || obj_trigger_dark_lvl2.lvl2_dark)
-        darkness = true;
-    else
-        darkness = false;
+    draw_set_color(c_silver);
+}
+else if(room == lvl3_3 || room == lvl3_4){
+    draw_set_color(c_white);
 }
 
 

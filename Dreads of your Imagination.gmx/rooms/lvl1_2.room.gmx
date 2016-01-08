@@ -209,11 +209,12 @@ with(obj_dialogue){
     <instance objName="obj_avoid_lvl1_bug" x="1184" y="736" name="inst_4E596C88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_avoid_lvl1_bug" x="1184" y="672" name="inst_7B25A446" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dialogue" x="1152" y="736" name="inst_E0A87899" locked="0" code="text[0] = &quot;Tommy: AH!! GHOSTS!!&quot;;&#xA;text[1] = &quot;Haze: Calm down Tommy. You can immobilize them with the web you got earlier.&quot;;&#xA;text[2] = &quot;Tommy: But they're so spooky... They can still hurt us right?&quot;;&#xA;text[3] = &quot;Haze: No, they'll be completly static for a few seconds.&quot;;&#xA;text[4] = &quot;Haze: Just be sure not to be near them when they break free.&quot;;&#xA;text[5] = &quot;Tommy: Ok... Let's get this over with then.&quot;;&#xA;&#xA;itemid = obj_dialogue.count_id;&#xA;obj_dialogue.count_id++;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_trigger_next_room" x="2016" y="736" name="inst_C9C4752E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_next_room" x="2048" y="736" name="inst_C9C4752E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_dark_lvl1" x="228" y="756" name="inst_848960DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_avoid_lvl1_bug" x="2080" y="736" name="inst_8AB4FEED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="1920" y="704" name="inst_0D8E6DA8" locked="0" code="can_light = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="1120" y="736" name="inst_D371AB5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_avoid_lvl1_bug" x="2048" y="736" name="inst_F6EFB557" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="cave" x="0" y="0" w="70" h="70" xo="630" yo="70" id="10000341" name="inst_40EA7C98" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -333,6 +334,7 @@ with(obj_dialogue){
     <tile bgName="cave" x="1472" y="704" w="70" h="70" xo="910" yo="210" id="10000519" name="inst_D7189FE2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="cave" x="1600" y="704" w="70" h="70" xo="910" yo="210" id="10000520" name="inst_41DB7863" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="cave" x="1728" y="704" w="70" h="70" xo="910" yo="210" id="10000521" name="inst_A20C5197" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="1920" y="704" w="72" h="72" xo="288" yo="216" id="10001547" name="inst_8BF40CDF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

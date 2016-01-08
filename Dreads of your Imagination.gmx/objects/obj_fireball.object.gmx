@@ -80,6 +80,13 @@ already_done = false;
     case states.transforming: scr_transforming(); break;
 }
 
+if(collision_circle(x,y,150,obj_player,false,false)){
+    with(obj_player){
+        if(hp &lt; 100 &amp;&amp; hp &gt; 0)
+            hp += 1;
+    }
+}
+
 </string>
           </argument>
         </arguments>
@@ -122,6 +129,7 @@ surface_reset_target();
 draw_set_blend_mode(bm_normal);
 }
 draw_text(x,y-50,alarm[0]/room_speed);
+
 </string>
           </argument>
         </arguments>

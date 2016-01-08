@@ -35,6 +35,7 @@ if (instance_exists(button) &&  key_e && button.visible){
 
 if(key_space){
    attack = true;
+   image_speed = 0.2;
    with(instance_create(x,y,obj_dog_attack)){
         image_xscale = obj_pet.image_xscale * obj_pet.facing;
    }
@@ -51,9 +52,11 @@ if(attack){
 }
 else if (move == 0 && !attack){ 
     sprite_index = spr_pet_idle;
+    image_speed = 0.1;
 }
 else if (move != 0 && !attack){
     sprite_index = spr_pet_move;
+    image_speed = 0.1;
 }
 
 if(instance_nearest(x,y,obj_transformable_enemy) && key_space){

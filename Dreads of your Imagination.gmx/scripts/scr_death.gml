@@ -5,7 +5,3 @@ else {
     room_restart();
 }
 
-if(room = lvl_3){
-
-    second_spawn_lvl3 = true;
-}

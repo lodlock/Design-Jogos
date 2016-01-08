@@ -18,7 +18,7 @@ if(hsp != 0){
 
 //LIGHT TORCHES
 
-if(room == lvl2_5 || room  == lvl_3){
+if(room == lvl2_5 || room  == lvl3_3){
     torch = collision_circle(x, y, 50, obj_torch, 0, 1);
     
     if (instance_exists(torch) &&  key_e){
@@ -31,14 +31,18 @@ if(room == lvl2_5 || room  == lvl_3){
 if(place_meeting(x,y+1, obj_box)){
     if(hsp == 0){
         sprite_index = spr_player_idle;
-        if(instance_exists(obj_pet))
+        if(instance_exists(obj_pet)){
             obj_pet.sprite_index = spr_pet_idle;
+            obj_pet.image_speed = 0.1;
+        }
     }
     else{
         if(sprite_index != spr_player_move) image_index = 0;
         sprite_index = spr_player_move;
-        if(instance_exists(obj_pet))
+        if(instance_exists(obj_pet)){
             obj_pet.sprite_index = spr_pet_move;
+            obj_pet.image_speed = 0.1;
+        }
     }   
 }
 else{

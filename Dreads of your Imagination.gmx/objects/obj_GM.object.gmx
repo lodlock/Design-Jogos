@@ -96,6 +96,8 @@ lvl2bossrdy = true;
         if (instance_exists(obj_web_pickup))obj_web_pickup.image_alpha = 1.0;
         if (instance_exists(obj_bow))obj_bow.image_alpha = 1.0;
         if (instance_exists(obj_frog_jump))obj_frog_jump.image_alpha = 1.0;
+        if (instance_exists(obj_small))obj_small.image_alpha = 1.0;
+        if (instance_exists(obj_speed))obj_speed.image_alpha = 1.0;
     }
 }
 
@@ -112,13 +114,10 @@ if(room = lvl1_2 || room = lvl1_3 || room = lvl1_4){
     with(obj_player){
         nearest_torch = instance_nearest(x, y, obj_torch);
         nearest_lightb = instance_nearest(x, y, obj_fireball);
-        if(obj_lightning.darkness &amp;&amp; nearest_torch.can_light &amp;&amp; distance_to_object(nearest_torch) &lt; 200 &amp;&amp; hp &lt; 100) hp += 0.5;
-        if(obj_lightning.darkness &amp;&amp; distance_to_object(nearest_lightb) &lt; 100 &amp;&amp; hp &lt; 100) hp += 0.6;
         if(obj_lightning.darkness &amp;&amp; !nearest_torch.can_light) hp -= 0.5;
         if(obj_lightning.darkness &amp;&amp; nearest_torch.can_light &amp;&amp; distance_to_object(nearest_torch) &gt; 200) hp -= 0.5;
         if(!obj_lightning.darkness &amp;&amp; obj_lightning.already &amp;&amp; !nearest_torch.can_light &amp;&amp; distance_to_object(nearest_torch) &gt; 0) hp -= 0.5;
-        if(!obj_lightning.darkness &amp;&amp; obj_lightning.already &amp;&amp; distance_to_object(nearest_torch) &lt; 200 &amp;&amp; hp &lt; 100 &amp;&amp; distance_to_object(obj_pet) &lt; 150) hp +=0.5;
-        if(start_boss &amp;&amp; place_meeting(obj_pet.x,obj_pet.y,obj_boss_obscuro)) hp -=1.0;
+        if(start_boss &amp;&amp; place_meeting(obj_pet.x,obj_pet.y,obj_boss_obscuro)) hp -=1.5;
     }
     if(lvl_1_boss_dialogue) {
         with(boss_dialogue) {
@@ -199,6 +198,8 @@ if(room = lvl2_5){
 draw_sprite(spr_healthbar_bg,1,view_xview[0]+46, view_yview[0]+34);
 if(instance_exists(obj_player))draw_sprite_ext(spr_healthbar_inner,1,view_xview[0]+46, view_yview[0]+34, obj_player.hp/100,1,0,c_white,1);
 draw_sprite(spr_healthbar_border,1,view_xview[0]+15, view_yview[0]+15);
+
+
 </string>
           </argument>
         </arguments>

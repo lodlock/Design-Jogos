@@ -218,6 +218,7 @@ with(obj_dialogue){
     <tile bgName="tree1" x="1376" y="544" w="129" h="230" xo="0" yo="0" id="10001157" name="inst_B65BF547" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tree2" x="1760" y="448" w="106" h="241" xo="0" yo="0" id="10001158" name="inst_A112871C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tree2" x="1024" y="544" w="106" h="241" xo="0" yo="0" id="10001159" name="inst_AC29A3AF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="1984" y="704" w="72" h="72" xo="288" yo="216" id="10001550" name="inst_830ACC13" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

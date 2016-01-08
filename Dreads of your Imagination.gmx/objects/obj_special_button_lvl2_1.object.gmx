@@ -56,6 +56,12 @@ if(activated){
 }
 else
     image_index = 1;
+    
+if((place_meeting(x,y,obj_player) || place_meeting(x,y,obj_pet)) &amp;&amp; !activated){
+    draw_text(x,y-50,"Press E to activate");
+    depth = -999;
+}
+else depth = 0;
 </string>
           </argument>
         </arguments>

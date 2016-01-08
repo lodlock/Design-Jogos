@@ -78,13 +78,13 @@ menu_height = 50;
                         with(obj_pet.enemy) instance_change(obj_web_pickup,1);
                         obj_pet.state = states.petcontroll;
                         obj_player.state = states.petcontroll;
-                        if(room == lvl_2 || room == lvl_3)
+                        if(room != lvl1_1 &amp;&amp; room != lvl1_2 &amp;&amp; room != lvl1_3 &amp;&amp; room != lvl1_4)
                             obj_player.hp = 100;
                     } 
                     if(instance_exists(obj_player.enemy)){
                         with(obj_player.enemy) instance_change(obj_web_pickup,1);
                         obj_player.state = states.normal;
-                        if(room == lvl_2 || room == lvl_3)
+                        if(room != lvl1_1 &amp;&amp; room != lvl1_2 &amp;&amp; room != lvl1_3 &amp;&amp; room != lvl1_4)
                             obj_player.hp = 100;
                     } 
                     
@@ -116,13 +116,13 @@ if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp
                         with(obj_pet.enemy) instance_change(obj_lightball_pickup,1);
                         obj_pet.state = states.petcontroll;
                         obj_player.state = states.petcontroll;
-                        if(room == lvl_2 || room == lvl_3)
+                        if(room != lvl1_1 &amp;&amp; room != lvl1_2 &amp;&amp; room != lvl1_3 &amp;&amp; room != lvl1_4)
                             obj_player.hp = 100;
                     } 
                     if(instance_exists(obj_player.enemy)){
                         with(obj_player.enemy) instance_change(obj_lightball_pickup,1);
                         obj_player.state = states.normal;
-                        if(room == lvl_2 || room == lvl_3)
+                        if(room != lvl1_1 &amp;&amp; room != lvl1_2 &amp;&amp; room != lvl1_3 &amp;&amp; room != lvl1_4)
                             obj_player.hp = 100;
                     } 
         }
@@ -151,13 +151,13 @@ if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp
                         with(obj_pet.enemy) instance_change(obj_frog_jump,1);
                         obj_pet.state = states.petcontroll;
                         obj_player.state = states.petcontroll;
-                        if(room == lvl_2 || room == lvl_3)
+                        if(room != lvl1_1 &amp;&amp; room != lvl1_2 &amp;&amp; room != lvl1_3 &amp;&amp; room != lvl1_4)
                             obj_player.hp = 100;
                     } 
                     if(instance_exists(obj_player.enemy)){
                         with(obj_player.enemy) instance_change(obj_frog_jump,1);
                         obj_player.state = states.normal;
-                        if(room == lvl_2 || room == lvl_3)
+                        if(room != lvl1_1 &amp;&amp; room != lvl1_2 &amp;&amp; room != lvl1_3 &amp;&amp; room != lvl1_4)
                             obj_player.hp = 100;
                     } 
         }
@@ -186,13 +186,13 @@ if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp
                         with(obj_pet.enemy) instance_change(obj_super_eyes,1);
                         obj_pet.state = states.petcontroll;
                         obj_player.state = states.petcontroll;
-                        if(room == lvl_2 || room == lvl_3)
+                        if(room != lvl1_1 &amp;&amp; room != lvl1_2 &amp;&amp; room != lvl1_3 &amp;&amp; room != lvl1_4)
                             obj_player.hp = 100;
                     } 
                     if(instance_exists(obj_player.enemy)){
                         with(obj_player.enemy) instance_change(obj_super_eyes,1);
                         obj_player.state = states.normal;
-                        if(room == lvl_2 || room == lvl_3)
+                        if(room != lvl1_1 &amp;&amp; room != lvl1_2 &amp;&amp; room != lvl1_3 &amp;&amp; room != lvl1_4)
                             obj_player.hp = 100;
                     } 
         }
@@ -221,13 +221,13 @@ if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp
                         with(obj_pet.enemy) instance_change(obj_small,1);
                         obj_pet.state = states.petcontroll;
                         obj_player.state = states.petcontroll;
-                        if(room == lvl_2 || room == lvl_3)
+                        if(room != lvl1_1 &amp;&amp; room != lvl1_2 &amp;&amp; room != lvl1_3 &amp;&amp; room != lvl1_4)
                             obj_player.hp = 100;
                     } 
                     if(instance_exists(obj_player.enemy)){
                         with(obj_player.enemy) instance_change(obj_small,1);
                         obj_player.state = states.normal;
-                        if(room == lvl_2 || room == lvl_3)
+                        if(room != lvl1_1 &amp;&amp; room != lvl1_2 &amp;&amp; room != lvl1_3 &amp;&amp; room != lvl1_4)
                             obj_player.hp = 100;
                     } 
         }
@@ -256,13 +256,13 @@ if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp
                         with(obj_pet.enemy) instance_change(obj_speed,1);
                         obj_pet.state = states.petcontroll;
                         obj_player.state = states.petcontroll;
-                        if(room == lvl_2 || room == lvl_3)
+                        if(room != lvl1_1 &amp;&amp; room != lvl1_2 &amp;&amp; room != lvl1_3 &amp;&amp; room != lvl1_4)
                             obj_player.hp = 100;
                     } 
                     if(instance_exists(obj_player.enemy)){
                         with(obj_player.enemy) instance_change(obj_speed,1);
                         obj_player.state = states.normal;
-                        if(room == lvl_2 || room == lvl_3)
+                        if(room != lvl1_1 &amp;&amp; room != lvl1_2 &amp;&amp; room != lvl1_3 &amp;&amp; room != lvl1_4)
                             obj_player.hp = 100;
                     } 
         }

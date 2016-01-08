@@ -4,7 +4,7 @@
   <width>2048</width>
   <height>768</height>
   <vsnap>8</vsnap>
-  <hsnap>32</hsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -141,11 +141,10 @@ with(obj_dialogue){
     <instance objName="obj_box" x="1728" y="608" name="inst_F82E1EDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1792" y="608" name="inst_6DCD75E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_moving_box" x="320" y="704" name="inst_AFA9DDF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="256" y="672" name="inst_70CDC0BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="192" y="672" name="inst_699E292C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="160" y="672" name="inst_FFA37D27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="288" y="672" name="inst_5F8EA8F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="320" y="672" name="inst_7E0E1412" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="240" y="656" name="inst_699E292C" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="176" y="656" name="inst_FFA37D27" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="280" y="656" name="inst_5F8EA8F1" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="320" y="656" name="inst_7E0E1412" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_button" x="384" y="736" name="inst_BEA923ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_snake" x="1504" y="552" name="inst_9DB54E99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1216" y="608" name="inst_C0404F03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -243,6 +242,7 @@ with(obj_dialogue){
     <tile bgName="cloud1" x="1440" y="176" w="190" h="127" xo="0" yo="0" id="10001149" name="inst_A010199F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="cloud1" x="160" y="88" w="190" h="127" xo="0" yo="0" id="10001150" name="inst_E45AAA3F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="cloud1" x="1824" y="320" w="190" h="127" xo="0" yo="0" id="10001151" name="inst_C566400F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="1952" y="496" w="72" h="72" xo="288" yo="216" id="10001549" name="inst_83F64D5F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

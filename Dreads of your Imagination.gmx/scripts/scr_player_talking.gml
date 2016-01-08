@@ -80,8 +80,8 @@ with(argument0){
         {
             if(argument0.line == 1 && first_spawn_lvl3)
             {
-                instance_create(3808,3416, obj_dark_talk_player);
-                instance_create(3680,3392, obj_boss_obscuro_lvl2);
+                instance_create(1400,528, obj_dark_talk_player);
+                instance_create(1480,496, obj_boss_obscuro_lvl2);
                 first_spawn_lvl3 = false;
                 
             }
@@ -90,8 +90,8 @@ with(argument0){
             if(second_spawn_lvl3){
                 with(obj_dark_talk_player) instance_destroy();
                 with(obj_boss_obscuro_lvl2) instance_destroy();
-                instance_create(3808,3416, obj_dark_player);
-                instance_create(4096,3264, obj_tenebris_lvl3);
+                instance_create(1568,704, obj_dark_player);
+                instance_create(1880,696, obj_tenebris_lvl3);
                 second_spawn_lvl3 = false;
             }
         }
