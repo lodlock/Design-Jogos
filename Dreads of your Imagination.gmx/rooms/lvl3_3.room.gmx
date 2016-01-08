@@ -3,8 +3,8 @@
   <caption></caption>
   <width>2048</width>
   <height>768</height>
-  <vsnap>35</vsnap>
-  <hsnap>35</hsnap>
+  <vsnap>4</vsnap>
+  <hsnap>4</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -182,9 +182,9 @@ with(obj_dialogue){
     <instance objName="obj_box" x="595" y="385" name="inst_7130CB46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="525" y="420" name="inst_03BE2363" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="455" y="455" name="inst_AAEF183C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="420" y="350" name="inst_492E1E98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="350" y="350" name="inst_8B6BCB9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="455" y="333" name="inst_BFF8DB9F" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="408" y="356" name="inst_492E1E98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="348" y="356" name="inst_8B6BCB9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="456" y="340" name="inst_BFF8DB9F" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="350" y="455" name="inst_422A1998" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="280" y="455" name="inst_833950E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="210" y="455" name="inst_4A3F3A5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -269,7 +269,7 @@ with(obj_dialogue){
     <instance objName="obj_torch" x="533" y="121" name="inst_3EAE6BF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="784" y="196" name="inst_81221FF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="598" y="330" name="inst_C6232ECF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_torch" x="433" y="402" name="inst_973D5C35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="445" y="402" name="inst_973D5C35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="91" y="297" name="inst_AA71EED3" locked="0" code="can_light = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="89" y="601" name="inst_CB7C4F2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="450" y="611" name="inst_11BBD7A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -387,9 +387,7 @@ with(obj_dialogue){
     <tile bgName="background7" x="735" y="315" w="72" h="72" xo="792" yo="144" id="10001587" name="inst_0F0AA0FB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background7" x="630" y="315" w="72" h="72" xo="792" yo="216" id="10001588" name="inst_F0C4B400" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background7" x="700" y="315" w="72" h="72" xo="792" yo="144" id="10001589" name="inst_0025CBB8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background7" x="315" y="315" w="72" h="72" xo="792" yo="216" id="10001591" name="inst_4C889343" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background7" x="385" y="315" w="72" h="72" xo="792" yo="144" id="10001592" name="inst_4779C863" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background7" x="420" y="315" w="72" h="72" xo="792" yo="648" id="10001593" name="inst_5331FD01" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="428" y="320" w="72" h="72" xo="792" yo="648" id="10001593" name="inst_5331FD01" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background7" x="490" y="630" w="72" h="72" xo="792" yo="72" id="10001594" name="inst_9C74E784" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background7" x="420" y="630" w="72" h="72" xo="792" yo="144" id="10001595" name="inst_006C5C1B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background7" x="350" y="630" w="72" h="72" xo="792" yo="144" id="10001596" name="inst_D9263F76" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -419,6 +417,8 @@ with(obj_dialogue){
     <tile bgName="background7" x="105" y="315" w="72" h="72" xo="792" yo="216" id="10001622" name="inst_1A8A0098" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background7" x="216" y="352" w="72" h="72" xo="504" yo="720" id="10001623" name="inst_787FEE34" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background7" x="945" y="420" w="72" h="72" xo="792" yo="144" id="10001624" name="inst_B5D86204" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="364" y="320" w="72" h="72" xo="288" yo="792" id="10001632" name="inst_E5FD883A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="312" y="320" w="72" h="72" xo="288" yo="792" id="10001633" name="inst_2143A5FB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
