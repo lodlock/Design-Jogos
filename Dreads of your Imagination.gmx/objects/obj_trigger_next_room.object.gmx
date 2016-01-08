@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>with(all){
 
-    if (object_index != obj_inventory &amp;&amp; object_index != obj_GM &amp;&amp; object_index != obj_lightning &amp;&amp; object_index != obj_camera)
+    if (object_index != obj_inventory &amp;&amp; object_index != obj_GM &amp;&amp; object_index != obj_lightning &amp;&amp; object_index != obj_camera &amp;&amp; object_index != obj_musicBox)
         instance_destroy();
 }
 instance_create(0,0,obj_fade);
@@ -55,7 +55,7 @@ instance_create(0,0,obj_fade);
             <kind>1</kind>
             <string>with(all){
 
-    if (object_index != obj_inventory &amp;&amp; object_index != obj_GM &amp;&amp; object_index != obj_lightning &amp;&amp; object_index != obj_camera)
+    if (object_index != obj_inventory &amp;&amp; object_index != obj_GM &amp;&amp; object_index != obj_lightning &amp;&amp; object_index != obj_camera &amp;&amp; object_index != obj_musicBox)
         instance_destroy();
 }
 instance_create(0,0,obj_fade);

@@ -120,7 +120,6 @@ draw_set_blend_mode(bm_normal);
             <string>draw_sprite_ext(sprite_index,image_index,x,y,-facing,1,0,c_white,1);
 image_speed = 0.2;
 draw_healthbar(x-25,y-35,x+25,y-40,hp,c_black,c_red,c_green,0,true,false);
-//draw_circle_colour(x,y,50,c_green,c_green,2);
 draw_sprite_ext(spr_aura,image_index,x,y,1,1,1,c_white,1);
 if(ask_transform)
 {

@@ -5,15 +5,15 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\snd_boss</sound>
-    <sound>sound\snd_win</sound>
-    <sound>sound\snd_level</sound>
+    <sound>sound\snd_boss_fight1</sound>
+    <sound>sound\snd_boss_fight2</sound>
+    <sound>sound\snd_boss_fight3</sound>
+    <sound>sound\snd_lvl1_win</sound>
+    <sound>sound\snd_lvl1</sound>
     <sound>sound\snd_lvl2</sound>
-    <sound>sound\snd_lostHaze</sound>
+    <sound>sound\snd_lvl3</sound>
     <sound>sound\snd_main_menu</sound>
     <sound>sound\snd_kid_dialog</sound>
-    <sound>sound\snd_lvl3</sound>
-    <sound>sound\snd_boss_lvl3</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Obscuro">
@@ -293,19 +293,25 @@
   <rooms name="rooms">
     <room>rooms\rm_initialize</room>
     <room>rooms\Start_menu</room>
-    <room>rooms\lvl1_1</room>
-    <room>rooms\lvl1_2</room>
-    <room>rooms\lvl1_3</room>
-    <room>rooms\lvl1_4</room>
-    <room>rooms\lvl2_1</room>
-    <room>rooms\lvl2_2</room>
-    <room>rooms\lvl2_3</room>
-    <room>rooms\lvl2_4</room>
-    <room>rooms\lvl2_5</room>
-    <room>rooms\lvl3_1</room>
-    <room>rooms\lvl3_2</room>
-    <room>rooms\lvl3_3</room>
-    <room>rooms\lvl3_4</room>
+    <rooms name="LVL1">
+      <room>rooms\lvl1_1</room>
+      <room>rooms\lvl1_2</room>
+      <room>rooms\lvl1_3</room>
+      <room>rooms\lvl1_4</room>
+    </rooms>
+    <rooms name="LVL2">
+      <room>rooms\lvl2_1</room>
+      <room>rooms\lvl2_2</room>
+      <room>rooms\lvl2_3</room>
+      <room>rooms\lvl2_4</room>
+      <room>rooms\lvl2_5</room>
+    </rooms>
+    <rooms name="LVL3">
+      <room>rooms\lvl3_1</room>
+      <room>rooms\lvl3_2</room>
+      <room>rooms\lvl3_3</room>
+      <room>rooms\lvl3_4</room>
+    </rooms>
     <room>rooms\lvl_room</room>
     <room>rooms\lvl_room2</room>
     <room>rooms\lvl_room3</room>

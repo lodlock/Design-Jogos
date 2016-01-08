@@ -188,7 +188,6 @@ with(obj_dialogue){
     <instance objName="obj_box" x="596" y="621" name="inst_DBC29D24" locked="0" code="" scaleX="1" scaleY="0.200000002980232" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="664" y="411" name="inst_E815418F" locked="0" code="" scaleX="1" scaleY="0.200000002980232" colour="4294967295" rotation="0"/>
     <instance objName="obj_snake" x="1400" y="272" name="inst_9D22EA2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_snake" x="1890" y="272" name="inst_0BF50817" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1088" y="320" name="inst_69F2D940" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1152" y="320" name="inst_4D634A5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1216" y="320" name="inst_2984A1B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -212,6 +211,7 @@ with(obj_dialogue){
     <instance objName="obj_box" x="1294" y="270" name="inst_78AA366E" locked="0" code="" scaleX="0.800000011920929" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1507" y="270" name="inst_04F904D8" locked="0" code="" scaleX="0.800000011920929" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1786" y="271" name="inst_9236AE8C" locked="0" code="" scaleX="0.800000011920929" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_transformable_enemy" x="1938" y="258" name="inst_E1A14717" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background7" x="70" y="760" w="72" h="72" xo="576" yo="288" id="10000784" name="inst_AC035A2E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -232,6 +232,7 @@ with(obj_dialogue){
     <instance objName="obj_moving_box" x="480" y="672" name="lvl2_4_button6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_moving_box" x="544" y="736" name="lvl2_4_button7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="1088" y="736" name="inst_D85B1975" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bee" x="64" y="704" name="inst_78F8468D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background7" x="70" y="760" w="72" h="72" xo="576" yo="288" id="10000784" name="inst_AC035A2E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

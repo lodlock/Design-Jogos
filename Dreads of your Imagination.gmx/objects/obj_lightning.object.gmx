@@ -75,7 +75,7 @@ if(room == lvl2_5 &amp;&amp; obj_trigger_dark_lvl2.lvl2_dark){
     if(instance_exists(obj_player)) if(obj_player.state = states.normal &amp;&amp; already) darkness = true;
 }
 
-if(room == lvl2_1 || room == lvl2_2){
+if(room == lvl2_1 || room == lvl2_2 || room == lvl2_3 || room == lvl2_4){
     draw_set_color(c_black);
 }
 
