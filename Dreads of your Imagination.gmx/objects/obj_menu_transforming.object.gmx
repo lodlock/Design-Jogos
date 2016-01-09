@@ -465,7 +465,7 @@ if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp
     var text;
     
     switch(item){
-        case 0: text = "Web: Use the power of the Spider and stop Ghosts for 5 seconds#making you invulnerable to them! You can just use one Web each time." break;
+        case 0: text = "Web: Use the power of the Spider and stop movement of creatures (such as Ghosts or Bees) for 5 seconds#making you invulnerable to them! You can just use one Web at a time." break;
         default: text = "" break;
     }
     draw_set_color(c_white);
@@ -493,7 +493,7 @@ if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp
     var text;
     
     switch(item){
-        case 0: text = "Lightball: Use the power of fire and send this Lightball.It will move the same direction you are facing,#             light the way and remove your fear while near it. You can just throw one fireball each#             time, and they last 30 seconds!" break;
+        case 0: text = "Lightball: Use the power of fire and send this Lightball.#             Lights the way and removes your fear while near it. You can just throw one fireball at a#             time. They last for 30 seconds!" break;
         default: text = "" break;
     }
     draw_set_color(c_white);
@@ -549,7 +549,7 @@ if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp
     var text;
     
     switch(item){
-        case 0: text = "Natureyes: Discover hidden objects with Natureyes." break;
+        case 0: text = "Natureyes: Allows you to discover hidden objects in a certain radius from your character." break;
         default: text = "" break;
     }
     draw_set_color(c_white);
@@ -605,7 +605,7 @@ if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.transforming &amp
     var text;
     
     switch(item){
-        case 0: text = "Speedy: Run Tommy run!" break;
+        case 0: text = "Speedy: Object that boosts your movement speed,  #allowing you to destroy crates thanks to your speed force. #Run the wind Bullseye!" break;
         default: text = "" break;
     }
     draw_set_color(c_white);
