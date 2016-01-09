@@ -300,6 +300,7 @@
       <room>rooms\lvl1_3</room>
       <room>rooms\lvl1_4</room>
     </rooms>
+    <room>rooms\lvl_room2</room>
     <rooms name="LVL2">
       <room>rooms\lvl2_1</room>
       <room>rooms\lvl2_2</room>
@@ -313,7 +314,6 @@
       <room>rooms\lvl3_3</room>
       <room>rooms\lvl3_4</room>
     </rooms>
-    <room>rooms\lvl_room2</room>
     <room>rooms\lvl_room3</room>
     <room>rooms\lvl_room4</room>
     <room>rooms\lvl_room5</room>
