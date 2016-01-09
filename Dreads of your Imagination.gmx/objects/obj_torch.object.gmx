@@ -97,6 +97,13 @@ draw_set_blend_mode(bm_normal);
             hp += 1;
     }
 }
+
+if(instance_exists(obj_pet) &amp;&amp; obj_pet.state == states.petcontroll &amp;&amp; start_boss &amp;&amp; collision_circle(x,y,220,obj_player,false,false)){
+    with(obj_player){
+        if(hp &lt; 100 &amp;&amp; hp &gt; 0)
+            hp += 0.1;
+    }
+}
 </string>
           </argument>
         </arguments>

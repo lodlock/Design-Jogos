@@ -294,13 +294,6 @@
     <room>rooms\rm_initialize</room>
     <room>rooms\Start_menu</room>
     <room>rooms\lvl_room</room>
-    <rooms name="LVL1">
-      <room>rooms\lvl1_1</room>
-      <room>rooms\lvl1_2</room>
-      <room>rooms\lvl1_3</room>
-      <room>rooms\lvl1_4</room>
-    </rooms>
-    <room>rooms\lvl_room2</room>
     <rooms name="LVL2">
       <room>rooms\lvl2_1</room>
       <room>rooms\lvl2_2</room>
@@ -308,6 +301,13 @@
       <room>rooms\lvl2_4</room>
       <room>rooms\lvl2_5</room>
     </rooms>
+    <rooms name="LVL1">
+      <room>rooms\lvl1_1</room>
+      <room>rooms\lvl1_2</room>
+      <room>rooms\lvl1_3</room>
+      <room>rooms\lvl1_4</room>
+    </rooms>
+    <room>rooms\lvl_room2</room>
     <rooms name="LVL3">
       <room>rooms\lvl3_1</room>
       <room>rooms\lvl3_2</room>

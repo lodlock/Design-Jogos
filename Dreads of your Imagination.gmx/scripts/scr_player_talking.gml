@@ -13,7 +13,7 @@ if(key_dialogue) {
         obj_player.state = states.normal;
         
         //Cutscene events
-        if(argument0 == cutscene_intro) {
+        if(argument0 == cutscene_intro || argument0 == cutscene_after_tenebris) {
             instance_create(0,0,obj_fade);
         }
     }

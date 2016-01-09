@@ -133,6 +133,8 @@ if(room = lvl1_2 || room = lvl1_3 || room = lvl1_4){
 if(room = lvl2_5){
     
     if(lvl2boss &amp;&amp; lvl2bossrdy){
+        haze_stuck_lvl2.x = obj_player.x;
+        haze_stuck_lvl2.y = obj_player.y;
         instance_create(1216,743, obj_snake_boss);
         instance_create(1500,743, obj_bat_boss);
         if(instance_number(obj_snake_boss) &gt; 2 || instance_number(obj_bat_boss) &gt; 2)
