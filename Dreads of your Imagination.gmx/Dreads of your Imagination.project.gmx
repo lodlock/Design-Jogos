@@ -171,6 +171,7 @@
     </scripts>
     <scripts name="Menu Scripts">
       <script>scripts\scr_menu.gml</script>
+      <script>scripts\scr_choose_level.gml</script>
     </scripts>
     <scripts name="Movement Scripts">
       <script>scripts\scr_move_down.gml</script>
@@ -284,6 +285,7 @@
     </objects>
     <objects name="Menu">
       <object>objects\obj_menu</object>
+      <object>objects\obj_choose_lvl</object>
     </objects>
     <object>objects\obj_chicken</object>
     <object>objects\obj_fade</object>
@@ -293,6 +295,7 @@
   <rooms name="rooms">
     <room>rooms\rm_initialize</room>
     <room>rooms\Start_menu</room>
+    <room>rooms\rm_choose_lvl</room>
     <room>rooms\lvl_room</room>
     <rooms name="LVL1">
       <room>rooms\lvl1_1</room>
