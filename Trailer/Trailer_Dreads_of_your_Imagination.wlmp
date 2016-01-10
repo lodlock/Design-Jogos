@@ -7,7 +7,7 @@
     <MediaItem id="4" filePath="D:\Johnny\Universidade\Mestrado_1_ano_1_semestre\Design de Jogos\Projecto\Assignment4_JogoDigital\Repositório\Design-Jogos\Trailer\Plague Inc. Custom Scenario- A Demon Awakens Music.mp3" arWidth="0" arHeight="0" duration="189.62275" songTitle="" songArtist="" songAlbum="" songCopyrightUrl="" songArtistUrl="" songAudioFileUrl="" stabilizationMode="0" mediaItemType="3" />
     <MediaItem id="5" filePath="D:\Videos\Twitch_streams\2016-01-10-2158-21.mp4" arWidth="1920" arHeight="1080" duration="12.4309791" songTitle="" songArtist="" songAlbum="" songCopyrightUrl="" songArtistUrl="" songAudioFileUrl="" stabilizationMode="0" mediaItemType="1" />
     <MediaItem id="6" filePath="D:\Videos\Twitch_streams\2016-01-10-2203-13.mp4" arWidth="1920" arHeight="1080" duration="51.405979100000003" songTitle="" songArtist="" songAlbum="" songCopyrightUrl="" songArtistUrl="" songAudioFileUrl="" stabilizationMode="0" mediaItemType="1" />
-    <MediaItem id="7" filePath="D:\Johnny\Universidade\Mestrado_1_ano_1_semestre\Design de Jogos\Projecto\Assignment4_JogoDigital\Repositório\Design-Jogos\Trailer\Logo.png" arWidth="96" arHeight="68" duration="0" songTitle="" songArtist="" songAlbum="" songCopyrightUrl="" songArtistUrl="" songAudioFileUrl="" stabilizationMode="0" mediaItemType="2" />
+    <MediaItem id="7" filePath="D:\Johnny\Universidade\Mestrado_1_ano_1_semestre\Design de Jogos\Projecto\Assignment4_JogoDigital\Repositório\Design-Jogos\Trailer\Logo.png" arWidth="2048" arHeight="1447" duration="0" songTitle="" songArtist="" songAlbum="" songCopyrightUrl="" songArtistUrl="" songAudioFileUrl="" stabilizationMode="0" mediaItemType="2" />
   </MediaItems>
   <Extents>
     <TitleClip extentID="53" gapBefore="0" duration="3">
@@ -848,12 +848,12 @@
             <BoundPropertyInt Name="outlineSizeIndex" Value="0" />
             <BoundPropertyFloatSet Name="position">
               <BoundPropertyFloatElement Value="0.16302776336669922" />
-              <BoundPropertyFloatElement Value="2.2325582504272461" />
+              <BoundPropertyFloatElement Value="2.2558140754699707" />
               <BoundPropertyFloatElement Value="0.02500000037252903" />
             </BoundPropertyFloatSet>
             <BoundPropertyFloat Name="size" Value="0.60000002384185791" />
             <BoundPropertyStringSet Name="string">
-              <BoundPropertyStringElement Value="Transform your ennemies into " />
+              <BoundPropertyStringElement Value="Transform your enemies into " />
               <BoundPropertyStringElement Value="usefull objects" />
             </BoundPropertyStringSet>
             <BoundPropertyString Name="style" Value="Plain" />
@@ -948,8 +948,8 @@
     <BoundPlaceholder placeholderID="SingleExtentView" extentID="0" />
     <BoundPlaceholder placeholderID="Main" extentID="1" />
     <BoundPlaceholder placeholderID="SoundTrack" extentID="2" />
-    <BoundPlaceholder placeholderID="Text" extentID="4" />
     <BoundPlaceholder placeholderID="Narration" extentID="3" />
+    <BoundPlaceholder placeholderID="Text" extentID="4" />
   </BoundPlaceholders>
   <BoundProperties>
     <BoundPropertyFloatSet Name="AspectRatio">
