@@ -3,7 +3,7 @@
   <caption></caption>
   <width>2048</width>
   <height>768</height>
-  <vsnap>1</vsnap>
+  <vsnap>32</vsnap>
   <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -212,7 +212,7 @@ with(obj_dialogue){
     <instance objName="obj_box" x="1507" y="270" name="inst_04F904D8" locked="0" code="" scaleX="0.800000011920929" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1786" y="271" name="inst_9236AE8C" locked="0" code="" scaleX="0.800000011920929" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_transformable_enemy" x="1938" y="258" name="inst_E1A14717" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_avoid_lvl1_bug" x="1726" y="256" name="inst_07CAEA8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_avoid_lvl1_bug" x="1722" y="256" name="inst_07CAEA8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_avoid_lvl1_bug" x="1724" y="194" name="inst_A260AF82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dialogue" x="1702" y="236" name="inst_4ED75289" locked="0" code="text[0] = &quot;...&quot;;&#xA;text[1] = &quot;Tommy: What? We're in spider town again?&quot;;&#xA;text[2] = &quot;Haze: Must be Tenebris' minions that went loose after you defeated him.&quot;;&#xA;text[3] = &quot;Tommy: Hmm... I don't know seems weird though don't you think?&quot;;&#xA;text[4] = &quot;Haze: Maybe who knows?&quot;;&#xA;&#xA;itemid = obj_dialogue.count_id;&#xA;obj_dialogue.count_id++;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
