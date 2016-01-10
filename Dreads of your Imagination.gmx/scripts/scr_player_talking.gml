@@ -16,6 +16,12 @@ if(key_dialogue) {
         if(argument0 == cutscene_intro || argument0 == cutscene_after_tenebris || argument0 == cutscene_after_haze_death) {
             instance_create(0,0,obj_fade);
         }
+        
+        //Last Cutscene goes back to main menu
+        if(argument0 == cutscene_new_dog) {
+            aux = instance_create(0,0,obj_fade);
+            aux.room_to_fade = rm_initialize;
+        }
     }
 }
 

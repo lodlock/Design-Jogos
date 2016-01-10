@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>a = 0;
 fade = 1;
+
+room_to_fade = noone;
 </string>
           </argument>
         </arguments>
@@ -51,9 +53,15 @@ fade = 1;
             <kind>1</kind>
             <string>a = clamp(a + (fade * 0.05),0,1);
 
-if(a == 1)
+if(a == 1 &amp;&amp; room_to_fade == noone)
 {
     room_goto_next();
+    fade = -1;
+}
+
+if(a == 1 &amp;&amp; room_to_fade != noone)
+{
+    room_goto(room_to_fade);
     fade = -1;
 }
 
