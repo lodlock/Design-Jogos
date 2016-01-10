@@ -29,6 +29,9 @@
 first_time_boss = true;
 first_time_chicken = true;
 first_time_boss3 = true;
+start_boss = false;
+haze_death = false;
+
 if(room == lvl1_1){
     audio_stop_all();
     audio_play_sound(snd_lvl1, 1, true);
@@ -40,6 +43,18 @@ else if(room == lvl2_1){
 else if(room == lvl3_1){
     audio_stop_all();
     audio_play_sound(snd_lvl3, 1, true);
+}
+else if(room == Start_menu) {
+    audio_stop_all();
+    audio_play_sound(snd_main_menu, 1, true);
+}
+else if(room == lvl_room || room == lvl_room2) {
+    audio_stop_all();
+    audio_play_sound(snd_kid_dialog, 1, true);
+}
+else if(room == lvl_room4) {
+    audio_stop_all();
+    audio_play_sound(snd_lvl1_win, 1, true);
 }
 </string>
           </argument>
