@@ -173,7 +173,9 @@ if(room = lvl2_5){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>aux = instance_create(0,0,obj_fade);
+            <string>with(all)
+    instance_destroy();
+aux = instance_create(0,0,obj_fade);
 aux.room_to_fade = rm_initialize;
 </string>
           </argument>
