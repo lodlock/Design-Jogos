@@ -160,7 +160,7 @@ with(obj_dialogue){
     <instance objName="obj_trigger_next_room" x="2091" y="736" name="inst_21830034" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_avoid_lvl1_bug" x="2088" y="736" name="inst_9DCD2CF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="32" y="604" name="inst_B02B176E" locked="0" code="" scaleX="1" scaleY="0.890625" colour="4294967295" rotation="0"/>
-    <instance objName="obj_box" x="95" y="604" name="inst_461D955D" locked="0" code="" scaleX="0.970000028610229" scaleY="0.875" colour="4294967295" rotation="0"/>
+    <instance objName="obj_box" x="95" y="604" name="inst_461D955D" locked="0" code="" scaleX="0.97000002861023" scaleY="0.875" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="158" y="604" name="inst_F81C32F0" locked="0" code="" scaleX="1" scaleY="0.890625" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="206" y="602" name="inst_2051B5EE" locked="0" code="" scaleX="1.03125" scaleY="0.84375" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="249" y="587" name="inst_7726F327" locked="0" code="" scaleX="0.98412698507309" scaleY="0.359375" colour="4294967295" rotation="0"/>

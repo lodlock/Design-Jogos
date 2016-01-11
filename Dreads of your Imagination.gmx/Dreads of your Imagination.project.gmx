@@ -129,6 +129,7 @@
     <background>background\cloud1</background>
     <background>background\grass</background>
     <background>background\scary_tree</background>
+    <background>background\background23</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\frog1_path</path>
