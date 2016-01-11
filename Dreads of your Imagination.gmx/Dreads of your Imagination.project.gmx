@@ -4,7 +4,17 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_boss_fight1</sound>
+    <sound>sound\snd_boss_fight2</sound>
+    <sound>sound\snd_boss_fight3</sound>
+    <sound>sound\snd_lvl1_win</sound>
+    <sound>sound\snd_lvl1</sound>
+    <sound>sound\snd_lvl2</sound>
+    <sound>sound\snd_lvl3</sound>
+    <sound>sound\snd_main_menu</sound>
+    <sound>sound\snd_kid_dialog</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Obscuro">
       <sprite>sprites\spr_obscuro_walk_and_iddle</sprite>
