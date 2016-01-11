@@ -200,6 +200,7 @@ with(obj_dialogue){
     <instance objName="obj_special_button_lvl3_1_button1" x="1231" y="735" name="inst_58E52DF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1366" y="551" name="inst_613DCDEC" locked="0" code="" scaleX="1" scaleY="0.200000002980232" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="1155" y="704" name="inst_5D291C66" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_musicBox" x="175" y="-112" name="inst_5806B775" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dialogue" x="84" y="720" name="inst_35C580C3" locked="0" code="text[0] = &quot;???: The final task is finally at hand! #Are you ready for your last stand?&quot;;&#xA;text[1] = &quot;???: Put yourself together and get ready to fight! #Time to get over your fright.&quot;;&#xA;text[2] = &quot;???: The time for vengeance is near! #Soon you'll be rid of all this fear.&quot;;&#xA;text[3] = &quot;Tommy's 18 now. Almost on his way to college. Although still himself, #Tommy never truly got over the death of Haze&quot;;&#xA;text[4] = &quot;He's been preparing to face those 2 again to have his revenge.&quot;;&#xA;text[5] = &quot;Tommy: Here we are again. Now to search for those sons of b******.&quot;;&#xA;&#xA;itemid = obj_dialogue.count_id;&#xA;obj_dialogue.count_id++;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
