@@ -1,0 +1,2 @@
+Abrir o ficheiro Dreads of your Imagination.project que se encontra na pasta em cima no Gamemaker. Simplesmente correr a build.
+Nota: Foram retiradas as músicas do projecto devido ao seu elevado tamnho que ocupavam.
