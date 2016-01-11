@@ -379,7 +379,7 @@
             </BoundPropertyFloatSet>
             <BoundPropertyFloat Name="size" Value="0.80000001192092896" />
             <BoundPropertyStringSet Name="string">
-              <BoundPropertyStringElement Value="This spring...." />
+              <BoundPropertyStringElement Value="This winter...." />
             </BoundPropertyStringSet>
             <BoundPropertyString Name="style" Value="Plain" />
             <BoundPropertyFloat Name="transparency" Value="0" />
@@ -854,7 +854,7 @@
             <BoundPropertyFloat Name="size" Value="0.60000002384185791" />
             <BoundPropertyStringSet Name="string">
               <BoundPropertyStringElement Value="Transform your enemies into " />
-              <BoundPropertyStringElement Value="usefull objects" />
+              <BoundPropertyStringElement Value="useful objects" />
             </BoundPropertyStringSet>
             <BoundPropertyString Name="style" Value="Plain" />
             <BoundPropertyFloat Name="transparency" Value="0" />
@@ -948,8 +948,8 @@
     <BoundPlaceholder placeholderID="SingleExtentView" extentID="0" />
     <BoundPlaceholder placeholderID="Main" extentID="1" />
     <BoundPlaceholder placeholderID="SoundTrack" extentID="2" />
-    <BoundPlaceholder placeholderID="Text" extentID="4" />
     <BoundPlaceholder placeholderID="Narration" extentID="3" />
+    <BoundPlaceholder placeholderID="Text" extentID="4" />
   </BoundPlaceholders>
   <BoundProperties>
     <BoundPropertyFloatSet Name="AspectRatio">
